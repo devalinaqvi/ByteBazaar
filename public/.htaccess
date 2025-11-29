@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# If not a file/dir, route to index.php (AltoRouter handles)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# Deny access to sensitive files (e.g., if someone hits /public/config.php—impossible but safe)
+<Files ~ "^\.">
+    Order allow,deny
+    Deny from all
+</Files>
