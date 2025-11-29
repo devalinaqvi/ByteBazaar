@@ -49,6 +49,7 @@ $container = new \App\Core\Container($pdo);
 // Bind deps
 $container->singleton('cartRepo', fn($c) => new \App\Repositories\CartRepository($c->get('pdo')));
 $container->singleton('cartService', fn($c) => new \App\Services\CartService($c->get('cartRepo')));
+$container->singleton('authService', fn($c) => new \App\Services\AuthService());
 
 // Bind controllers
 $container->bind('App\Controllers\CartController', fn($c) => new \App\Controllers\CartController($c->get('cartService')));
