@@ -5,7 +5,7 @@ use App\Services\AuthService;
 use App\Core\Request;
 
 class AuthMiddleware {
-    private AuthService $authService;
+    protected AuthService $authService;
     private bool $guestOnly;
 
     public function __construct(AuthService $authService, bool $guestOnly = false) {
