@@ -3,10 +3,11 @@
 namespace App\Services;
 
 use App\Repositories\CartRepository;
+use App\Repositories\ProductRepository;
 
 class CartService
 {
-    public function __construct(private CartRepository $cartRepo) {}
+    public function __construct(private CartRepository $cartRepo, private ProductRepository $productRepo) {}
 
     private function identifyUser(): array
     {
@@ -26,12 +27,34 @@ class CartService
         return $this->cartRepo->getCartItems($userId, $sessionId);
     }
 
+    public function getItemPrice(int $productId): float
+    {
+        $product = $this->productRepo->find($productId);
+        return $product->price;
+    }
+
+    public function getProductImage(int $productId): string
+    {
+        $product = $this->productRepo->find($productId);
+        return $product->image_url;
+    }
+    public function getProductSlug(int $productId): string
+    {
+        $product = $this->productRepo->find($productId);
+        return $product->slug;
+    }
+    public function getProductName(int $productId): string
+    {
+        $product = $this->productRepo->find($productId);
+        return $product->name;
+    }
+
     public function addToCart(int $productId, int $qty = 1)
     {
         logMessage('Adding product to cart');
+
         [$userId, $sessionId] = $this->identifyUser();
 
-        logMessage('Identified user: ' . $userId);
         logMessage('Identified session: ' . $sessionId);
 
         $existing = $this->cartRepo->findItem($userId, $sessionId, $productId);
@@ -45,7 +68,6 @@ class CartService
 
         logMessage('Adding new cart item');
         return $this->cartRepo->addItem([
-            'user_id' => $userId,
             'session_id' => $sessionId,
             'product_id' => $productId,
             'quantity' => $qty,

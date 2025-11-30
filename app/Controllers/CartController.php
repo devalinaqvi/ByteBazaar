@@ -16,7 +16,34 @@ class CartController extends BaseController
 
     public function index(): void
     {
-        $this->render('pages/cart', ['title' => 'Cart']);
+        $cartItems = $this->cart->getCart();
+        $processedItems = [];
+        $cartTotal = 0;
+
+        foreach ($cartItems as $item) {
+            // Access object properties with -> instead of []
+            $price = $this->cart->getItemPrice($item->product_id);
+            $image = $this->cart->getProductImage($item->product_id);
+            $name = $this->cart->getProductName($item->product_id);
+            $subtotal = $item->quantity * $price;
+            $cartTotal += $subtotal;
+
+            $processedItems[] = [
+                'id' => $item->id,
+                'product_id' => $item->product_id,
+                'quantity' => $item->quantity,
+                'price' => $price,
+                'subtotal' => $subtotal,
+                'image' => $image,
+                'product_name' => $name
+            ];
+        }
+
+        $this->render('pages/cart', [
+            'title' => 'Cart',
+            'cartItems' => $processedItems,
+            'cartTotal' => $cartTotal
+        ]);
     }
 
     public function add(): void

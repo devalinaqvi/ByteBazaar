@@ -1,7 +1,6 @@
 -- Add session_id column to cart_items table to support guest users
 ALTER TABLE cart_items 
-ADD COLUMN session_id VARCHAR(255) NULL AFTER user_id,
-MODIFY user_id INT NULL,
+ADD COLUMN session_id VARCHAR(255) NULL AFTER id,
 ADD INDEX idx_cart_items_session (session_id);
 
 -- Update unique constraint to handle both logged-in and guest users

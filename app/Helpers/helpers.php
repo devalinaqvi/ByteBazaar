@@ -127,10 +127,35 @@ function view(string $view, array $data = []): string
  */
 function route(string $route, array $params = []): string
 {
-    return base_url($route);
+    $url = base_url($route);
+    if (!empty($params)) {
+        $url .= '?' . http_build_query($params);
+    }
+    return $url;
 }
 
 function csrf_hash(): string
 {
     return hash('sha256', session_id() . $_SERVER['REMOTE_ADDR'] . time());
+}
+
+function mapCategoryImage(string $category): string
+{
+    $category = strtolower($category);
+    $baseDir = '/assets/images/categories/';
+
+    $possibleFiles = [
+        $category . '.jpg',
+        $category . '.png',
+        $category . '.webp',
+    ];
+
+    foreach ($possibleFiles as $filename) {
+        $path = $_SERVER['DOCUMENT_ROOT'] . $baseDir . $filename;
+        if (file_exists($path)) {
+            return $baseDir . $filename;
+        }
+    }
+
+    return '/assets/images/categories/default.webp';
 }

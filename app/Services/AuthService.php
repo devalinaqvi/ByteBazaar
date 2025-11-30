@@ -27,7 +27,6 @@ class AuthService {
         session_destroy();
     }
 
-    // Stub for full module: register, authenticate (password_verify)
     public function authenticate(string $email, string $password): ?\App\Models\User
     {
         if ($email === '' && $password === '') {

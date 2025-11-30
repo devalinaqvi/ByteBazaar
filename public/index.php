@@ -69,7 +69,7 @@ try {
 $container->singleton('authService', fn($c) => new \App\Services\AuthService($c->get('userRepository')));
 
 // Bind controllers
-$container->bind('\\App\\Controllers\\HomeController', fn($c) => new \App\Controllers\HomeController());
+$container->bind('\\App\\Controllers\\HomeController', fn($c) => new \App\Controllers\HomeController($c->get('categoryService'), $c->get('productService')));
 $container->bind('\\App\\Controllers\\CartController', fn($c) => new \App\Controllers\CartController($c->get('cartService'), $c->get('request')));
 $container->bind('\\App\\Controllers\\AuthController', fn($c) => new \App\Controllers\AuthController($c->get('authService'), $c->get('request')));
 $container->bind('\\App\\Controllers\\AdminController', fn($c) => new \App\Controllers\AdminController($c->get('orderService'), $c->get('productService'), $c->get('categoryService'), $c->get('request')));

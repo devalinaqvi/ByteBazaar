@@ -12,14 +12,8 @@ class CartRepository
     public function getCartItems(?int $userId, string $sessionId): array
     {
         $sql = "SELECT * FROM cart_items WHERE ";
-
-        if ($userId) {
-            $sql .= "user_id = ?";
-            $params = [$userId];
-        } else {
-            $sql .= "session_id = ?";
-            $params = [$sessionId];
-        }
+        $sql .= "session_id = ?";
+        $params = [$sessionId];
 
         logMessage('Session ID: ' . $sessionId . ' User ID: ' . $userId . ' SQL: ' . $sql);
         $stmt = $this->db->prepare($sql);
@@ -35,6 +29,7 @@ class CartRepository
     public function findItem(?int $userId, string $sessionId, int $productId)
     {
         logMessage('Finding cart item: User ID: ' . $userId . ', Session ID: ' . $sessionId . ', Product ID: ' . $productId);
+
         $sql = "SELECT * FROM cart_items WHERE product_id = ? AND ";
 
         if ($sessionId) {
@@ -62,8 +57,8 @@ class CartRepository
         }
 
         $stmt = $this->db->prepare("
-        INSERT INTO cart_items (user_id, session_id, product_id, quantity)
-        VALUES (:user_id, :session_id, :product_id, :quantity)
+        INSERT INTO cart_items (session_id, product_id, quantity)
+        VALUES (:session_id, :product_id, :quantity)
         ");
         $stmt->execute($data);
         return $this->db->lastInsertId();

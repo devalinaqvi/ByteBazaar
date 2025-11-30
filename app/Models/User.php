@@ -5,10 +5,12 @@ namespace App\Models;
 class User
 {
     public int $id;
+
     public string $name;
+
     public string $email;
     public string $password;
-    public int $is_admin;
+    public int $is_admin = 0;
 
     public function __construct(array $data)
     {

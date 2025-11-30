@@ -6,5 +6,4 @@ class Category {
     public ?int $id = null;
     public string $name = '';
     public ?string $slug = null;
-
 }

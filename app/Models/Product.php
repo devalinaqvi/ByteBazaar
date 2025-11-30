@@ -5,18 +5,26 @@ namespace App\Models;
 class Product
 {
     public ?int $id = null;
-    public string $name = '';
-    public ?string $slug = null;
-    public string $description = '';
-    public float $price = 0.0;
-    public int $stock = 0;
-    public int $category_id = 0;
-    public ?string $image_url = null;
-    public string $created_at = '';
-    public string $updated_at = '';
-    public ?string $deleted_at = null;
 
-    public Category $category;
+    public string $name = '';
+
+    public ?string $slug = null;
+
+    public string $description = '';
+
+    public float $price = 0.0;
+
+    public int $stock = 0;
+
+    public int $category_id = 0;
+
+    public ?string $image_url = null;
+
+    public string $created_at = '';
+
+    public string $updated_at = '';
+
+    public ?string $deleted_at = null;
 
     public function __construct(array $data = [])
     {
