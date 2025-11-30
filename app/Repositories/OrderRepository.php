@@ -7,7 +7,7 @@ use PDO;
 
 class OrderRepository
 {
-    public function __construct(private PDO $db) {}
+    public function __construct(private readonly PDO $db) {}
 
     public function getAll(): array
     {
@@ -20,5 +20,10 @@ class OrderRepository
         $stmt = $this->db->prepare("SELECT * FROM orders WHERE user_id = ?");
         $stmt->execute([$userId]);
         return $stmt->fetchAll(PDO::FETCH_CLASS, Order::class);
+    }
+    public function create(int $userId, array $items): int
+    {
+        $stmt = $this->db->prepare("INSERT INTO orders (user_id) VALUES (?)");
+        return $stmt->execute([$userId]) ? $this->db->lastInsertId() : 0;
     }
 }

@@ -50,10 +50,15 @@ $container = new \App\Core\Container($pdo);
 // Bind deps
 $container->singleton('request', fn($c) => new \App\Core\Request());
 $container->singleton('cartRepo', fn($c) => new \App\Repositories\CartRepository($c->get('pdo')));
-$container->singleton('cartService', fn($c) => new \App\Services\CartService($c->get('cartRepo')));
 $container->singleton('userRepository', fn($c) => new \App\Repositories\UserRepository($c->get('db')));
 $container->singleton('orderRepo', fn($c) => new \App\Repositories\OrderRepository($c->get('db')));
 $container->singleton('orderService', fn($c) => new \App\Services\OrderService($c->get('orderRepo')));
+$container->singleton('productRepo', fn($c) => new \App\Repositories\ProductRepository($c->get('db')));
+$container->singleton('cartService', fn($c) => new \App\Services\CartService($c->get('cartRepo'), $c->get('productRepo')));
+$container->singleton('fileUploadService', fn() => new App\Services\FileUploadService());
+$container->singleton('productService', fn($c) => new \App\Services\ProductService($c->get('productRepo'), $c->get('fileUploadService')));
+$container->singleton('categoryRepo', fn($c) => new \App\Repositories\CategoryRepository($c->get('db')));
+$container->singleton('categoryService', fn($c) => new \App\Services\CategoryService($c->get('categoryRepo')));
 
 try {
     $userRepo = $container->get('userRepository');
@@ -65,9 +70,12 @@ $container->singleton('authService', fn($c) => new \App\Services\AuthService($c-
 
 // Bind controllers
 $container->bind('\\App\\Controllers\\HomeController', fn($c) => new \App\Controllers\HomeController());
-$container->bind('\\App\\Controllers\\CartController', fn($c) => new \App\Controllers\CartController($c->get('cartService')));
+$container->bind('\\App\\Controllers\\CartController', fn($c) => new \App\Controllers\CartController($c->get('cartService'), $c->get('request')));
 $container->bind('\\App\\Controllers\\AuthController', fn($c) => new \App\Controllers\AuthController($c->get('authService'), $c->get('request')));
-$container->bind('\\App\\Controllers\\AdminController', fn($c) => new \App\Controllers\AdminController($c->get('orderService')));
+$container->bind('\\App\\Controllers\\AdminController', fn($c) => new \App\Controllers\AdminController($c->get('orderService'), $c->get('productService'), $c->get('categoryService'), $c->get('request')));
+$container->bind('\\App\\Controllers\\CategoryController', fn($c) => new \App\Controllers\CategoryController($c->get('categoryService'), $c->get('request')));
+$container->bind('\\App\\Controllers\\ProductController', fn($c) => new \App\Controllers\ProductController($c->get('productService'), $c->get('request')));
+$container->bind('\\App\\Controllers\\OrderController', fn($c) => new \App\Controllers\OrderController($c->get('orderService'), $c->get('productService'), $c->get('request')));
 
 $router = new \App\Core\Router($container);
 

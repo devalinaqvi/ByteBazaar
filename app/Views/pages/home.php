@@ -1,10 +1,4 @@
-<!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
-<div class="bg-white">
-
-
-    <main>
-        <!-- Hero section -->
+ <!-- Hero section -->
         <div class="relative">
             <!-- Background image and overlap -->
             <div aria-hidden="true" class="absolute inset-0 hidden sm:flex sm:flex-col">

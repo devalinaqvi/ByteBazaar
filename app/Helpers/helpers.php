@@ -122,3 +122,15 @@ function view(string $view, array $data = []): string
     require base_path('app/Views/' . $view . '.php');
     return ob_get_clean();
 }
+/**
+ * Helper to create route urls
+ */
+function route(string $route, array $params = []): string
+{
+    return base_url($route);
+}
+
+function csrf_hash(): string
+{
+    return hash('sha256', session_id() . $_SERVER['REMOTE_ADDR'] . time());
+}

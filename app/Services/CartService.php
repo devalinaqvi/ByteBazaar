@@ -3,33 +3,71 @@
 namespace App\Services;
 
 use App\Repositories\CartRepository;
-use Exception;
+
 class CartService
 {
-    private CartRepository $cartRepository;
-    public function __construct(CartRepository $cartRepository) {
-        $this->cartRepository = $cartRepository;
-    }
-    public function getCartItems(int $userId): array {
-        return $this->cartRepository->getCartItems($userId);
-    }
-    public function addToCart(int $userId, int $productId, int $quantity): void {
-        $this->cartRepository->addToCart($userId, $productId, $quantity);
-    }
-    public function removeFromCart(int $userId, int $productId): void {
-        $this->cartRepository->removeFromCart($userId, $productId);
-    }
-    public function clearCart(int $userId): void {
-        $this->cartRepository->clearCart($userId);
-    }
-    public function getCartTotal(int $userId): int {
-        return $this->cartRepository->getCartTotal($userId);
-    }
-    public function getCartCount(int $userId): int {
-        return $this->cartRepository->getCartCount($userId);
-    }
-    public function getItem(int $userId, int $productId): \App\Models\CartItem
+    public function __construct(private CartRepository $cartRepo) {}
+
+    private function identifyUser(): array
     {
-        return $this->cartRepository->getItem($userId, $productId);
+        $userId = $_SESSION['user_id'] ?? null;
+
+        if (!isset($_SESSION['session_id'])) {
+            $_SESSION['session_id'] = bin2hex(random_bytes(16));
+        }
+
+        return [$userId, $_SESSION['session_id']];
+    }
+
+    public function getCart(): array
+    {
+        [$userId, $sessionId] = $this->identifyUser();
+
+        return $this->cartRepo->getCartItems($userId, $sessionId);
+    }
+
+    public function addToCart(int $productId, int $qty = 1)
+    {
+        logMessage('Adding product to cart');
+        [$userId, $sessionId] = $this->identifyUser();
+
+        logMessage('Identified user: ' . $userId);
+        logMessage('Identified session: ' . $sessionId);
+
+        $existing = $this->cartRepo->findItem($userId, $sessionId, $productId);
+
+        logMessage('Adding product to cart: User ID: ' . $userId . ', Session ID: ' . $sessionId . ', Product ID: ' . $productId . ', Quantity: ' . $qty);
+
+        if ($existing) {
+            logMessage('Updating existing cart item');
+            return $this->cartRepo->updateQuantity($existing->id, $existing->quantity + $qty);
+        }
+
+        logMessage('Adding new cart item');
+        return $this->cartRepo->addItem([
+            'user_id' => $userId,
+            'session_id' => $sessionId,
+            'product_id' => $productId,
+            'quantity' => $qty,
+        ]);
+    }
+
+    public function remove(int $id)
+    {
+        return $this->cartRepo->deleteItem($id);
+    }
+
+    public function update(int $id, int $qty)
+    {
+        return $this->cartRepo->updateQuantity($id, $qty);
+    }
+
+    public function transferSessionCartToUser(int $userId)
+    {
+        $sessionId = $_SESSION['session_id'] ?? null;
+
+        if ($sessionId) {
+            $this->cartRepo->transferSessionToUser($sessionId, $userId);
+        }
     }
 }

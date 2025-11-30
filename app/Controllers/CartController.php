@@ -3,30 +3,58 @@
 namespace App\Controllers;
 
 use App\Core\BaseController;
+use App\Core\Request;
 use App\Services\CartService;
-use Exception;
 
 class CartController extends BaseController
 {
-    private CartService $cartService;
-    public function __construct(CartService $cartService) {
-        $this->cartService = $cartService;
+    private Request $request;
+    public function __construct(private readonly CartService $cart, Request $request) {
+        parent::__construct();
+        $this->request = $request;
     }
-    public function add(int $userId, int $productId, int $quantity): void
+
+    public function index(): void
     {
-        session_start();
-        $this->cartService->addToCart($userId, $productId, $quantity);
+        $this->render('pages/cart', ['title' => 'Cart']);
     }
-    public function remove(int $userId, int $productId): void
+
+    public function add(): void
     {
-        $this->cartService->removeFromCart($userId, $productId);
+        $productId = (int)$this->request->post('product_id');
+        $qty = (int)$this->request->post('qty') ?: 1;
+
+        $this->cart->addToCart($productId, $qty);
+
+        logMessage('Adding product to cart: Product ID: ' . $productId);
+
+        $this->json([
+            'success' => true,
+            'message' => 'Product added to cart successfully'
+        ]);
     }
-    public function clear(int $userId): void
+
+    public function remove(): void
     {
-        $this->cartService->clearCart($userId);
+        $id = (int)$this->request->post('id');
+        $this->cart->remove($id);
+
+        $this->json(['success' => true]);
     }
-    public function getCartTotal(int $userId): int
+
+    public function update(): void
     {
-        return $this->cartService->getCartTotal($userId);
+        $id = (int)$this->request->post('id');
+        $qty = (int)$this->request->post('qty');
+
+        $this->cart->update($id, $qty);
+
+        $this->json(['success' => true]);
+    }
+
+    public function show(): void
+    {
+        $items = $this->cart->getCart();
+        $this->render('cart/show', ['items' => $items]);
     }
 }

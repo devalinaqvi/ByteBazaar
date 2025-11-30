@@ -8,10 +8,11 @@ use App\Services\AuthService;
 
 class AuthController extends BaseController
 {
-    private AuthService $authService;
-    private Request $request;
+    private readonly AuthService $authService;
+    private readonly Request $request;
 
     public function __construct(AuthService $authService, Request $request) {
+        parent::__construct();
         $this->authService = $authService;
         $this->request = $request;
     }

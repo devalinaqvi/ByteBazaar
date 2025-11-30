@@ -4,6 +4,7 @@ namespace App\Core;
 class BaseController {
     private static bool $rendered = false;  // Prevent dupe renders (per request)
 
+    public function __construct() {}
     protected function redirect(string $url, array $params = []): void {
         $query = http_build_query($params);
         header("Location: {$url}" . ($query ? "?{$query}" : ''), true, 302);

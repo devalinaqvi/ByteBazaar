@@ -147,11 +147,7 @@
                 <form>
                     <div class="-ml-2 inline-grid grid-cols-1">
                         <select id="desktop-currency" name="currency" aria-label="Currency" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-gray-900 py-0.5 pr-7 pl-2 text-left text-base font-medium text-white focus:outline-2 focus:-outline-offset-1 focus:outline-white sm:text-sm/6">
-                            <option>CAD</option>
-                            <option>USD</option>
-                            <option>AUD</option>
-                            <option>EUR</option>
-                            <option>GBP</option>
+                            <option value="USD">USD</option>
                         </select>
                         <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-1 size-5 self-center justify-self-end fill-gray-300">
                             <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -160,139 +156,22 @@
                 </form>
 
                 <div class="flex items-center space-x-6">
-                    <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Sign in</a>
-                    <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Create an account</a>
+                    <a href="<?php echo route('login') ?>" class="text-sm font-medium text-white hover:text-gray-100">Sign in</a>
+                    <a href="<?php echo route('register') ?>" class="text-sm font-medium text-white hover:text-gray-100">Create an account</a>
                 </div>
             </div>
         </div>
 
         <!-- Secondary navigation -->
-        <div class="bg-white">
+        <div class="bg-white shadow-xs">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="flex h-16 items-center justify-between">
                     <!-- Logo (lg+) -->
                     <div class="hidden lg:flex lg:flex-1 lg:items-center">
-                        <a href="#">
+                        <a href="/">
                             <span class="sr-only">Your Company</span>
                             <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto" />
                         </a>
-                    </div>
-
-                    <div class="z-10 hidden h-full lg:flex">
-                        <!-- Flyout menus -->
-                        <el-popover-group class="group/popover-group inset-x-0 bottom-0 px-4">
-                            <!-- Presentational element to emulate a border that sits on top of the popover -->
-                            <div class="absolute inset-x-0 -bottom-px h-px w-full bg-white opacity-0 transition-opacity duration-200 ease-in group-has-open/popover-group:opacity-100 group-has-open/popover-group:duration-150 group-has-open/popover-group:ease-out">
-                                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                                    <div class="h-px w-full bg-gray-200"></div>
-                                </div>
-                            </div>
-                            <div class="flex h-full justify-center space-x-8">
-                                <div class="group/popover flex">
-                                    <div class="relative flex">
-                                        <button popovertarget="desktop-menu-women" class="relative flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out group-not-has-open/popover:text-gray-700 group-has-open/popover:text-indigo-600 group-not-has-open/popover:hover:text-gray-800">
-                                            Women
-                                            <span aria-hidden="true" class="absolute inset-x-0 -bottom-px z-30 h-0.5 bg-transparent duration-200 ease-in group-has-open/popover:bg-indigo-600 group-has-open/popover-group:duration-150 group-has-open/popover-group:ease-out"></span>
-                                        </button>
-                                    </div>
-                                    <el-popover id="desktop-menu-women" anchor="bottom" popover class="w-full overflow-visible bg-white text-sm text-gray-500 transition transition-discrete [--anchor-gap:1px] backdrop:bg-transparent open:block data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
-                                        <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
-                                        <div aria-hidden="true" class="absolute inset-0 top-1/2 bg-white shadow-sm"></div>
-                                        <div class="relative bg-white">
-                                            <div class="mx-auto max-w-7xl px-8">
-                                                <div class="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
-                                                    <div class="group relative">
-                                                        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-01.jpg" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                                        <a href="#" class="mt-4 block font-medium text-gray-900">
-                                                            <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                                            New Arrivals
-                                                        </a>
-                                                        <p aria-hidden="true" class="mt-1">Shop now</p>
-                                                    </div>
-                                                    <div class="group relative">
-                                                        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-02.jpg" alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                                        <a href="#" class="mt-4 block font-medium text-gray-900">
-                                                            <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                                            Basic Tees
-                                                        </a>
-                                                        <p aria-hidden="true" class="mt-1">Shop now</p>
-                                                    </div>
-                                                    <div class="group relative">
-                                                        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-03.jpg" alt="Model wearing minimalist watch with black wristband and white watch face." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                                        <a href="#" class="mt-4 block font-medium text-gray-900">
-                                                            <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                                            Accessories
-                                                        </a>
-                                                        <p aria-hidden="true" class="mt-1">Shop now</p>
-                                                    </div>
-                                                    <div class="group relative">
-                                                        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-04.jpg" alt="Model opening tan leather long wallet with credit card pockets and cash pouch." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                                        <a href="#" class="mt-4 block font-medium text-gray-900">
-                                                            <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                                            Carry
-                                                        </a>
-                                                        <p aria-hidden="true" class="mt-1">Shop now</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </el-popover>
-                                </div>
-                                <div class="group/popover flex">
-                                    <div class="relative flex">
-                                        <button popovertarget="desktop-menu-men" class="relative flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out group-not-has-open/popover:text-gray-700 group-has-open/popover:text-indigo-600 group-not-has-open/popover:hover:text-gray-800">
-                                            Men
-                                            <span aria-hidden="true" class="absolute inset-x-0 -bottom-px z-30 h-0.5 bg-transparent duration-200 ease-in group-has-open/popover:bg-indigo-600 group-has-open/popover-group:duration-150 group-has-open/popover-group:ease-out"></span>
-                                        </button>
-                                    </div>
-                                    <el-popover id="desktop-menu-men" anchor="bottom" popover class="w-full overflow-visible bg-white text-sm text-gray-500 transition transition-discrete [--anchor-gap:1px] backdrop:bg-transparent open:block data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
-                                        <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
-                                        <div aria-hidden="true" class="absolute inset-0 top-1/2 bg-white shadow-sm"></div>
-                                        <div class="relative bg-white">
-                                            <div class="mx-auto max-w-7xl px-8">
-                                                <div class="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
-                                                    <div class="group relative">
-                                                        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-01.jpg" alt="Hats and sweaters on wood shelves next to various colors of t-shirts on hangers." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                                        <a href="#" class="mt-4 block font-medium text-gray-900">
-                                                            <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                                            New Arrivals
-                                                        </a>
-                                                        <p aria-hidden="true" class="mt-1">Shop now</p>
-                                                    </div>
-                                                    <div class="group relative">
-                                                        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-02.jpg" alt="Model wearing light heather gray t-shirt." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                                        <a href="#" class="mt-4 block font-medium text-gray-900">
-                                                            <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                                            Basic Tees
-                                                        </a>
-                                                        <p aria-hidden="true" class="mt-1">Shop now</p>
-                                                    </div>
-                                                    <div class="group relative">
-                                                        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-03.jpg" alt="Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                                        <a href="#" class="mt-4 block font-medium text-gray-900">
-                                                            <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                                            Accessories
-                                                        </a>
-                                                        <p aria-hidden="true" class="mt-1">Shop now</p>
-                                                    </div>
-                                                    <div class="group relative">
-                                                        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-04.jpg" alt="Model putting folded cash into slim card holder olive leather wallet with hand stitching." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                                        <a href="#" class="mt-4 block font-medium text-gray-900">
-                                                            <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                                            Carry
-                                                        </a>
-                                                        <p aria-hidden="true" class="mt-1">Shop now</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </el-popover>
-                                </div>
-
-                                <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">Company</a>
-                                <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">Stores</a>
-                            </div>
-                        </el-popover-group>
                     </div>
 
                     <!-- Mobile menu and search (lg-) -->
@@ -314,27 +193,20 @@
                     </div>
 
                     <!-- Logo (lg-) -->
-                    <a href="#" class="lg:hidden">
+                    <a href="/" class="lg:hidden">
                         <span class="sr-only">Your Company</span>
                         <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto" />
                     </a>
 
                     <div class="flex flex-1 items-center justify-end">
-                        <a href="#" class="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">Search</a>
+                        <a href="<?php echo route('/') ?>" class="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">Home</a>
 
                         <div class="flex items-center lg:ml-8">
-                            <!-- Help -->
-                            <a href="#" class="p-2 text-gray-400 hover:text-gray-500 lg:hidden">
-                                <span class="sr-only">Help</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-                                    <path d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                            <a href="#" class="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">Help</a>
+                            <a href="<?php echo route('products') ?>" class="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">Shop</a>
 
                             <!-- Cart -->
                             <div class="ml-4 flow-root lg:ml-8">
-                                <a href="#" class="group -m-2 flex items-center p-2">
+                                <a href="<?php echo route('cart') ?>" class="group -m-2 flex items-center p-2">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 shrink-0 text-gray-400 group-hover:text-gray-500">
                                         <path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>

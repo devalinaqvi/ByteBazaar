@@ -1,6 +1,6 @@
 {
-  "name": "byte-bazaar",
-  "type": "project",
+  "name": "vendor/byte-bazaar",
+  "type": "library",
   "description": "Online Computer Store MVC",
   "require": {
     "altorouter/altorouter": "^2.0"

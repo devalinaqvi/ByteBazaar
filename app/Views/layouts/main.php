@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= htmlspecialchars($title ?? 'Byte Bazaar') ?></title>
+    <link rel="stylesheet" href="<?= asset('css/app.css') ?>">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="<?= $body_class ?? '' ?>">
@@ -41,7 +42,11 @@
         : require_once __DIR__ . '/../partials/website-footer.php';
     ?>
     <?php endif; ?>
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="<?= asset('js/app.js') ?>"></script>
 </body>
 </html>

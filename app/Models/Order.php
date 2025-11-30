@@ -4,17 +4,20 @@ namespace App\Models;
 
 class Order
 {
-    public int $id;
-    public int $user_id;
+    public ?int $id = null;
+    public ?int $user_id = null;
     public float $total_price;
-    public string $order_date;
-    public string $status;
+    public string $status = 'pending';
+    public ?string $order_date = null;
+    public ?string $customer_name = null;
+    public ?string $customer_email = null;
+    public ?string $shipping_address = null;
+    public ?string $shipping_city = null;
+    public ?string $shipping_postal_code = null;
+    public ?string $shipping_country = null;
+    public ?string $phone = null;
+    public string $payment_method = 'cash_on_delivery';
 
-    public function __construct(int $id, int $user_id, float $total_price, string $order_date, string $status) {
-        $this->id = $id;
-        $this->user_id = $user_id;
-        $this->total_price = $total_price;
-        $this->order_date = $order_date;
-        $this->status = $status;
-    }
+    // Relations
+    public array $items = [];
 }

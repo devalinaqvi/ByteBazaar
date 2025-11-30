@@ -2,7 +2,8 @@
 
 CREATE TABLE categories (
                             id INT AUTO_INCREMENT PRIMARY KEY,
-                            name VARCHAR(100) NOT NULL
+                            name VARCHAR(100) NOT NULL,
+                            slug VARCHAR(100) NOT NULL UNIQUE
 );
 
 CREATE TABLE users (
@@ -19,14 +20,17 @@ CREATE TABLE products (
                           name VARCHAR(255) NOT NULL,
                           description TEXT,
                           price DECIMAL(10,2) NOT NULL,
+                          slug VARCHAR(255) NOT NULL UNIQUE,
                           image_url VARCHAR(255),
                           category_id INT,
                           stock INT DEFAULT 0,
                           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                          deleted_at TIMESTAMP DEFAULT NULL,
+                          isDeleted BOOLEAN DEFAULT FALSE
                           FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL
 );
 
-CREATE TABLE carts (
+CREATE TABLE cart_items (
                        id INT AUTO_INCREMENT PRIMARY KEY,
                        user_id INT NOT NULL,
                        product_id INT NOT NULL,

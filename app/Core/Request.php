@@ -15,7 +15,11 @@ class Request {
     }
 
     public function all(): array {
-        return array_merge($_GET, $_POST);
+        return array_merge($_GET, $_POST, $_FILES);
+    }
+
+    public function file(string $key) {
+        return $_FILES[$key] ?? null;
     }
 
     public function getUri(): string {
