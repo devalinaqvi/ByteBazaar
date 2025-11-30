@@ -7,16 +7,17 @@ session_start();  // Early
 error_log('URI: ' . $_SERVER['REQUEST_URI']);
 
 require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../app/Helpers/helpers.php';
 require_once __DIR__ . '/../app/Core/Database.php';
 
 // Load config once (idempotent: require returns array or null)
-$configFile = __DIR__ . '/../config/config.php';
+$configFile = base_path('config/config.php');
 if (!file_exists($configFile)) {
     die('Missing config.php—create it with DB creds!');
 }
 $config = require $configFile;  // Captures return
 
-// Null guard + fallback (dev only—remove for prod)
+// Null guard and fallback (dev only—remove for prod)
 if (!is_array($config) || !isset($config['db'])) {
     error_log('Config invalid—using fallback');
     $config = [
@@ -47,12 +48,26 @@ try {
 $container = new \App\Core\Container($pdo);
 
 // Bind deps
+$container->singleton('request', fn($c) => new \App\Core\Request());
 $container->singleton('cartRepo', fn($c) => new \App\Repositories\CartRepository($c->get('pdo')));
 $container->singleton('cartService', fn($c) => new \App\Services\CartService($c->get('cartRepo')));
-$container->singleton('authService', fn($c) => new \App\Services\AuthService());
+$container->singleton('userRepository', fn($c) => new \App\Repositories\UserRepository($c->get('db')));
+$container->singleton('orderRepo', fn($c) => new \App\Repositories\OrderRepository($c->get('db')));
+$container->singleton('orderService', fn($c) => new \App\Services\OrderService($c->get('orderRepo')));
+
+try {
+    $userRepo = $container->get('userRepository');
+    error_log('userRepository OK');
+} catch (\Exception $e) {
+    error_log('userRepository FAILED: ' . $e->getMessage());
+}
+$container->singleton('authService', fn($c) => new \App\Services\AuthService($c->get('userRepository')));
 
 // Bind controllers
-$container->bind('App\Controllers\CartController', fn($c) => new \App\Controllers\CartController($c->get('cartService')));
+$container->bind('\\App\\Controllers\\HomeController', fn($c) => new \App\Controllers\HomeController());
+$container->bind('\\App\\Controllers\\CartController', fn($c) => new \App\Controllers\CartController($c->get('cartService')));
+$container->bind('\\App\\Controllers\\AuthController', fn($c) => new \App\Controllers\AuthController($c->get('authService'), $c->get('request')));
+$container->bind('\\App\\Controllers\\AdminController', fn($c) => new \App\Controllers\AdminController($c->get('orderService')));
 
 $router = new \App\Core\Router($container);
 

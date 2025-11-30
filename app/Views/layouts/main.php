@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="<?= $html_class ?? '' ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= htmlspecialchars($title ?? 'Byte Bazaar') ?></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="<?= $body_class ?? '' ?>">
+<div class="min-h-full">
 <?php if (!isset($nav_rendered)): $nav_rendered = true; ?>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/">Byte Bazaar</a>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
-                <?php if ($is_logged_in ?? false): ?>
-                    <li><a class="nav-link" href="/cart">Cart</a></li>
-                    <li><a class="nav-link" href="/logout">Logout</a></li>
-                <?php else: ?>
-                    <li><a class="nav-link" href="/login">Login</a></li>
-                <?php endif; ?>
-            </ul>
-        </div>
-    </nav>
+
+    <?php (isset($admin_nav_active) && $admin_nav_active === 'active')
+            ? require __DIR__ . '/../partials/admin-header.php'
+            : require __DIR__ . '/../partials/website-header.php';
+    ?>
+
 <?php endif; ?>
 
-<main class="container mt-4">
+<main>
+    <?php if (isset($header)){ ?>
+        <header class="relative bg-white shadow-sm">
+            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900"><?= htmlspecialchars($title ?? 'Dashboard') ?></h1>
+            </div>
+        </header>
+    <?php } ?>
     <?php if (isset($view) && !isset($page_rendered)):
         $page_rendered = true;
         $pagePath = __DIR__ . '/../pages/' . basename($view) . '.php';
@@ -35,7 +35,13 @@
         <?php endif; ?>
     <?php endif; ?>
 </main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <?php if (!isset($footer_rendered)): $footer_rendered = true; ?>
+    <?php (isset($admin_footer_active) && $admin_footer_active === 'active')
+        ? require_once __DIR__ . '/../partials/admin-footer.php'
+        : require_once __DIR__ . '/../partials/website-footer.php';
+    ?>
+    <?php endif; ?>
+</div>
+<script src="<?= asset('js/app.js') ?>"></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+/* Byte Bazaar Theme */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
+.navbar-brand { font-weight: bold; color: #0d6efd !important; }
+.product-card { transition: transform 0.2s; }
+.product-card:hover { transform: scale(1.05); }
+.filter-section { background: #e9ecef; padding: 1rem; border-radius: 0.375rem; }
+#priceSlider { width: 100%; }
+.cart-total { font-size: 1.25rem; font-weight: bold; color: #28a745; }
+.checkout-step { padding: 1rem; border: 1px solid #dee2e6; margin-bottom: 1rem; border-radius: 0.375rem; }

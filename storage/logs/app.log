@@ -1,0 +1,60 @@
+[2025-11-29 16:21:17] Authenticating user with email: admin@example.com
+[2025-11-29 16:21:17] Result: failure
+[2025-11-29 16:22:38] Authenticating user with email: admin@example.com
+[2025-11-29 16:22:38] Authenticating user with email: admin@example.com
+[2025-11-29 16:22:38] Result: failure
+[2025-11-29 16:23:06] Found user with email: admin@example.com
+[2025-11-29 16:23:06] Authenticating user with email: admin@example.com
+[2025-11-29 16:23:07] Authenticating user with email: admin@example.com
+[2025-11-29 16:23:07] Result: failure
+[2025-11-29 16:23:37] Found user with email: admin@example.com
+[2025-11-29 16:23:37] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-11-29 16:23:38] Authenticating user with email: admin@example.com
+[2025-11-29 16:23:38] Result: failure
+[2025-11-29 16:24:22] Found user with email: admin@example.com
+[2025-11-29 16:24:22] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-11-29 16:24:22] AUTH SERVICE: Result: failure (password mismatch)
+[2025-11-29 16:24:22] Authenticating user with email: admin@example.com
+[2025-11-29 16:24:22] Result: failure
+[2025-11-29 16:25:24] Found user with email: admin@example.com
+[2025-11-29 16:25:24] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-11-29 16:25:24] AUTH SERVICE: Result: failure (password mismatch)
+[2025-11-29 16:25:24] Authenticating user with email: admin@example.com
+[2025-11-29 16:25:24] Result: failure
+[2025-11-29 16:27:27] Found user with email: admin@example.com
+[2025-11-29 16:27:27] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-11-29 16:27:27] AUTH SERVICE: Plain password length: 11
+[2025-11-29 16:27:27] AUTH SERVICE: Hashed password from DB: $2y$10$KnzyJHDnEWel61M5ZMkbQOeaP9LpyBNEC6rJnCbZ.BJ.Q9aqfK.FO
+[2025-11-29 16:27:27] AUTH SERVICE: Hashed password length: 60
+[2025-11-29 16:27:27] AUTH SERVICE: password_verify result: FALSE
+[2025-11-29 16:27:27] AUTH SERVICE: Result: failure (password mismatch)
+[2025-11-29 16:27:27] Authenticating user with email: admin@example.com
+[2025-11-29 16:27:27] Result: failure
+[2025-11-29 16:29:22] Found user with email: admin@example.com
+[2025-11-29 16:29:22] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-11-29 16:29:22] AUTH SERVICE: Plain password length: 11
+[2025-11-29 16:29:22] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-11-29 16:29:22] AUTH SERVICE: Hashed password length: 60
+[2025-11-29 16:29:22] AUTH SERVICE: password_verify result: TRUE
+[2025-11-29 16:29:22] AUTH SERVICE: Result: success
+[2025-11-29 16:29:22] Authenticating user with email: admin@example.com
+[2025-11-29 16:29:22] Result: success
+[2025-11-29 18:54:07] Found user with email: admin@example.com
+[2025-11-29 18:54:07] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-11-29 18:54:07] AUTH SERVICE: Plain password length: 11
+[2025-11-29 18:54:07] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-11-29 18:54:07] AUTH SERVICE: Hashed password length: 60
+[2025-11-29 18:54:07] AUTH SERVICE: password_verify result: TRUE
+[2025-11-29 18:54:07] AUTH SERVICE: Result: success
+[2025-11-29 18:54:07] Authenticating user with email: admin@example.com
+[2025-11-29 18:54:07] Result: success
+[2025-11-29 19:02:06] No route found for GET /admin/products/1
+[2025-11-30 03:14:09] Found user with email: admin@example.com
+[2025-11-30 03:14:09] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-11-30 03:14:09] AUTH SERVICE: Plain password length: 11
+[2025-11-30 03:14:09] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-11-30 03:14:09] AUTH SERVICE: Hashed password length: 60
+[2025-11-30 03:14:09] AUTH SERVICE: password_verify result: TRUE
+[2025-11-30 03:14:09] AUTH SERVICE: Result: success
+[2025-11-30 03:14:09] Authenticating user with email: admin@example.com
+[2025-11-30 03:14:09] Result: success

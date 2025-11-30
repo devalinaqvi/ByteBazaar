@@ -1,7 +1,10 @@
 <?php
 namespace App\Services;
 
+use App\Repositories\UserRepository;
+
 class AuthService {
+    public function __construct(private readonly UserRepository $userRepository) {}
     public function getCurrentUser(): ?array {
         if (!isset($_SESSION['user_id'])) {
             return null;
@@ -13,10 +16,10 @@ class AuthService {
         ];
     }
 
-    public function login(int $userId, string $name, bool $isAdmin = false): void {
-        $_SESSION['user_id'] = $userId;
-        $_SESSION['user_name'] = $name;
-        $_SESSION['is_admin'] = $isAdmin;
+    public function login(\App\Models\User $user): void {
+        $_SESSION['user_id'] = $user->id;
+        $_SESSION['user_name'] = $user->name;
+        $_SESSION['is_admin'] = $user->is_admin;
         session_regenerate_id(true);  // Security: prevent fixation
     }
 
@@ -25,9 +28,32 @@ class AuthService {
     }
 
     // Stub for full module: register, authenticate (password_verify)
-    public function authenticate(string $email, string $password): ?array {
-        // Implement with UserRepo later
-        return null;
+    public function authenticate(string $email, string $password): ?\App\Models\User
+    {
+        if ($email === '' && $password === '') {
+            return null;
+        }
+        $user = $this->userRepository->findByEmail($email);
+        logMessage("AUTH SERVICE: Authenticating user with email: {$email}");
+        if (!$user) {
+            logMessage("AUTH SERVICE: Result: failure (user not found)");
+            return null;
+        }
+
+        // Debug logging
+        logMessage("AUTH SERVICE: Plain password length: " . strlen($password));
+        logMessage("AUTH SERVICE: Hashed password from DB: " . $user->password);
+        logMessage("AUTH SERVICE: Hashed password length: " . strlen($user->password));
+
+        $isValid = password_verify($password, $user->password);
+        logMessage("AUTH SERVICE: password_verify result: " . ($isValid ? 'TRUE' : 'FALSE'));
+
+        if (!$isValid) {
+            logMessage("AUTH SERVICE: Result: failure (password mismatch)");
+            return null;
+        }
+        logMessage("AUTH SERVICE: Result: success");
+        return $user;
     }
 
     public function isUserAdmin(): bool|array {

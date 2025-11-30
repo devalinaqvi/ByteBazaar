@@ -2,8 +2,13 @@
 require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../app/Core/Database.php';
 
-$db = new \App\Core\Database($config['db']);
-$pdo = $db->getPdo();
+$config = require __DIR__ . '/../config/config.php';
+$db = new \App\Core\Database();
+try {
+    $pdo = $db->getConnection($config['db']);
+} catch (Exception $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
 
 // Categories
 $pdo->exec("INSERT INTO categories (name) VALUES ('Laptops'), ('Desktops'), ('Graphic Cards'), ('Memory')");

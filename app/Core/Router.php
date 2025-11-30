@@ -29,10 +29,17 @@ class Router {
         $cleanUri = parse_url($uri, PHP_URL_PATH);
         $cleanUri = $cleanUri === '/' ? '/' : rtrim($cleanUri, '/');
 
-        $match = $this->altoRouter->match($cleanUri);
+        $e = null;
+        try {
+            $match = $this->altoRouter->match($cleanUri);
+        }
+        catch (\Exception $e) {
+            $this->handle404($e);
+            return;
+        }
 
         if (!$match) {
-            $this->handle404();
+            logMessage("No route found for $method $uri");
             return;
         }
 
@@ -55,19 +62,32 @@ class Router {
 
     private function callController(string $controllerClass, string $action, array $params): void {
         try {
-            $controller = $this->container->make($controllerClass);  // DI magic
+            try {
+                $controller = $this->container->get($controllerClass);
+            } catch (\Exception $e) {
+                // Fallback: Check if the controller has dependencies
+                $reflection = new \ReflectionClass($controllerClass);
+                $constructor = $reflection->getConstructor();
+
+                if ($constructor && $constructor->getNumberOfRequiredParameters() > 0) {
+                    throw new \Exception("Controller $controllerClass requires binding in container");
+                }
+                $controller = new $controllerClass();
+            }
             if (!method_exists($controller, $action)) {
                 throw new \Exception("Method $action not in $controllerClass");
             }
-            call_user_func_array([$controller, $action], $params);
+            // Convert associative params to positional values only
+            $positionalParams = array_values($params);
+
+            call_user_func_array([$controller, $action], $positionalParams);
         } catch (\Exception $e) {
             error_log("Controller error: " . $e->getMessage());
-            $this->handle404();
+            error_log("Stack trace: " . $e->getTraceAsString());
+            $this->handle404($e);
         }
     }
 
-// In applyMiddleware:
-// In Router.php, replace the stub method:
     private function applyMiddleware(string $routeName, Request $request, callable $next): void {
         $authService = $this->container->get('authService');
 
@@ -98,9 +118,11 @@ class Router {
         $middlewareChain();
     }
 
-    private function handle404(): void {
+    private function handle404($e): void {
         http_response_code(404);
-        echo '<h1>404 - Page Not Found</h1>';
+        echo '<h1>404 - Page Not Found</h1>' . ($e ? "<p>$e</p>" : '');
+        error_log("404 error: " . $e->getMessage());
+        error_log("Stack trace: " . $e->getTraceAsString());
         exit;
     }
 }

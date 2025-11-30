@@ -7,7 +7,7 @@ $router->get('/admin', 'AdminController@index', 'admin_dashboard');
 // Products CRUD
 $router->get('/admin/products', 'AdminController@products', 'admin_products');
 $router->post('/admin/products', 'AdminController@store', 'admin_store_product');
-$router->get('/admin/products/[i:id]/edit', 'AdminController@edit', 'admin_edit_product');
+$router->get('/admin/products/[i:id]/edit', 'AdminController@editProduct', 'admin_edit_product');
 $router->post('/admin/products/[i:id]', 'AdminController@update', 'admin_update_product');
 $router->post('/admin/products/[i:id]/delete', 'AdminController@destroy', 'admin_delete_product');
 
