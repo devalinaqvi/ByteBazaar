@@ -8,7 +8,7 @@
             <ul role="list" class="divide-y divide-gray-200 border-t border-b border-gray-200">
                 <?php if(isset($cartItems) && count($cartItems) > 0) : ?>
                 <?php foreach ($cartItems as $item) : ?>
-                    <li class="flex py-6">
+                    <li class="flex py-6" data-item-id="<?php echo e($item['id']); ?>">
                         <div class="shrink-0">
                             <img src="<?php echo $item['image']; ?>" alt="<?php echo $item['product_name']; ?>" class="size-24 rounded-md object-cover sm:size-32" />
                         </div>
@@ -29,7 +29,7 @@
                                 <span>Price: <?php echo e($item['price']) ?></span>
                             </p>
                             <div class="ml-4">
-                                <button type="button" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                <button data-id="<?php echo e($item['id']) ?>" type="button" class="remove text-sm font-medium text-indigo-600 hover:text-indigo-500 cursor-pointer">
                                     <span>Remove</span>
                                 </button>
                             </div>

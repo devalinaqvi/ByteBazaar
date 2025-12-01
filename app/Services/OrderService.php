@@ -18,8 +18,18 @@ class OrderService
         return $this->orders->getByUser($userId);
     }
 
-    public function createOrder(int $userId, array $items): int
+    public function createOrder(?int $userId, array $data, array $items): int
     {
-        return $this->orders->create($userId, $items);
+        return $this->orders->create($userId, $data, $items);
+    }
+    public function getOrderDetails(int $orderId): \App\Models\Order
+    {
+        $order = $this->orders->find($orderId);
+        logMessage('Order details: ' . print_r($order, true));
+        if (!$order) {
+            throw new \Exception('Order not found');
+        }
+        return $order;
     }
 }
+?>

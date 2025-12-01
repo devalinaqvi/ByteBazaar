@@ -22,4 +22,7 @@ $router->get('/checkout', 'OrderController@checkout', 'checkout');
 $router->post('/checkout', 'OrderController@placeOrder', 'checkout_post');
 $router->get('/orders', 'OrderController@history', 'protected_orders');
 $router->get('/account', 'AccountController@index', 'protected_account');
+
+$router->get('/api/cart', 'CartController@api_index', 'api_cart');
+
 ?>

@@ -236,14 +236,65 @@
         }
 
         // Add to Cart Form
-        document.querySelectorAll('form[id^="addToCartForm-"]').forEach(form => {
-            const productId = form.querySelector('input[name="product_id"]').value;
-
-            new FormHandler(`#addToCartForm-${productId}`, {
+        if ($('#addToCartForm').length) {
+            const productId = $('input[name="product_id"]').val();
+            new FormHandler('#addToCartForm', {
                 submitUrl: `/cart/add/${productId}`,
                 successMessage: 'Product added to cart successfully!',
                 errorMessage: 'Failed to add product to cart'
             }).init();
+        }
+
+        document.addEventListener('click', (e) => {
+            const button = e.target.closest('.add-to-cart');
+            if (!button) return;
+
+            const productId = button.dataset.id;
+            const csrfToken = button.dataset.csrf;
+            const quantity = button.dataset.quantity || 1;
+
+            // Prevent double clicks
+            if (button.disabled) return;
+            button.disabled = true;
+
+            const formData = new FormData();
+            formData.append('csrf_token', csrfToken);
+            formData.append('product_id', productId);
+            formData.append('quantity', quantity);
+            fetch(`/cart/add/${productId}`, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: formData
+            })
+                .then(response => {
+                    // Log the actual response to debug
+                    console.log('Response status:', response.status);
+                    return response.text(); // Get raw text first
+                })
+                .then(text => {
+                    console.log('Raw response:', text);
+                    try {
+                        const data = JSON.parse(text);
+                        if (data.success) {
+                            // document.getElementById('cart-count').textContent = data.cart_count;
+                            showToast('Product added to cart successfully!', 'success');
+                        } else {
+                            showToast(data.message || 'Failed to add product to cart', 'error');
+                        }
+                    } catch (e) {
+                        console.error('JSON parse error:', e, 'Text:', text);
+                        showToast('Server error - invalid response', 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Fetch error:', error);
+                    showToast('Failed to add product to cart', 'error');
+                })
+                .finally(() => {
+                    button.disabled = false;
+                });
         });
 
         // Delete Product (Example for other CRUD operations)
@@ -320,33 +371,47 @@
             showToast('File selected: ' + files[0].name, 'success');
         }
     });
+    document.addEventListener('click', (e) => {
+        const button = e.target.closest('.remove');
+        if (!button) return;
 
-    $(document).on('click', '.add-to-cart', function () {
-        const productId = $(this).data('id');
+        const itemId = button.dataset.id;
 
-        $.post('/cart/add/' + productId, {
-            qty: 1,
-            product_id: productId
-        }, function (res) {
-            const data = JSON.parse(res);
-            showToast(data.message, 'success');
-        });
+        if (!confirm('Remove this item from cart?')) return;
+
+        button.disabled = true;
+
+        const formData = new FormData();
+        formData.append('id', itemId);
+
+        fetch(`/cart/remove/${itemId}`, {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const itemRow = button.closest('[data-item-id]');
+                    if (itemRow) {
+                        itemRow.style.opacity = '0';
+                        setTimeout(() => itemRow.remove(), 300);
+                    }
+
+                    if (data.cart_count !== undefined) {
+                        document.getElementById('cart-count').textContent = data.cart_count;
+                    }
+
+                    showToast('Item removed from cart', 'success');
+                } else {
+                    showToast(data.message || 'Failed to remove item', 'error');
+                    button.disabled = false;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showToast('Failed to remove item', 'error');
+                button.disabled = false;
+            });
     });
 
-    $(document).on('change', '.qty', function () {
-        $.post('/cart/update', {
-            id: $(this).data('id'),
-            qty: $(this).val()
-        }, function (res) {
-            console.log("Quantity updated.");
-        });
-    });
-
-    $(document).on('click', '.remove', function () {
-        const itemId = $(this).data('id');
-
-        $.post('/cart/remove/' + itemId, {}, function () {
-            location.reload();
-        });
-    });
 

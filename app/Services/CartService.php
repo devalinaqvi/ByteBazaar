@@ -27,25 +27,53 @@ class CartService
         return $this->cartRepo->getCartItems($userId, $sessionId);
     }
 
+    public function getCartWithProducts(?int $userId, string $sessionId): array
+    {
+        [$userId, $sessionId] = $this->identifyUser();
+
+        return $this->cartRepo->getOrderItems($userId, $sessionId);
+    }
+
+    public function clearCart(?int $userId, string $sessionId): void
+    {
+            // Clear session cart
+            [$userId, $sessionId] = $this->identifyUser();
+            $_SESSION['cart_count'] = 0;
+            $this->cartRepo->clearSessionCart($sessionId);
+    }
+
+
     public function getItemPrice(int $productId): float
     {
         $product = $this->productRepo->find($productId);
+        if (!$product) {
+            return 0;
+        }
         return $product->price;
     }
 
     public function getProductImage(int $productId): string
     {
         $product = $this->productRepo->find($productId);
+        if (!$product) {
+            return '';
+        }
         return $product->image_url;
     }
     public function getProductSlug(int $productId): string
     {
         $product = $this->productRepo->find($productId);
+        if (!$product) {
+            return '';
+        }
         return $product->slug;
     }
     public function getProductName(int $productId): string
     {
         $product = $this->productRepo->find($productId);
+        if (!$product) {
+            return '';
+        }
         return $product->name;
     }
 
@@ -58,6 +86,16 @@ class CartService
         logMessage('Identified session: ' . $sessionId);
 
         $existing = $this->cartRepo->findItem($userId, $sessionId, $productId);
+
+        //check in stock
+        $product = $this->productRepo->find($productId);
+        $alreadyAdded = $this->cartRepo->countItemsByProduct($productId);
+        if (!$product) {
+            throw new \Exception('Product not found');
+        }
+        if ($product->stock < $alreadyAdded) {
+            throw new \Exception('Out of stock');
+        }
 
         logMessage('Adding product to cart: User ID: ' . $userId . ', Session ID: ' . $sessionId . ', Product ID: ' . $productId . ', Quantity: ' . $qty);
 
@@ -82,6 +120,12 @@ class CartService
     public function update(int $id, int $qty)
     {
         return $this->cartRepo->updateQuantity($id, $qty);
+    }
+
+    public function count(): int
+    {
+        [$userId, $sessionId] = $this->identifyUser();
+        return $this->cartRepo->countItems($sessionId) ?? 0;
     }
 
     public function transferSessionCartToUser(int $userId)

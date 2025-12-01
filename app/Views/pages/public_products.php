@@ -3,7 +3,7 @@
 <div class="bg-white">
     <main class="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8">
         <div class="border-b border-gray-200 pt-24 pb-10">
-            <h1 class="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900">New</h1>
             <p class="mt-4 text-base text-gray-500">Checkout out the latest release of Basic Tees, new and improved with four openings!</p>
         </div>
 
@@ -18,91 +18,14 @@
                     </svg>
                 </button>
 
-                <div class="hidden lg:block">
+                <div class="hidden">
                     <form class="divide-y divide-gray-200">
-                        <div class="py-10 first:pt-0 last:pb-0">
-                            <fieldset>
-                                <legend class="block text-sm font-medium text-gray-900">Color</legend>
-                                <div class="space-y-3 pt-6">
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="color-0" type="checkbox" name="color[]" value="white" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="color-0" class="text-sm text-gray-600">White</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="color-1" type="checkbox" name="color[]" value="beige" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="color-1" class="text-sm text-gray-600">Beige</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="color-2" type="checkbox" name="color[]" value="blue" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="color-2" class="text-sm text-gray-600">Blue</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="color-3" type="checkbox" name="color[]" value="brown" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="color-3" class="text-sm text-gray-600">Brown</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="color-4" type="checkbox" name="color[]" value="green" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="color-4" class="text-sm text-gray-600">Green</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="color-5" type="checkbox" name="color[]" value="purple" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="color-5" class="text-sm text-gray-600">Purple</label>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </div>
                         <div class="py-10 first:pt-0 last:pb-0">
                             <fieldset>
                                 <legend class="block text-sm font-medium text-gray-900">Category</legend>
                                 <div class="space-y-3 pt-6">
+                                    <?php if(isset($categories) && !empty($categories)) : ?>
+                                    <?php foreach($categories as $category) : ?>
                                     <div class="flex gap-3">
                                         <div class="flex h-5 shrink-0 items-center">
                                             <div class="group grid size-4 grid-cols-1">
@@ -113,143 +36,21 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <label for="category-0" class="text-sm text-gray-600">All New Arrivals</label>
+                                        <label for="category-0" class="text-sm text-gray-600"><?= $category->name ?></label>
                                     </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="category-1" type="checkbox" name="category[]" value="tees" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="category-1" class="text-sm text-gray-600">Tees</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="category-2" type="checkbox" name="category[]" value="crewnecks" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="category-2" class="text-sm text-gray-600">Crewnecks</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="category-3" type="checkbox" name="category[]" value="sweatshirts" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="category-3" class="text-sm text-gray-600">Sweatshirts</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="category-4" type="checkbox" name="category[]" value="pants-shorts" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="category-4" class="text-sm text-gray-600">Pants &amp; Shorts</label>
-                                    </div>
+                                    <?php endforeach; ?>
+                                    <?php endif; ?>
                                 </div>
                             </fieldset>
                         </div>
-                        <div class="py-10 first:pt-0 last:pb-0">
-                            <fieldset>
-                                <legend class="block text-sm font-medium text-gray-900">Sizes</legend>
-                                <div class="space-y-3 pt-6">
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="sizes-0" type="checkbox" name="sizes[]" value="xs" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="sizes-0" class="text-sm text-gray-600">XS</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="sizes-1" type="checkbox" name="sizes[]" value="s" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="sizes-1" class="text-sm text-gray-600">S</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="sizes-2" type="checkbox" name="sizes[]" value="m" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="sizes-2" class="text-sm text-gray-600">M</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="sizes-3" type="checkbox" name="sizes[]" value="l" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="sizes-3" class="text-sm text-gray-600">L</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="sizes-4" type="checkbox" name="sizes[]" value="xl" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="sizes-4" class="text-sm text-gray-600">XL</label>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="sizes-5" type="checkbox" name="sizes[]" value="2xl" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <label for="sizes-5" class="text-sm text-gray-600">2XL</label>
-                                    </div>
-                                </div>
-                            </fieldset>
+                        <div class="py-6 last:pb-0">
+                            <button type="submit" class="w-full block text-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Apply Filters</button>
                         </div>
                     </form>
                 </div>
             </aside>
 
-            <section aria-labelledby="product-heading" class="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-3">
+            <section aria-labelledby="product-heading" class="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-4">
                 <h2 id="product-heading" class="sr-only">Products</h2>
 
                 <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">
@@ -281,17 +82,15 @@
                                     </div>
 
                                     <div class="relative z-40 border-t border-gray-200 pt-4">
-                                        <form id="addToCartForm-<?= $product->id ?>" method="post">
                                             <input type="hidden" name="csrf_token" value="<?= csrf_hash() ?>" />
                                             <input type="hidden" name="quantity" value="1" />
                                             <input type="hidden" name="product_id" value="<?= $product->id ?>" />
                                             <button
-                                                    type="submit"
+                                                    type="button"
                                                     data-id="<?= $product->id ?>"
                                                     class="add-to-cart w-full rounded-full bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 cursor-pointer">
                                                 Add to Cart
                                             </button>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -299,5 +98,5 @@
                     <?php endif; ?>
                 </div>
             </section>
-        </div>
-    </main>
+        </main>
+    </div>

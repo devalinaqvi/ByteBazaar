@@ -8,12 +8,18 @@ class ProductService
 {
     public function __construct(
         private readonly ProductRepository $products,
-        private readonly FileUploadService $fileUploadService
+        private readonly FileUploadService $fileUploadService,
+        private readonly CategoryService $categoryService
     ) {}
 
     public function list(): array
     {
         return $this->products->getAll();
+    }
+
+    public function categories()
+    {
+        return $this->categoryService->list();
     }
 
     public function get(int $id)

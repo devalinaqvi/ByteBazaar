@@ -7,6 +7,7 @@ use App\Core\Request;
 use App\Services\OrderService;
 use App\Services\ProductService;
 use App\Services\CategoryService;
+use App\Services\UserService;
 
 class AdminController extends BaseController
 {
@@ -15,6 +16,7 @@ class AdminController extends BaseController
         private readonly OrderService $orders,
         private readonly ProductService $products,
         private readonly CategoryService $categories,
+        private readonly UserService $users,
         Request $request
     ) {
         parent::__construct();
@@ -23,6 +25,11 @@ class AdminController extends BaseController
     public function index(): void {
         $orders = $this->orders->listAllOrders();
         $this->render('pages/admin', ['title' => 'Dashboard', 'body_class' => 'h-full', 'html_class' => 'h-full bg-gray-100', 'header' => true, 'admin_nav_active' => 'active', 'admin_footer_active' => 'active', 'orders' => $orders]);
+    }
+    public function viewUsers(): void {
+        logMessage('Viewing users');
+        $users = $this->users->listAllUsers();
+        $this->render('pages/admin_users', ['title' => 'Users', 'body_class' => 'h-full', 'html_class' => 'h-full bg-gray-100', 'header' => true, 'admin_nav_active' => 'active', 'admin_footer_active' => 'active', 'users' => $users  ]);
     }
     public function search(Request $request): void
     {
@@ -101,4 +108,5 @@ class AdminController extends BaseController
         $this->products->delete($id);
         $this->redirect('/admin/products');
     }
+
 }

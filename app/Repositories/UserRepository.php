@@ -30,6 +30,16 @@ class UserRepository
         return null;
     }
 
+    public function listAllUsers(): array
+    {
+        $stmt = $this->pdo->query("SELECT * FROM users");
+        $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return array_map(function($row) {
+            return new User($row);
+        }, $rows);
+    }
+
     public function create(string $name, string $email, string $password): int
     {
         $stmt = $this->pdo->prepare("

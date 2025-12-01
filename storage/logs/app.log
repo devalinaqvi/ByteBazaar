@@ -1182,3 +1182,3086 @@
 [2025-11-30 21:43:53] Session ID: 17afd1c2e91c08e87055d3db46ef5745 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
 [2025-11-30 21:44:48] Product: Sample was viewed.
 [2025-11-30 21:44:48] Product: Sample was viewed.
+[2025-11-30 21:45:39] Session ID: 17afd1c2e91c08e87055d3db46ef5745 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-11-30 21:45:39] Session ID: 17afd1c2e91c08e87055d3db46ef5745 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-11-30 21:46:13] Product: Sample was viewed.
+[2025-11-30 21:46:13] Product: Sample was viewed.
+[2025-11-30 21:46:27] Adding product to cart
+[2025-11-30 21:46:27] Identified session: 17afd1c2e91c08e87055d3db46ef5745
+[2025-11-30 21:46:27] Finding cart item: User ID: 1, Session ID: 17afd1c2e91c08e87055d3db46ef5745, Product ID: 45
+[2025-11-30 21:46:27] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-11-30 21:46:27] Found cart item: {"id":34,"session_id":"17afd1c2e91c08e87055d3db46ef5745","product_id":45,"quantity":2,"added_at":"2025-12-01 02:15:10"}
+[2025-11-30 21:46:27] Adding product to cart: User ID: 1, Session ID: 17afd1c2e91c08e87055d3db46ef5745, Product ID: 45, Quantity: 1
+[2025-11-30 21:46:27] Updating existing cart item
+[2025-11-30 21:46:27] Adding product to cart: Product ID: 45
+[2025-11-30 21:46:27] Adding product to cart
+[2025-11-30 21:46:27] Identified session: 17afd1c2e91c08e87055d3db46ef5745
+[2025-11-30 21:46:27] Finding cart item: User ID: 1, Session ID: 17afd1c2e91c08e87055d3db46ef5745, Product ID: 45
+[2025-11-30 21:46:27] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-11-30 21:46:27] Found cart item: {"id":34,"session_id":"17afd1c2e91c08e87055d3db46ef5745","product_id":45,"quantity":3,"added_at":"2025-12-01 02:15:10"}
+[2025-11-30 21:46:27] Adding product to cart: User ID: 1, Session ID: 17afd1c2e91c08e87055d3db46ef5745, Product ID: 45, Quantity: 1
+[2025-11-30 21:46:27] Updating existing cart item
+[2025-11-30 21:46:27] Adding product to cart: Product ID: 45
+[2025-11-30 21:46:30] Product: iPhone 17 was viewed.
+[2025-11-30 21:46:30] Product: iPhone 17 was viewed.
+[2025-11-30 21:46:32] Session ID: 17afd1c2e91c08e87055d3db46ef5745 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-11-30 21:46:32] Session ID: 17afd1c2e91c08e87055d3db46ef5745 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-11-30 21:46:35] Session ID: 17afd1c2e91c08e87055d3db46ef5745 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-11-30 21:46:35] Session ID: 17afd1c2e91c08e87055d3db46ef5745 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 03:10:40] Product: Sample was viewed.
+[2025-12-01 03:10:40] Product: Sample was viewed.
+[2025-12-01 03:17:17] Product: Sample was viewed.
+[2025-12-01 03:17:17] Product: Sample was viewed.
+[2025-12-01 03:17:23] Adding product to cart
+[2025-12-01 03:17:23] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:17:23] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:17:23] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:17:23] Found cart item: false
+[2025-12-01 03:17:23] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:17:23] Adding new cart item
+[2025-12-01 03:17:23] Adding product to cart: Product ID: 45
+[2025-12-01 03:17:25] Product: Sample was viewed.
+[2025-12-01 03:17:25] Product: Sample was viewed.
+[2025-12-01 03:17:30] Adding product to cart
+[2025-12-01 03:17:30] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:17:30] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:17:30] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:17:30] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":1,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:17:30] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:17:30] Updating existing cart item
+[2025-12-01 03:17:30] Adding product to cart: Product ID: 45
+[2025-12-01 03:17:30] Adding product to cart
+[2025-12-01 03:17:30] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:17:30] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:17:30] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:17:30] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":2,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:17:30] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:17:30] Updating existing cart item
+[2025-12-01 03:17:30] Adding product to cart: Product ID: 45
+[2025-12-01 03:19:47] Adding product to cart
+[2025-12-01 03:19:47] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:19:47] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:19:47] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:19:47] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":3,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:19:47] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:19:47] Updating existing cart item
+[2025-12-01 03:19:47] Adding product to cart: Product ID: 45
+[2025-12-01 03:19:49] Adding product to cart
+[2025-12-01 03:19:49] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:19:49] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:19:49] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:19:49] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":4,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:19:49] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:19:49] Updating existing cart item
+[2025-12-01 03:19:49] Adding product to cart: Product ID: 45
+[2025-12-01 03:19:49] No route found for POST /cart/add
+[2025-12-01 03:19:49] No route found for POST /cart/add
+[2025-12-01 03:19:58] Adding product to cart
+[2025-12-01 03:19:58] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:19:58] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:19:58] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:19:58] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":5,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:19:58] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:19:58] Updating existing cart item
+[2025-12-01 03:19:58] Adding product to cart: Product ID: 45
+[2025-12-01 03:19:59] Adding product to cart
+[2025-12-01 03:19:59] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:19:59] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:19:59] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:19:59] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":6,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:19:59] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:19:59] Updating existing cart item
+[2025-12-01 03:19:59] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:00] Adding product to cart
+[2025-12-01 03:20:00] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:00] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:00] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:00] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":7,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:00] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:00] Updating existing cart item
+[2025-12-01 03:20:00] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:00] Adding product to cart
+[2025-12-01 03:20:00] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:00] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:00] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:00] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":8,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:00] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:00] Updating existing cart item
+[2025-12-01 03:20:00] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:05] Adding product to cart
+[2025-12-01 03:20:05] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:05] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:05] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:05] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":9,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:05] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:05] Updating existing cart item
+[2025-12-01 03:20:05] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:09] Adding product to cart
+[2025-12-01 03:20:09] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:09] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:09] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:09] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":10,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:09] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:09] Updating existing cart item
+[2025-12-01 03:20:09] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:09] Adding product to cart
+[2025-12-01 03:20:09] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:09] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:09] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:09] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":11,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:09] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:09] Updating existing cart item
+[2025-12-01 03:20:09] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:09] Adding product to cart
+[2025-12-01 03:20:09] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:09] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:09] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:09] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":12,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:09] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:09] Updating existing cart item
+[2025-12-01 03:20:09] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:40] Adding product to cart
+[2025-12-01 03:20:40] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:40] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:40] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:40] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":13,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:40] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:40] Updating existing cart item
+[2025-12-01 03:20:40] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:40] No route found for POST /cart/add
+[2025-12-01 03:20:46] Adding product to cart
+[2025-12-01 03:20:46] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:46] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:46] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:46] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":14,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:46] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:46] Updating existing cart item
+[2025-12-01 03:20:46] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:46] Adding product to cart
+[2025-12-01 03:20:46] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:46] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:46] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:46] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":15,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:46] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:46] Updating existing cart item
+[2025-12-01 03:20:46] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:50] Adding product to cart
+[2025-12-01 03:20:50] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:50] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:50] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:50] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":16,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:50] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:50] Updating existing cart item
+[2025-12-01 03:20:50] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:50] Adding product to cart
+[2025-12-01 03:20:50] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:50] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:50] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:50] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":17,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:50] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:50] Updating existing cart item
+[2025-12-01 03:20:50] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:54] Product: Sample was viewed.
+[2025-12-01 03:20:54] Product: Sample was viewed.
+[2025-12-01 03:20:55] Adding product to cart
+[2025-12-01 03:20:55] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:20:55] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:20:55] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:20:55] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":18,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:20:55] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:20:55] Updating existing cart item
+[2025-12-01 03:20:55] Adding product to cart: Product ID: 45
+[2025-12-01 03:20:57] Product: Sample was viewed.
+[2025-12-01 03:20:57] Product: Sample was viewed.
+[2025-12-01 03:21:37] Product: Sample was viewed.
+[2025-12-01 03:21:37] Product: Sample was viewed.
+[2025-12-01 03:21:44] Adding product to cart
+[2025-12-01 03:21:44] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:21:44] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:21:44] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:21:44] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":19,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:21:44] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:21:44] Updating existing cart item
+[2025-12-01 03:21:44] Adding product to cart: Product ID: 45
+[2025-12-01 03:21:44] Adding product to cart
+[2025-12-01 03:21:44] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:21:44] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:21:44] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:21:44] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":20,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:21:44] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:21:44] Updating existing cart item
+[2025-12-01 03:21:44] Adding product to cart: Product ID: 45
+[2025-12-01 03:22:12] No route found for POST /products
+[2025-12-01 03:22:22] Adding product to cart
+[2025-12-01 03:22:22] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:22:22] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:22:22] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:22:22] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":21,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:22:22] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:22:22] Updating existing cart item
+[2025-12-01 03:22:22] Adding product to cart: Product ID: 45
+[2025-12-01 03:22:27] Adding product to cart
+[2025-12-01 03:22:27] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:22:27] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:22:27] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:22:27] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":22,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:22:27] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:22:27] Updating existing cart item
+[2025-12-01 03:22:27] Adding product to cart: Product ID: 45
+[2025-12-01 03:22:27] Adding product to cart
+[2025-12-01 03:22:27] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:22:27] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:22:27] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:22:27] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":23,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:22:27] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:22:27] Updating existing cart item
+[2025-12-01 03:22:27] Adding product to cart: Product ID: 45
+[2025-12-01 03:22:27] Adding product to cart
+[2025-12-01 03:22:27] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:22:27] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:22:27] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:22:27] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":24,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:22:27] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:22:27] Updating existing cart item
+[2025-12-01 03:22:27] Adding product to cart: Product ID: 45
+[2025-12-01 03:22:32] Adding product to cart
+[2025-12-01 03:22:32] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:22:32] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:22:32] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:22:32] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":25,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:22:32] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:22:32] Updating existing cart item
+[2025-12-01 03:22:32] Adding product to cart: Product ID: 45
+[2025-12-01 03:22:42] Product: Sample was viewed.
+[2025-12-01 03:22:42] Product: Sample was viewed.
+[2025-12-01 03:23:09] Adding product to cart
+[2025-12-01 03:23:09] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:23:09] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:23:09] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:23:09] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":26,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:23:09] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:23:09] Updating existing cart item
+[2025-12-01 03:23:09] Adding product to cart: Product ID: 45
+[2025-12-01 03:23:09] Adding product to cart
+[2025-12-01 03:23:09] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:23:09] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:23:09] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:23:09] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":27,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:23:09] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:23:09] Updating existing cart item
+[2025-12-01 03:23:09] Adding product to cart: Product ID: 45
+[2025-12-01 03:23:10] Product: Sample was viewed.
+[2025-12-01 03:23:10] Product: Sample was viewed.
+[2025-12-01 03:23:10] Product: Sample was viewed.
+[2025-12-01 03:23:10] Product: Sample was viewed.
+[2025-12-01 03:24:09] Product: Sample was viewed.
+[2025-12-01 03:24:09] Product: Sample was viewed.
+[2025-12-01 03:24:13] No route found for POST /cart/add
+[2025-12-01 03:24:13] No route found for POST /cart/add
+[2025-12-01 03:24:18] Product: Sample was viewed.
+[2025-12-01 03:24:18] Product: Sample was viewed.
+[2025-12-01 03:24:20] Adding product to cart
+[2025-12-01 03:24:20] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:24:20] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:24:20] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:24:20] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":28,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:24:20] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:24:20] Updating existing cart item
+[2025-12-01 03:24:20] Adding product to cart: Product ID: 45
+[2025-12-01 03:24:20] Adding product to cart
+[2025-12-01 03:24:20] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:24:20] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:24:20] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:24:20] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":29,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:24:20] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:24:20] Updating existing cart item
+[2025-12-01 03:24:21] Adding product to cart: Product ID: 45
+[2025-12-01 03:24:22] Product: Sample was viewed.
+[2025-12-01 03:24:22] Product: Sample was viewed.
+[2025-12-01 03:24:22] Product: Sample was viewed.
+[2025-12-01 03:24:22] Product: Sample was viewed.
+[2025-12-01 03:27:09] Product: Sample was viewed.
+[2025-12-01 03:27:09] Product: Sample was viewed.
+[2025-12-01 03:27:11] Adding product to cart
+[2025-12-01 03:27:11] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:27:11] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:27:11] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:27:11] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":30,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:27:11] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:27:11] Updating existing cart item
+[2025-12-01 03:27:11] Adding product to cart: Product ID: 45
+[2025-12-01 03:27:13] Product: Sample was viewed.
+[2025-12-01 03:27:13] Product: Sample was viewed.
+[2025-12-01 03:27:23] Adding product to cart
+[2025-12-01 03:27:23] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:27:23] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:27:23] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:27:23] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":31,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:27:23] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:27:23] Updating existing cart item
+[2025-12-01 03:27:23] Adding product to cart: Product ID: 45
+[2025-12-01 03:27:23] Adding product to cart
+[2025-12-01 03:27:23] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:27:23] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:27:23] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:27:23] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":32,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:27:23] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:27:23] Updating existing cart item
+[2025-12-01 03:27:23] Adding product to cart: Product ID: 45
+[2025-12-01 03:46:14] Adding product to cart
+[2025-12-01 03:46:14] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:46:14] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:46:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:46:14] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":33,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:46:14] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:46:14] Updating existing cart item
+[2025-12-01 03:46:14] Adding product to cart: Product ID: 45
+[2025-12-01 03:46:14] Adding product to cart
+[2025-12-01 03:46:14] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:46:14] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:46:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:46:14] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":34,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:46:14] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:46:14] Updating existing cart item
+[2025-12-01 03:46:14] Adding product to cart: Product ID: 45
+[2025-12-01 03:46:20] Adding product to cart
+[2025-12-01 03:46:20] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:46:20] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:46:20] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:46:20] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":35,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:46:20] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:46:20] Updating existing cart item
+[2025-12-01 03:46:20] Adding product to cart: Product ID: 45
+[2025-12-01 03:46:20] Adding product to cart
+[2025-12-01 03:46:20] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:46:20] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:46:20] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:46:20] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":36,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:46:20] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:46:20] Updating existing cart item
+[2025-12-01 03:46:20] Adding product to cart: Product ID: 45
+[2025-12-01 03:55:24] Adding product to cart
+[2025-12-01 03:55:24] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:55:24] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:55:24] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:55:24] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":37,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:55:24] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:55:24] Updating existing cart item
+[2025-12-01 03:55:24] Adding product to cart: Product ID: 45
+[2025-12-01 03:55:24] No route found for POST /cart/add
+[2025-12-01 03:55:26] Adding product to cart
+[2025-12-01 03:55:26] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:55:26] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44
+[2025-12-01 03:55:26] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:55:26] Found cart item: false
+[2025-12-01 03:55:26] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44, Quantity: 1
+[2025-12-01 03:55:26] Adding new cart item
+[2025-12-01 03:55:26] Adding product to cart: Product ID: 44
+[2025-12-01 03:55:26] No route found for POST /cart/add
+[2025-12-01 03:55:27] Adding product to cart
+[2025-12-01 03:55:27] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:55:27] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 43
+[2025-12-01 03:55:27] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:55:27] Found cart item: false
+[2025-12-01 03:55:27] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 43, Quantity: 1
+[2025-12-01 03:55:27] Adding new cart item
+[2025-12-01 03:55:27] Adding product to cart: Product ID: 43
+[2025-12-01 03:55:27] No route found for POST /cart/add
+[2025-12-01 03:55:28] Product: Sample was viewed.
+[2025-12-01 03:55:28] Product: Sample was viewed.
+[2025-12-01 03:55:29] No route found for POST /product/sample
+[2025-12-01 03:55:32] Product: Sample was viewed.
+[2025-12-01 03:55:32] Product: Sample was viewed.
+[2025-12-01 03:55:33] No route found for POST /product/sample
+[2025-12-01 03:55:34] Product: Sample was viewed.
+[2025-12-01 03:55:34] Product: Sample was viewed.
+[2025-12-01 03:55:47] Product: Sample was viewed.
+[2025-12-01 03:55:47] Product: Sample was viewed.
+[2025-12-01 03:55:50] Adding product to cart
+[2025-12-01 03:55:50] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:55:50] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:55:50] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:55:50] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":38,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:55:50] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:55:50] Updating existing cart item
+[2025-12-01 03:55:50] Adding product to cart: Product ID: 45
+[2025-12-01 03:55:52] Product: Sample was viewed.
+[2025-12-01 03:55:52] Product: Sample was viewed.
+[2025-12-01 03:55:58] Adding product to cart
+[2025-12-01 03:55:58] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:55:58] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:55:58] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:55:58] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":39,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:55:58] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:55:58] Updating existing cart item
+[2025-12-01 03:55:58] Adding product to cart: Product ID: 45
+[2025-12-01 03:55:58] No route found for POST /cart/add
+[2025-12-01 03:56:05] Adding product to cart
+[2025-12-01 03:56:05] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:56:05] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:56:05] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:56:05] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":40,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:56:05] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:56:05] Updating existing cart item
+[2025-12-01 03:56:05] Adding product to cart: Product ID: 45
+[2025-12-01 03:56:05] No route found for POST /cart/add
+[2025-12-01 03:56:23] Adding product to cart
+[2025-12-01 03:56:23] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:56:23] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:56:23] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:56:23] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":41,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:56:23] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:56:23] Updating existing cart item
+[2025-12-01 03:56:23] Adding product to cart: Product ID: 45
+[2025-12-01 03:56:23] No route found for POST /cart/add
+[2025-12-01 03:56:27] Adding product to cart
+[2025-12-01 03:56:27] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:56:27] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:56:27] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:56:27] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":42,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:56:27] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:56:27] Updating existing cart item
+[2025-12-01 03:56:27] Adding product to cart: Product ID: 45
+[2025-12-01 03:56:27] No route found for POST /cart/add
+[2025-12-01 03:58:30] Adding product to cart
+[2025-12-01 03:58:30] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:58:30] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:58:30] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:58:30] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":43,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:58:30] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:58:30] Updating existing cart item
+[2025-12-01 03:58:30] Adding product to cart: Product ID: 45
+[2025-12-01 03:58:30] No route found for POST /cart/add
+[2025-12-01 03:59:14] Adding product to cart
+[2025-12-01 03:59:14] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:59:14] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:59:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:59:14] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":44,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:59:14] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:59:14] Updating existing cart item
+[2025-12-01 03:59:14] Adding product to cart: Product ID: 45
+[2025-12-01 03:59:14] No route found for POST /cart/add
+[2025-12-01 03:59:19] Adding product to cart
+[2025-12-01 03:59:19] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 03:59:19] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 03:59:19] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 03:59:19] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":45,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 03:59:19] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 03:59:19] Updating existing cart item
+[2025-12-01 03:59:19] Adding product to cart: Product ID: 45
+[2025-12-01 03:59:19] No route found for POST /cart/add
+[2025-12-01 04:00:27] Adding product to cart
+[2025-12-01 04:00:27] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:00:27] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:00:27] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:00:27] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":46,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:00:27] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:00:27] Updating existing cart item
+[2025-12-01 04:00:27] Adding product to cart: Product ID: 45
+[2025-12-01 04:00:27] Adding product to cart
+[2025-12-01 04:00:27] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:00:27] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:00:27] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:00:27] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":47,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:00:27] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:00:27] Updating existing cart item
+[2025-12-01 04:00:27] Adding product to cart: Product ID: 45
+[2025-12-01 04:00:41] Adding product to cart
+[2025-12-01 04:00:41] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:00:41] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:00:41] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:00:41] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":48,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:00:41] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:00:41] Updating existing cart item
+[2025-12-01 04:00:41] Adding product to cart: Product ID: 45
+[2025-12-01 04:00:41] Adding product to cart
+[2025-12-01 04:00:41] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:00:41] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:00:41] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:00:41] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":49,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:00:41] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:00:41] Updating existing cart item
+[2025-12-01 04:00:41] Adding product to cart: Product ID: 45
+[2025-12-01 04:00:46] Adding product to cart
+[2025-12-01 04:00:46] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:00:46] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:00:46] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:00:46] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":50,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:00:46] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:00:46] Updating existing cart item
+[2025-12-01 04:00:46] Adding product to cart: Product ID: 45
+[2025-12-01 04:00:46] Adding product to cart
+[2025-12-01 04:00:46] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:00:46] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:00:46] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:00:46] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":51,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:00:46] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:00:46] Updating existing cart item
+[2025-12-01 04:00:46] Adding product to cart: Product ID: 45
+[2025-12-01 04:02:43] Adding product to cart
+[2025-12-01 04:02:43] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:02:43] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:02:43] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:02:43] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":52,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:02:43] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:02:43] Updating existing cart item
+[2025-12-01 04:02:43] Adding product to cart: Product ID: 45
+[2025-12-01 04:02:43] Adding product to cart
+[2025-12-01 04:02:43] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:02:43] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:02:43] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:02:43] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":53,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:02:43] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:02:43] Updating existing cart item
+[2025-12-01 04:02:43] Adding product to cart: Product ID: 45
+[2025-12-01 04:05:03] Adding product to cart
+[2025-12-01 04:05:03] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:05:03] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:05:03] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:05:03] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":54,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:05:03] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:05:03] Updating existing cart item
+[2025-12-01 04:05:03] Adding product to cart: Product ID: 45
+[2025-12-01 04:05:18] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:05:18] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:05:42] Product: Sample was viewed.
+[2025-12-01 04:05:42] Product: Sample was viewed.
+[2025-12-01 04:06:05] Product: Sample was viewed.
+[2025-12-01 04:06:05] Product: Sample was viewed.
+[2025-12-01 04:06:09] Product: Sample was viewed.
+[2025-12-01 04:06:09] Product: Sample was viewed.
+[2025-12-01 04:06:11] Adding product to cart
+[2025-12-01 04:06:11] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:06:11] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:06:11] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:06:11] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":55,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:06:11] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:06:11] Updating existing cart item
+[2025-12-01 04:06:11] Adding product to cart: Product ID: 45
+[2025-12-01 04:06:12] Product: Sample was viewed.
+[2025-12-01 04:06:12] Product: Sample was viewed.
+[2025-12-01 04:06:15] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:06:15] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:08:54] Product: Sample was viewed.
+[2025-12-01 04:08:54] Product: Sample was viewed.
+[2025-12-01 04:09:22] Product: Sample was viewed.
+[2025-12-01 04:09:22] Product: Sample was viewed.
+[2025-12-01 04:10:05] Product: Sample was viewed.
+[2025-12-01 04:10:05] Product: Sample was viewed.
+[2025-12-01 04:10:25] Product: Sample was viewed.
+[2025-12-01 04:10:25] Product: Sample was viewed.
+[2025-12-01 04:10:37] Product: Sample was viewed.
+[2025-12-01 04:10:37] Product: Sample was viewed.
+[2025-12-01 04:11:15] Product: Sample was viewed.
+[2025-12-01 04:11:15] Product: Sample was viewed.
+[2025-12-01 04:11:21] Product: Sample was viewed.
+[2025-12-01 04:11:21] Product: Sample was viewed.
+[2025-12-01 04:14:26] Product: Sample was viewed.
+[2025-12-01 04:14:26] Product: Sample was viewed.
+[2025-12-01 04:14:43] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:14:43] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:14:43] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:14:43] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:14:48] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:14:48] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:16:40] Adding product to cart
+[2025-12-01 04:16:40] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:16:40] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:16:40] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:16:40] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":56,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:16:40] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:16:40] Updating existing cart item
+[2025-12-01 04:16:40] Adding product to cart: Product ID: 45
+[2025-12-01 04:18:07] Adding product to cart
+[2025-12-01 04:18:07] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:18:07] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:18:07] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:18:07] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":57,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:18:07] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:18:07] Updating existing cart item
+[2025-12-01 04:18:07] Adding product to cart: Product ID: 45
+[2025-12-01 04:18:56] Adding product to cart
+[2025-12-01 04:18:56] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:18:56] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:18:56] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:18:56] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":58,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:18:56] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:18:56] Updating existing cart item
+[2025-12-01 04:18:56] Adding product to cart: Product ID: 45
+[2025-12-01 04:19:35] Adding product to cart
+[2025-12-01 04:19:35] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:19:35] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:19:35] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:19:35] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":59,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:19:35] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:19:35] Updating existing cart item
+[2025-12-01 04:19:35] Adding product to cart: Product ID: 45
+[2025-12-01 04:20:00] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:20:00] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:21:36] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:21:36] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:21:39] Adding product to cart
+[2025-12-01 04:21:39] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:21:39] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:21:39] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:21:39] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":60,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:21:39] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:21:39] Updating existing cart item
+[2025-12-01 04:21:39] Adding product to cart: Product ID: 45
+[2025-12-01 04:21:39] Cart count: 0
+[2025-12-01 04:21:41] Adding product to cart
+[2025-12-01 04:21:41] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:21:41] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:21:41] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:21:41] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":61,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:21:41] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:21:41] Updating existing cart item
+[2025-12-01 04:21:41] Adding product to cart: Product ID: 45
+[2025-12-01 04:21:41] Cart count: 0
+[2025-12-01 04:22:18] Product: Sample was viewed.
+[2025-12-01 04:22:18] Product: Sample was viewed.
+[2025-12-01 04:22:19] Adding product to cart
+[2025-12-01 04:22:19] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:22:19] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:22:19] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:22:19] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":62,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:22:19] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:22:19] Updating existing cart item
+[2025-12-01 04:22:19] Adding product to cart: Product ID: 45
+[2025-12-01 04:22:19] Cart count: 3
+[2025-12-01 04:22:21] Product: Sample was viewed.
+[2025-12-01 04:22:21] Product: Sample was viewed.
+[2025-12-01 04:22:23] Product: Sample was viewed.
+[2025-12-01 04:22:23] Product: Sample was viewed.
+[2025-12-01 04:22:26] Adding product to cart
+[2025-12-01 04:22:26] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:22:26] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:22:26] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:22:26] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":63,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:22:26] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:22:26] Updating existing cart item
+[2025-12-01 04:22:26] Adding product to cart: Product ID: 45
+[2025-12-01 04:22:26] Cart count: 3
+[2025-12-01 04:22:30] Adding product to cart
+[2025-12-01 04:22:30] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:22:30] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44
+[2025-12-01 04:22:30] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:22:30] Found cart item: {"id":38,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":44,"quantity":1,"added_at":"2025-12-01 08:55:26"}
+[2025-12-01 04:22:30] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44, Quantity: 1
+[2025-12-01 04:22:30] Updating existing cart item
+[2025-12-01 04:22:30] Adding product to cart: Product ID: 44
+[2025-12-01 04:22:30] Cart count: 3
+[2025-12-01 04:23:57] Adding product to cart
+[2025-12-01 04:23:57] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 04:23:57] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 04:23:57] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 04:23:57] Found cart item: {"id":37,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":45,"quantity":64,"added_at":"2025-12-01 08:17:23"}
+[2025-12-01 04:23:57] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 04:23:57] Updating existing cart item
+[2025-12-01 04:23:57] Adding product to cart: Product ID: 45
+[2025-12-01 04:23:57] SESSION Cart count: 3
+[2025-12-01 04:24:24] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:24:24] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:24:40] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:24:40] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:24:43] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:24:43] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:17] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:17] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:20] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:20] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:22] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:22] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:24] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:24] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:24] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:24] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:35] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:35] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:37] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:37] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:38] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:38] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:39] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:26:39] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:27:45] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:27:46] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:28:00] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:28:00] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:29:45] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:29:45] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:29:47] Removing item from cart: Item ID: 0
+[2025-12-01 04:29:47] Deleting cart item: 0
+[2025-12-01 04:29:47] SESSION Cart count: 3
+[2025-12-01 04:29:47] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:29:47] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:29:48] Removing item from cart: Item ID: 0
+[2025-12-01 04:29:48] Deleting cart item: 0
+[2025-12-01 04:29:48] SESSION Cart count: 3
+[2025-12-01 04:29:48] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:29:49] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:29:52] Removing item from cart: Item ID: 0
+[2025-12-01 04:29:52] Deleting cart item: 0
+[2025-12-01 04:29:52] SESSION Cart count: 3
+[2025-12-01 04:29:52] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:29:52] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:10] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:10] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:16] Removing item from cart: Item ID: 0
+[2025-12-01 04:32:16] Deleting cart item: 0
+[2025-12-01 04:32:16] SESSION Cart count: 3
+[2025-12-01 04:32:20] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:20] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:21] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:21] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:22] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:22] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:25] Removing item from cart: Item ID: 0
+[2025-12-01 04:32:25] Deleting cart item: 0
+[2025-12-01 04:32:25] SESSION Cart count: 3
+[2025-12-01 04:32:56] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:32:56] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:33:00] Removing item from cart: Item ID: 0
+[2025-12-01 04:33:00] Deleting cart item: 0
+[2025-12-01 04:33:00] SESSION Cart count: 3
+[2025-12-01 04:33:03] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:33:03] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:33:04] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:33:04] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:34:24] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:34:24] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:34:28] Removing item from cart: Item ID: 0
+[2025-12-01 04:34:28] Deleting cart item: 0
+[2025-12-01 04:34:28] SESSION Cart count: 3
+[2025-12-01 04:34:30] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:34:30] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:35:17] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:35:17] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:35:20] Removing item from cart: Item ID: 39
+[2025-12-01 04:35:20] Deleting cart item: 39
+[2025-12-01 04:35:20] SESSION Cart count: 2
+[2025-12-01 04:35:22] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:35:22] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:36:18] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:36:18] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:36:25] Removing item from cart: Item ID: 37
+[2025-12-01 04:36:25] Deleting cart item: 37
+[2025-12-01 04:36:25] SESSION Cart count: 1
+[2025-12-01 04:36:31] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:36:31] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:36:32] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:36:32] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:49:09] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:49:09] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:49:09] No route found for GET /api/cart
+[2025-12-01 04:56:23] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:56:23] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:56:23] No route found for GET /api/cart
+[2025-12-01 04:57:40] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:57:40] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 04:57:45] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:57:45] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 04:58:06] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 04:58:06] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:01:26] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:01:26] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:01:42] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:01:42] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:02:12] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:02:12] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:04:33] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:04:33] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:06:00] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:06:00] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:07:58] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:08:13] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:08:13] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:11:29] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:11:29] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:14:10] Checkout error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.image' in 'field list'
+[2025-12-01 05:15:08] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:15:16] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:16:58] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:16:58] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:17:05] Product: iPhone 17 was viewed.
+[2025-12-01 05:17:05] Product: iPhone 17 was viewed.
+[2025-12-01 05:17:06] Adding product to cart
+[2025-12-01 05:17:06] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 05:17:06] Finding cart item: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44
+[2025-12-01 05:17:06] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 05:17:06] Found cart item: {"id":38,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":44,"quantity":2,"added_at":"2025-12-01 08:55:26"}
+[2025-12-01 05:17:06] Adding product to cart: User ID: , Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44, Quantity: 1
+[2025-12-01 05:17:06] Updating existing cart item
+[2025-12-01 05:17:06] Adding product to cart: Product ID: 44
+[2025-12-01 05:17:06] SESSION Cart count: 1
+[2025-12-01 05:17:08] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:17:08] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:17:09] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:17:09] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:18:12] Checkout error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+[2025-12-01 05:28:50] Checkout error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.user_id' in 'where clause'
+[2025-12-01 05:30:23] Order creation error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:30:23] Checkout error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:31:24] Order creation error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:31:24] Checkout error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:32:53] Order creation error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:32:53] Checkout error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:33:11] Creating order
+[2025-12-01 05:33:11] Order creation error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:33:11] Checkout error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:34:21] Creating order
+[2025-12-01 05:34:21] Order total: 150
+[2025-12-01 05:34:21] Order creation error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:34:21] Checkout error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'
+[2025-12-01 05:34:46] Creating order
+[2025-12-01 05:34:46] Order total: 150
+[2025-12-01 05:34:48] No route found for GET /order/6
+[2025-12-01 05:34:56] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:34:56] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:34:59] Removing item from cart: Item ID: 38
+[2025-12-01 05:34:59] Deleting cart item: 38
+[2025-12-01 05:34:59] SESSION Cart count: 0
+[2025-12-01 05:35:10] Found user with email: admin@example.com
+[2025-12-01 05:35:10] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-01 05:35:10] AUTH SERVICE: Plain password length: 11
+[2025-12-01 05:35:10] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-01 05:35:10] AUTH SERVICE: Hashed password length: 60
+[2025-12-01 05:35:10] AUTH SERVICE: password_verify result: TRUE
+[2025-12-01 05:35:10] AUTH SERVICE: Result: success
+[2025-12-01 05:35:10] Authenticating user with email: admin@example.com
+[2025-12-01 05:35:10] Result: success
+[2025-12-01 05:40:38] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:40:38] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:40:42] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:40:42] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:40:42] No route found for GET /api/cart
+[2025-12-01 05:40:55] Adding product to cart
+[2025-12-01 05:40:55] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 05:40:55] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45
+[2025-12-01 05:40:55] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 05:40:55] Found cart item: false
+[2025-12-01 05:40:55] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 45, Quantity: 1
+[2025-12-01 05:40:55] Adding new cart item
+[2025-12-01 05:40:55] Adding product to cart: Product ID: 45
+[2025-12-01 05:40:55] SESSION Cart count: 1
+[2025-12-01 05:40:57] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:40:57] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:41:01] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:41:01] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:41:01] No route found for GET /api/cart
+[2025-12-01 05:41:16] Creating order
+[2025-12-01 05:41:16] Order total: 50
+[2025-12-01 05:41:18] No route found for GET /order/7
+[2025-12-01 05:41:35] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:41:35] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:41:46] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:41:46] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:02] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:02] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:04] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:04] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:05] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:05] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:05] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:05] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:08] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:08] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:14] Adding product to cart
+[2025-12-01 05:42:14] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 05:42:14] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44
+[2025-12-01 05:42:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 05:42:14] Found cart item: false
+[2025-12-01 05:42:14] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44, Quantity: 1
+[2025-12-01 05:42:14] Adding new cart item
+[2025-12-01 05:42:14] Adding product to cart: Product ID: 44
+[2025-12-01 05:42:14] SESSION Cart count: 1
+[2025-12-01 05:42:15] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:16] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:17] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:17] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:42:17] No route found for GET /api/cart
+[2025-12-01 05:43:07] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:07] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:24] Product: iPhone 17 was viewed.
+[2025-12-01 05:43:24] Product: iPhone 17 was viewed.
+[2025-12-01 05:43:25] Adding product to cart
+[2025-12-01 05:43:25] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 05:43:25] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44
+[2025-12-01 05:43:25] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 05:43:25] Found cart item: {"id":41,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":44,"quantity":1,"added_at":"2025-12-01 10:42:14"}
+[2025-12-01 05:43:25] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44, Quantity: 1
+[2025-12-01 05:43:25] Updating existing cart item
+[2025-12-01 05:43:25] Adding product to cart: Product ID: 44
+[2025-12-01 05:43:25] SESSION Cart count: 1
+[2025-12-01 05:43:26] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:26] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:31] Removing item from cart: Item ID: 41
+[2025-12-01 05:43:31] Deleting cart item: 41
+[2025-12-01 05:43:31] SESSION Cart count: 0
+[2025-12-01 05:43:35] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:35] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:40] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:40] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:40] No route found for GET /api/cart
+[2025-12-01 05:43:46] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:46] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:48] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:48] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:48] No route found for GET /api/cart
+[2025-12-01 05:43:58] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:58] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 05:43:58] No route found for GET /api/cart
+[2025-12-01 05:56:18] No route found for GET /admin/order/6
+[2025-12-01 06:01:36] Adding product to cart
+[2025-12-01 06:01:36] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 06:01:36] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 43
+[2025-12-01 06:01:36] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 06:01:36] Found cart item: false
+[2025-12-01 06:01:36] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 43, Quantity: 1
+[2025-12-01 06:01:36] Adding new cart item
+[2025-12-01 06:01:36] Adding product to cart: Product ID: 43
+[2025-12-01 06:01:36] SESSION Cart count: 1
+[2025-12-01 06:01:38] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:01:38] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:01:43] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:01:43] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:01:43] No route found for GET /api/cart
+[2025-12-01 06:02:00] Creating order
+[2025-12-01 06:02:00] Order total: 199
+[2025-12-01 06:02:09] No route found for GET /admin/dashboard
+[2025-12-01 06:02:22] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:02:22] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:02:31] Adding product to cart
+[2025-12-01 06:02:31] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 06:02:31] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 43
+[2025-12-01 06:02:31] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 06:02:31] Found cart item: false
+[2025-12-01 06:02:31] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 43, Quantity: 1
+[2025-12-01 06:02:31] Adding new cart item
+[2025-12-01 06:02:32] Adding product to cart: Product ID: 43
+[2025-12-01 06:02:32] SESSION Cart count: 1
+[2025-12-01 06:07:14] Adding product to cart
+[2025-12-01 06:07:14] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 06:07:14] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44
+[2025-12-01 06:07:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 06:07:14] Found cart item: false
+[2025-12-01 06:07:14] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44, Quantity: 1
+[2025-12-01 06:07:14] Adding new cart item
+[2025-12-01 06:07:14] Adding product to cart: Product ID: 44
+[2025-12-01 06:07:14] SESSION Cart count: 2
+[2025-12-01 06:07:21] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:07:21] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:07:30] Removing item from cart: Item ID: 43
+[2025-12-01 06:07:30] Deleting cart item: 43
+[2025-12-01 06:07:30] SESSION Cart count: 1
+[2025-12-01 06:07:31] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:07:31] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:07:33] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:07:33] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:07:33] No route found for GET /api/cart
+[2025-12-01 06:07:51] Creating order
+[2025-12-01 06:07:51] Order total: 50
+[2025-12-01 06:08:52] Adding product to cart
+[2025-12-01 06:08:52] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 06:08:52] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44
+[2025-12-01 06:08:52] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 06:08:52] Found cart item: false
+[2025-12-01 06:08:52] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44, Quantity: 1
+[2025-12-01 06:08:52] Adding new cart item
+[2025-12-01 06:08:52] Adding product to cart: Product ID: 44
+[2025-12-01 06:08:52] SESSION Cart count: 1
+[2025-12-01 06:08:53] Adding product to cart
+[2025-12-01 06:08:53] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 06:08:53] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 47
+[2025-12-01 06:08:53] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 06:08:53] Found cart item: false
+[2025-12-01 06:08:53] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 47, Quantity: 1
+[2025-12-01 06:08:53] Adding new cart item
+[2025-12-01 06:08:53] Adding product to cart: Product ID: 47
+[2025-12-01 06:08:53] SESSION Cart count: 2
+[2025-12-01 06:08:54] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:08:54] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:11:55] Adding product to cart
+[2025-12-01 06:11:55] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 06:11:55] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44
+[2025-12-01 06:11:55] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 06:11:55] Found cart item: {"id":45,"session_id":"2b1cbd7c924b0a444da16ab70d5dd58d","product_id":44,"quantity":1,"added_at":"2025-12-01 11:08:52"}
+[2025-12-01 06:11:55] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44, Quantity: 1
+[2025-12-01 06:11:55] Updating existing cart item
+[2025-12-01 06:11:55] Adding product to cart: Product ID: 44
+[2025-12-01 06:11:55] SESSION Cart count: 2
+[2025-12-01 06:11:57] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:11:57] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:12:01] Removing item from cart: Item ID: 46
+[2025-12-01 06:12:01] Deleting cart item: 46
+[2025-12-01 06:12:01] SESSION Cart count: 1
+[2025-12-01 06:12:03] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:12:03] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:12:03] No route found for GET /api/cart
+[2025-12-01 06:12:18] Creating order
+[2025-12-01 06:12:18] Order total: 100
+[2025-12-01 06:12:26] Adding product to cart
+[2025-12-01 06:12:26] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 06:12:26] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44
+[2025-12-01 06:12:26] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 06:12:26] Found cart item: false
+[2025-12-01 06:12:26] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 44, Quantity: 1
+[2025-12-01 06:12:26] Adding new cart item
+[2025-12-01 06:12:26] Adding product to cart: Product ID: 44
+[2025-12-01 06:12:26] SESSION Cart count: 1
+[2025-12-01 06:12:29] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:12:29] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:12:33] Removing item from cart: Item ID: 47
+[2025-12-01 06:12:33] Deleting cart item: 47
+[2025-12-01 06:12:33] SESSION Cart count: 0
+[2025-12-01 06:12:35] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:12:35] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:13:40] Adding product to cart
+[2025-12-01 06:13:40] Identified session: 2b1cbd7c924b0a444da16ab70d5dd58d
+[2025-12-01 06:13:40] Finding cart item: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 48
+[2025-12-01 06:13:40] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 06:13:40] Found cart item: false
+[2025-12-01 06:13:40] Adding product to cart: User ID: 1, Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d, Product ID: 48, Quantity: 1
+[2025-12-01 06:13:40] Adding new cart item
+[2025-12-01 06:13:40] Adding product to cart: Product ID: 48
+[2025-12-01 06:13:40] SESSION Cart count: 1
+[2025-12-01 06:13:42] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 06:13:42] Session ID: 2b1cbd7c924b0a444da16ab70d5dd58d User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:14:24] Product: Sample was viewed.
+[2025-12-01 14:14:24] Product: Sample was viewed.
+[2025-12-01 14:14:25] Adding product to cart
+[2025-12-01 14:14:25] Identified session: 605cc1185fb4d6812b48d1ea207e7459
+[2025-12-01 14:14:25] Finding cart item: User ID: , Session ID: 605cc1185fb4d6812b48d1ea207e7459, Product ID: 48
+[2025-12-01 14:14:25] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 14:14:26] Found cart item: false
+[2025-12-01 14:14:26] Adding product to cart: User ID: , Session ID: 605cc1185fb4d6812b48d1ea207e7459, Product ID: 48, Quantity: 1
+[2025-12-01 14:14:26] Adding new cart item
+[2025-12-01 14:14:26] Adding product to cart: Product ID: 48
+[2025-12-01 14:14:26] SESSION Cart count: 1
+[2025-12-01 14:14:27] Product: Sample was viewed.
+[2025-12-01 14:14:27] Product: Sample was viewed.
+[2025-12-01 14:14:29] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:14:29] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:14:48] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:14:48] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:14:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:14:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:14:49] No route found for GET /api/cart
+[2025-12-01 14:15:02] Creating order
+[2025-12-01 14:15:02] Order total: 1199
+[2025-12-01 14:15:15] Found user with email: admin@example.com
+[2025-12-01 14:15:15] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-01 14:15:15] AUTH SERVICE: Plain password length: 11
+[2025-12-01 14:15:15] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-01 14:15:15] AUTH SERVICE: Hashed password length: 60
+[2025-12-01 14:15:15] AUTH SERVICE: password_verify result: TRUE
+[2025-12-01 14:15:15] AUTH SERVICE: Result: success
+[2025-12-01 14:15:15] Authenticating user with email: admin@example.com
+[2025-12-01 14:15:15] Result: success
+[2025-12-01 14:15:18] No route found for GET /admin/order/11
+[2025-12-01 14:15:31] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:15:31] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:15:32] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:15:32] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:15:32] No route found for GET /api/cart
+[2025-12-01 14:17:12] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:17:12] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:17:12] No route found for GET /api/cart
+[2025-12-01 14:17:45] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:17:45] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:17:45] No route found for GET /api/cart
+[2025-12-01 14:17:58] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:17:58] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:17:58] No route found for GET /api/cart
+[2025-12-01 14:19:35] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:19:35] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:19:35] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:19:35] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:19:56] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:19:56] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:19:56] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:19:56] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:22] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:22] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:22] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:22] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:42] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:42] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:42] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:42] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:44] Adding product to cart
+[2025-12-01 14:20:44] Identified session: 605cc1185fb4d6812b48d1ea207e7459
+[2025-12-01 14:20:44] Finding cart item: User ID: 1, Session ID: 605cc1185fb4d6812b48d1ea207e7459, Product ID: 48
+[2025-12-01 14:20:44] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 14:20:44] Found cart item: false
+[2025-12-01 14:20:44] Adding product to cart: User ID: 1, Session ID: 605cc1185fb4d6812b48d1ea207e7459, Product ID: 48, Quantity: 1
+[2025-12-01 14:20:44] Adding new cart item
+[2025-12-01 14:20:44] Adding product to cart: Product ID: 48
+[2025-12-01 14:20:44] SESSION Cart count: 1
+[2025-12-01 14:20:46] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:46] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:20:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:16] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:16] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:17] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:17] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:24] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:24] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:24] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:24] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:33] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:33] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:33] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:21:33] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:43] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:43] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:43] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:43] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:44] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:44] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:23:49] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:24:36] Creating order
+[2025-12-01 14:24:36] Order total: 1199
+[2025-12-01 14:24:41] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:24:41] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:24:42] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:24:42] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:24:42] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:24:42] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:27:30] Adding product to cart
+[2025-12-01 14:27:30] Identified session: 605cc1185fb4d6812b48d1ea207e7459
+[2025-12-01 14:27:30] Finding cart item: User ID: 1, Session ID: 605cc1185fb4d6812b48d1ea207e7459, Product ID: 48
+[2025-12-01 14:27:30] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 14:27:30] Found cart item: false
+[2025-12-01 14:27:30] Adding product to cart: User ID: 1, Session ID: 605cc1185fb4d6812b48d1ea207e7459, Product ID: 48, Quantity: 1
+[2025-12-01 14:27:30] Adding new cart item
+[2025-12-01 14:27:30] Adding product to cart: Product ID: 48
+[2025-12-01 14:27:30] SESSION Cart count: 1
+[2025-12-01 14:27:31] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:27:31] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:27:33] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:27:33] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:27:40] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:27:40] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:28:55] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:28:57] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:29:10] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:30:24] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:31:16] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:31:26] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:31:40] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:32:24] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:32:52] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:33:00] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:33:05] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:33:34] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:33:34] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:33:52] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:34:22] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:34:27] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:34:27] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:34:39] Removing item from cart: Item ID: 51
+[2025-12-01 14:34:39] Deleting cart item: 51
+[2025-12-01 14:34:39] SESSION Cart count: 0
+[2025-12-01 14:34:41] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:34:41] Session ID: 605cc1185fb4d6812b48d1ea207e7459 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 14:39:16] Found user with email: admin@example.com
+[2025-12-01 14:39:16] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-01 14:39:16] AUTH SERVICE: Plain password length: 11
+[2025-12-01 14:39:16] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-01 14:39:16] AUTH SERVICE: Hashed password length: 60
+[2025-12-01 14:39:16] AUTH SERVICE: password_verify result: TRUE
+[2025-12-01 14:39:16] AUTH SERVICE: Result: success
+[2025-12-01 14:39:16] Authenticating user with email: admin@example.com
+[2025-12-01 14:39:16] Result: success
+[2025-12-01 14:40:09] Found user with email: admin@example.com
+[2025-12-01 14:40:09] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-01 14:40:09] AUTH SERVICE: Plain password length: 11
+[2025-12-01 14:40:09] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-01 14:40:09] AUTH SERVICE: Hashed password length: 60
+[2025-12-01 14:40:09] AUTH SERVICE: password_verify result: TRUE
+[2025-12-01 14:40:09] AUTH SERVICE: Result: success
+[2025-12-01 14:40:09] Authenticating user with email: admin@example.com
+[2025-12-01 14:40:09] Result: success
+[2025-12-01 14:42:21] No route found for GET /admin/users
+[2025-12-01 14:44:34] No route found for GET /admin/order/11
+[2025-12-01 14:44:45] No route found for GET /admin/users
+[2025-12-01 14:49:11] No route found for GET /admin/users
+[2025-12-01 14:49:36] No route found for GET /admin/users
+[2025-12-01 14:49:37] No route found for GET /admin/users
+[2025-12-01 14:54:01] No route found for GET /admin/users
+[2025-12-01 14:54:43] No route found for GET /admin/users
+[2025-12-01 14:54:47] No route found for GET /admin/users
+[2025-12-01 14:55:15] No route found for GET /admin/users
+[2025-12-01 14:55:22] No route found for GET /admin/users
+[2025-12-01 15:06:26] No route found for GET /admin/users
+[2025-12-01 15:06:26] No route found for GET /admin/users
+[2025-12-01 15:06:41] No route found for GET /admin/users
+[2025-12-01 15:06:42] No route found for GET /admin/users
+[2025-12-01 15:07:13] No route found for GET /admin/users
+[2025-12-01 15:09:32] No route found for GET /admin/users
+[2025-12-01 15:09:49] Viewing users
+[2025-12-01 15:11:14] Viewing users
+[2025-12-01 15:11:26] Viewing users
+[2025-12-01 15:11:26] Viewing users
+[2025-12-01 15:11:33] Viewing users
+[2025-12-01 15:11:33] Viewing users
+[2025-12-01 15:12:50] Product: MacBook Pro was viewed.
+[2025-12-01 15:12:50] Product: MacBook Pro was viewed.
+[2025-12-01 15:12:53] Adding product to cart
+[2025-12-01 15:12:53] Identified session: 976de7e8ae4dec8b033aa3c9e62c5933
+[2025-12-01 15:12:53] Finding cart item: User ID: 1, Session ID: 976de7e8ae4dec8b033aa3c9e62c5933, Product ID: 49
+[2025-12-01 15:12:53] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 15:12:53] Found cart item: false
+[2025-12-01 15:12:53] Adding product to cart: User ID: 1, Session ID: 976de7e8ae4dec8b033aa3c9e62c5933, Product ID: 49, Quantity: 1
+[2025-12-01 15:12:53] Adding new cart item
+[2025-12-01 15:12:53] Adding product to cart: Product ID: 49
+[2025-12-01 15:12:53] SESSION Cart count: 1
+[2025-12-01 15:12:54] Product: MacBook Pro was viewed.
+[2025-12-01 15:12:54] Product: MacBook Pro was viewed.
+[2025-12-01 15:12:55] Session ID: 976de7e8ae4dec8b033aa3c9e62c5933 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 15:12:55] Session ID: 976de7e8ae4dec8b033aa3c9e62c5933 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 15:13:01] Session ID: 976de7e8ae4dec8b033aa3c9e62c5933 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 15:13:24] Creating order
+[2025-12-01 15:13:24] Order total: 999
+[2025-12-01 15:13:36] No route found for GET /admin/order/13
+[2025-12-01 15:13:55] Viewing users
+[2025-12-01 15:13:55] Viewing users
+[2025-12-01 15:13:59] Product: MacBook Pro was viewed.
+[2025-12-01 15:13:59] Product: MacBook Pro was viewed.
+[2025-12-01 17:24:50] Product: MacBook Pro was viewed.
+[2025-12-01 17:24:50] Product: MacBook Pro was viewed.
+[2025-12-01 17:24:56] Product: MacBook Pro was viewed.
+[2025-12-01 17:24:56] Product: MacBook Pro was viewed.
+[2025-12-01 17:25:04] Product: MacBook Pro was viewed.
+[2025-12-01 17:25:04] Product: MacBook Pro was viewed.
+[2025-12-01 17:25:13] Product: MacBook Pro was viewed.
+[2025-12-01 17:25:13] Product: MacBook Pro was viewed.
+[2025-12-01 17:25:25] Product: MacBook Pro was viewed.
+[2025-12-01 17:25:25] Product: MacBook Pro was viewed.
+[2025-12-01 17:28:32] Product: MacBook Pro was viewed.
+[2025-12-01 17:28:32] Product: MacBook Pro was viewed.
+[2025-12-01 17:31:29] Found user with email: admin@example.com
+[2025-12-01 17:31:29] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-01 17:31:29] AUTH SERVICE: Plain password length: 11
+[2025-12-01 17:33:03] Found user with email: admin@example.com
+[2025-12-01 17:33:03] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-01 17:33:03] AUTH SERVICE: Plain password length: 11
+[2025-12-01 17:33:03] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-01 17:33:03] AUTH SERVICE: Hashed password length: 60
+[2025-12-01 17:33:03] AUTH SERVICE: password_verify result: TRUE
+[2025-12-01 17:33:03] AUTH SERVICE: Result: success
+[2025-12-01 17:33:03] Authenticating user with email: admin@example.com
+[2025-12-01 17:33:03] Result: success
+[2025-12-01 17:33:14] Viewing users
+[2025-12-01 17:33:26] Viewing users
+[2025-12-01 17:34:04] Viewing users
+[2025-12-01 17:35:47] Viewing users
+[2025-12-01 17:35:47] Viewing users
+[2025-12-01 17:35:49] Viewing users
+[2025-12-01 17:35:49] Viewing users
+[2025-12-01 17:35:52] Viewing users
+[2025-12-01 17:35:52] Viewing users
+[2025-12-01 17:39:28] Viewing users
+[2025-12-01 17:39:28] Viewing users
+[2025-12-01 17:39:33] Viewing users
+[2025-12-01 17:39:33] Viewing users
+[2025-12-01 17:39:45] Found user with email: admin@example.com
+[2025-12-01 17:39:45] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-01 17:39:45] AUTH SERVICE: Plain password length: 11
+[2025-12-01 17:39:45] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-01 17:39:45] AUTH SERVICE: Hashed password length: 60
+[2025-12-01 17:39:45] AUTH SERVICE: password_verify result: TRUE
+[2025-12-01 17:39:45] AUTH SERVICE: Result: success
+[2025-12-01 17:39:45] Authenticating user with email: admin@example.com
+[2025-12-01 17:39:45] Result: success
+[2025-12-01 17:39:48] Viewing users
+[2025-12-01 17:39:48] Viewing users
+[2025-12-01 17:40:00] Adding product to cart
+[2025-12-01 17:40:00] Identified session: 6994ddf484c6d8127f7262e2316aa269
+[2025-12-01 17:40:00] Finding cart item: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49
+[2025-12-01 17:40:00] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:40:00] Found cart item: false
+[2025-12-01 17:40:00] Adding product to cart: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49, Quantity: 1
+[2025-12-01 17:40:00] Adding new cart item
+[2025-12-01 17:40:00] Adding product to cart: Product ID: 49
+[2025-12-01 17:40:00] SESSION Cart count: 1
+[2025-12-01 17:40:00] Adding product to cart
+[2025-12-01 17:40:00] Identified session: 6994ddf484c6d8127f7262e2316aa269
+[2025-12-01 17:40:00] Finding cart item: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49
+[2025-12-01 17:40:00] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:40:00] Found cart item: {"id":53,"session_id":"6994ddf484c6d8127f7262e2316aa269","product_id":49,"quantity":1,"added_at":"2025-12-01 22:40:00"}
+[2025-12-01 17:40:00] Adding product to cart: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49, Quantity: 1
+[2025-12-01 17:40:00] Updating existing cart item
+[2025-12-01 17:40:00] Adding product to cart: Product ID: 49
+[2025-12-01 17:40:00] SESSION Cart count: 1
+[2025-12-01 17:40:00] Adding product to cart
+[2025-12-01 17:40:00] Identified session: 6994ddf484c6d8127f7262e2316aa269
+[2025-12-01 17:40:00] Finding cart item: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49
+[2025-12-01 17:40:00] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:40:00] Found cart item: {"id":53,"session_id":"6994ddf484c6d8127f7262e2316aa269","product_id":49,"quantity":2,"added_at":"2025-12-01 22:40:00"}
+[2025-12-01 17:40:00] Adding product to cart: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49, Quantity: 1
+[2025-12-01 17:40:00] Updating existing cart item
+[2025-12-01 17:40:00] Adding product to cart: Product ID: 49
+[2025-12-01 17:40:00] SESSION Cart count: 1
+[2025-12-01 17:40:00] Adding product to cart
+[2025-12-01 17:40:00] Identified session: 6994ddf484c6d8127f7262e2316aa269
+[2025-12-01 17:40:00] Finding cart item: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49
+[2025-12-01 17:40:00] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:40:00] Found cart item: {"id":53,"session_id":"6994ddf484c6d8127f7262e2316aa269","product_id":49,"quantity":3,"added_at":"2025-12-01 22:40:00"}
+[2025-12-01 17:40:00] Adding product to cart: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49, Quantity: 1
+[2025-12-01 17:40:00] Updating existing cart item
+[2025-12-01 17:40:00] Adding product to cart: Product ID: 49
+[2025-12-01 17:40:00] SESSION Cart count: 1
+[2025-12-01 17:40:01] Adding product to cart
+[2025-12-01 17:40:01] Identified session: 6994ddf484c6d8127f7262e2316aa269
+[2025-12-01 17:40:01] Finding cart item: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49
+[2025-12-01 17:40:01] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:40:01] Found cart item: {"id":53,"session_id":"6994ddf484c6d8127f7262e2316aa269","product_id":49,"quantity":4,"added_at":"2025-12-01 22:40:00"}
+[2025-12-01 17:40:01] Adding product to cart: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49, Quantity: 1
+[2025-12-01 17:40:01] Updating existing cart item
+[2025-12-01 17:40:01] Adding product to cart: Product ID: 49
+[2025-12-01 17:40:01] SESSION Cart count: 1
+[2025-12-01 17:40:01] Adding product to cart
+[2025-12-01 17:40:01] Identified session: 6994ddf484c6d8127f7262e2316aa269
+[2025-12-01 17:40:01] Finding cart item: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49
+[2025-12-01 17:40:01] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:40:01] Found cart item: {"id":53,"session_id":"6994ddf484c6d8127f7262e2316aa269","product_id":49,"quantity":5,"added_at":"2025-12-01 22:40:00"}
+[2025-12-01 17:40:01] Adding product to cart: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49, Quantity: 1
+[2025-12-01 17:40:01] Updating existing cart item
+[2025-12-01 17:40:01] Adding product to cart: Product ID: 49
+[2025-12-01 17:40:01] SESSION Cart count: 1
+[2025-12-01 17:40:01] Adding product to cart
+[2025-12-01 17:40:01] Identified session: 6994ddf484c6d8127f7262e2316aa269
+[2025-12-01 17:40:01] Finding cart item: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49
+[2025-12-01 17:40:01] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:40:01] Found cart item: {"id":53,"session_id":"6994ddf484c6d8127f7262e2316aa269","product_id":49,"quantity":6,"added_at":"2025-12-01 22:40:00"}
+[2025-12-01 17:40:01] Adding product to cart: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49, Quantity: 1
+[2025-12-01 17:40:01] Updating existing cart item
+[2025-12-01 17:40:01] Adding product to cart: Product ID: 49
+[2025-12-01 17:40:01] SESSION Cart count: 1
+[2025-12-01 17:40:01] Adding product to cart
+[2025-12-01 17:40:01] Identified session: 6994ddf484c6d8127f7262e2316aa269
+[2025-12-01 17:40:01] Finding cart item: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49
+[2025-12-01 17:40:01] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:40:01] Found cart item: {"id":53,"session_id":"6994ddf484c6d8127f7262e2316aa269","product_id":49,"quantity":7,"added_at":"2025-12-01 22:40:00"}
+[2025-12-01 17:40:01] Adding product to cart: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49, Quantity: 1
+[2025-12-01 17:40:01] Updating existing cart item
+[2025-12-01 17:40:01] Adding product to cart: Product ID: 49
+[2025-12-01 17:40:01] SESSION Cart count: 1
+[2025-12-01 17:40:01] Adding product to cart
+[2025-12-01 17:40:01] Identified session: 6994ddf484c6d8127f7262e2316aa269
+[2025-12-01 17:40:01] Finding cart item: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49
+[2025-12-01 17:40:01] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:40:01] Found cart item: {"id":53,"session_id":"6994ddf484c6d8127f7262e2316aa269","product_id":49,"quantity":8,"added_at":"2025-12-01 22:40:00"}
+[2025-12-01 17:40:01] Adding product to cart: User ID: 1, Session ID: 6994ddf484c6d8127f7262e2316aa269, Product ID: 49, Quantity: 1
+[2025-12-01 17:40:01] Updating existing cart item
+[2025-12-01 17:40:01] Adding product to cart: Product ID: 49
+[2025-12-01 17:40:01] SESSION Cart count: 1
+[2025-12-01 17:40:03] Session ID: 6994ddf484c6d8127f7262e2316aa269 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:40:03] Session ID: 6994ddf484c6d8127f7262e2316aa269 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:40:21] Session ID: 6994ddf484c6d8127f7262e2316aa269 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:40:35] Creating order
+[2025-12-01 17:40:35] Order total: 8991
+[2025-12-01 17:43:11] Found user with email: admin@example.com
+[2025-12-01 17:43:11] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-01 17:43:11] AUTH SERVICE: Plain password length: 11
+[2025-12-01 17:43:11] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-01 17:43:11] AUTH SERVICE: Hashed password length: 60
+[2025-12-01 17:43:11] AUTH SERVICE: password_verify result: TRUE
+[2025-12-01 17:43:11] AUTH SERVICE: Result: success
+[2025-12-01 17:43:11] Authenticating user with email: admin@example.com
+[2025-12-01 17:43:11] Result: success
+[2025-12-01 17:43:22] Viewing users
+[2025-12-01 17:43:22] Viewing users
+[2025-12-01 17:43:32] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:43:32] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:44:08] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:44:08] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:44:14] Adding product to cart
+[2025-12-01 17:44:14] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:44:14] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:44:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:44:14] Found cart item: false
+[2025-12-01 17:44:14] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49, Quantity: 1
+[2025-12-01 17:44:14] Adding new cart item
+[2025-12-01 17:44:14] Adding product to cart: Product ID: 49
+[2025-12-01 17:44:14] SESSION Cart count: 1
+[2025-12-01 17:46:28] Adding product to cart
+[2025-12-01 17:46:28] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:46:28] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:46:28] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:46:28] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":1,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:46:28] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49, Quantity: 1
+[2025-12-01 17:46:28] Updating existing cart item
+[2025-12-01 17:46:28] Adding product to cart: Product ID: 49
+[2025-12-01 17:46:28] SESSION Cart count: 1
+[2025-12-01 17:50:05] Adding product to cart
+[2025-12-01 17:50:05] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:05] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:05] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:05] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:05] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:05] SESSION Cart count: 1
+[2025-12-01 17:50:06] Adding product to cart
+[2025-12-01 17:50:06] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:06] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:06] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:06] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:06] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:06] SESSION Cart count: 1
+[2025-12-01 17:50:06] Adding product to cart
+[2025-12-01 17:50:06] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:06] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:06] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:06] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:06] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:06] SESSION Cart count: 1
+[2025-12-01 17:50:07] Adding product to cart
+[2025-12-01 17:50:07] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:07] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:07] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:07] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:07] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:07] SESSION Cart count: 1
+[2025-12-01 17:50:07] Adding product to cart
+[2025-12-01 17:50:07] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:07] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:07] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:07] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:07] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:07] SESSION Cart count: 1
+[2025-12-01 17:50:07] Adding product to cart
+[2025-12-01 17:50:07] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:07] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:07] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:07] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:07] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:07] SESSION Cart count: 1
+[2025-12-01 17:50:07] Adding product to cart
+[2025-12-01 17:50:07] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:07] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:07] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:07] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:07] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:07] SESSION Cart count: 1
+[2025-12-01 17:50:07] Adding product to cart
+[2025-12-01 17:50:07] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:07] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:07] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:07] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:07] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:07] SESSION Cart count: 1
+[2025-12-01 17:50:07] Adding product to cart
+[2025-12-01 17:50:07] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:07] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:07] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:07] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:07] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:07] SESSION Cart count: 1
+[2025-12-01 17:50:08] Adding product to cart
+[2025-12-01 17:50:08] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:08] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:08] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:08] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:08] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:08] SESSION Cart count: 1
+[2025-12-01 17:50:08] Adding product to cart
+[2025-12-01 17:50:08] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:08] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:08] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:08] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:08] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:08] SESSION Cart count: 1
+[2025-12-01 17:50:08] Adding product to cart
+[2025-12-01 17:50:08] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:08] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:08] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:08] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:08] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:08] SESSION Cart count: 1
+[2025-12-01 17:50:08] Adding product to cart
+[2025-12-01 17:50:08] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:08] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:08] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:08] Found cart item: {"id":54,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:44:14"}
+[2025-12-01 17:50:08] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:08] SESSION Cart count: 1
+[2025-12-01 17:50:25] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:50:25] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:50:30] Removing item from cart: Item ID: 54
+[2025-12-01 17:50:30] Deleting cart item: 54
+[2025-12-01 17:50:30] SESSION Cart count: 0
+[2025-12-01 17:50:42] Adding product to cart
+[2025-12-01 17:50:42] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:42] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:42] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:42] Found cart item: false
+[2025-12-01 17:50:42] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49, Quantity: 1
+[2025-12-01 17:50:42] Adding new cart item
+[2025-12-01 17:50:42] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:42] SESSION Cart count: 1
+[2025-12-01 17:50:42] Adding product to cart
+[2025-12-01 17:50:42] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:42] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:42] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:42] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":1,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:42] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49, Quantity: 1
+[2025-12-01 17:50:42] Updating existing cart item
+[2025-12-01 17:50:42] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:42] SESSION Cart count: 1
+[2025-12-01 17:50:42] Adding product to cart
+[2025-12-01 17:50:42] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:42] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:42] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:42] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:42] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:42] SESSION Cart count: 1
+[2025-12-01 17:50:42] Adding product to cart
+[2025-12-01 17:50:42] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:42] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:42] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:42] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:42] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:42] SESSION Cart count: 1
+[2025-12-01 17:50:42] Adding product to cart
+[2025-12-01 17:50:42] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:42] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:42] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:42] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:42] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:42] SESSION Cart count: 1
+[2025-12-01 17:50:43] Adding product to cart
+[2025-12-01 17:50:43] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:43] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:43] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:43] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:43] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:43] SESSION Cart count: 1
+[2025-12-01 17:50:43] Adding product to cart
+[2025-12-01 17:50:43] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:43] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:43] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:43] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:43] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:43] SESSION Cart count: 1
+[2025-12-01 17:50:43] Adding product to cart
+[2025-12-01 17:50:43] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:43] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:43] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:43] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:43] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:43] SESSION Cart count: 1
+[2025-12-01 17:50:43] Adding product to cart
+[2025-12-01 17:50:43] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:43] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:43] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:43] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:43] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:43] SESSION Cart count: 1
+[2025-12-01 17:50:43] Adding product to cart
+[2025-12-01 17:50:43] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:43] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:43] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:43] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:43] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:43] SESSION Cart count: 1
+[2025-12-01 17:50:43] Adding product to cart
+[2025-12-01 17:50:43] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:43] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:43] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:43] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:43] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:43] SESSION Cart count: 1
+[2025-12-01 17:50:44] Adding product to cart
+[2025-12-01 17:50:44] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:50:44] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:50:44] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:50:44] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:50:44] Adding product to cart: Product ID: 49
+[2025-12-01 17:50:44] SESSION Cart count: 1
+[2025-12-01 17:51:12] Adding product to cart
+[2025-12-01 17:51:12] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:12] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:12] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:12] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:12] Adding product to cart
+[2025-12-01 17:51:12] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:12] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:12] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:12] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:12] Adding product to cart
+[2025-12-01 17:51:12] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:12] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:12] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:12] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:12] Adding product to cart
+[2025-12-01 17:51:12] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:12] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:12] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:12] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:12] Adding product to cart
+[2025-12-01 17:51:12] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:12] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:12] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:12] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:13] Adding product to cart
+[2025-12-01 17:51:13] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:13] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:13] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:13] Adding product to cart
+[2025-12-01 17:51:13] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:13] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:13] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:13] Adding product to cart
+[2025-12-01 17:51:13] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:13] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:13] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:13] Adding product to cart
+[2025-12-01 17:51:13] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:13] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:13] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:19] Adding product to cart
+[2025-12-01 17:51:19] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:19] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:19] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:19] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:19] Adding product to cart
+[2025-12-01 17:51:19] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:19] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:19] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:19] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:19] Adding product to cart
+[2025-12-01 17:51:19] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:19] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:19] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:19] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:19] Adding product to cart
+[2025-12-01 17:51:19] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:19] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:19] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:19] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:19] Adding product to cart
+[2025-12-01 17:51:19] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:19] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:19] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:19] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:51:20] Adding product to cart
+[2025-12-01 17:51:20] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:51:20] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:51:20] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:51:20] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:52:05] Adding product to cart
+[2025-12-01 17:52:05] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:05] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:05] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:05] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:52:06] Adding product to cart
+[2025-12-01 17:52:06] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:06] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:06] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:06] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:52:06] Adding product to cart
+[2025-12-01 17:52:06] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:06] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:06] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:06] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:52:06] Adding product to cart
+[2025-12-01 17:52:06] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:06] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:06] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:06] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:52:06] Adding product to cart
+[2025-12-01 17:52:06] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:06] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:06] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:06] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:52:06] Adding product to cart
+[2025-12-01 17:52:06] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:06] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:06] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:06] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:52:06] Adding product to cart
+[2025-12-01 17:52:06] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:06] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:06] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:06] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:52:07] Adding product to cart
+[2025-12-01 17:52:07] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:07] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:07] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:07] Found cart item: {"id":55,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:50:42"}
+[2025-12-01 17:52:15] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:52:15] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:52:18] Removing item from cart: Item ID: 55
+[2025-12-01 17:52:18] Deleting cart item: 55
+[2025-12-01 17:52:18] SESSION Cart count: 0
+[2025-12-01 17:52:21] Adding product to cart
+[2025-12-01 17:52:21] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:21] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:21] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:21] Found cart item: false
+[2025-12-01 17:52:21] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49, Quantity: 1
+[2025-12-01 17:52:21] Adding new cart item
+[2025-12-01 17:52:21] Adding product to cart: Product ID: 49
+[2025-12-01 17:52:21] SESSION Cart count: 1
+[2025-12-01 17:52:22] Adding product to cart
+[2025-12-01 17:52:22] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:22] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:22] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:22] Found cart item: {"id":56,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":1,"added_at":"2025-12-01 22:52:21"}
+[2025-12-01 17:52:22] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49, Quantity: 1
+[2025-12-01 17:52:22] Updating existing cart item
+[2025-12-01 17:52:22] Adding product to cart: Product ID: 49
+[2025-12-01 17:52:22] SESSION Cart count: 1
+[2025-12-01 17:52:23] Adding product to cart
+[2025-12-01 17:52:23] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:23] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:23] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:23] Found cart item: {"id":56,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:52:21"}
+[2025-12-01 17:52:24] Adding product to cart
+[2025-12-01 17:52:24] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:24] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:24] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:24] Found cart item: {"id":56,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:52:21"}
+[2025-12-01 17:52:24] Adding product to cart
+[2025-12-01 17:52:24] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 17:52:24] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 17:52:24] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 17:52:24] Found cart item: {"id":56,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 22:52:21"}
+[2025-12-01 17:52:27] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:52:27] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 17:52:31] Removing item from cart: Item ID: 56
+[2025-12-01 17:52:31] Deleting cart item: 56
+[2025-12-01 17:52:31] SESSION Cart count: 0
+[2025-12-01 18:22:13] No route found for GET /admin/order/14
+[2025-12-01 18:24:41] Product: MacBook Pro was viewed.
+[2025-12-01 18:24:41] Product: MacBook Pro was viewed.
+[2025-12-01 18:24:43] Adding product to cart
+[2025-12-01 18:24:43] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 18:24:43] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 18:24:43] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 18:24:43] Found cart item: false
+[2025-12-01 18:24:43] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49, Quantity: 1
+[2025-12-01 18:24:43] Adding new cart item
+[2025-12-01 18:24:43] Adding product to cart: Product ID: 49
+[2025-12-01 18:24:43] SESSION Cart count: 1
+[2025-12-01 18:24:44] Product: MacBook Pro was viewed.
+[2025-12-01 18:24:44] Product: MacBook Pro was viewed.
+[2025-12-01 18:24:45] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 18:24:45] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 18:24:47] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 18:47:55] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+        )
+
+    [product_name] => MacBook Pro
+    [product_price] => 999
+)
+
+[2025-12-01 18:47:55] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+        )
+
+    [product_name] => MacBook Pro
+    [product_price] => 999
+)
+
+[2025-12-01 18:51:12] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:51:12] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:51:27] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:51:27] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:51:33] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:51:33] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:52:43] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:52:43] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:53:23] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:53:23] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:53:24] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:53:24] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:53:51] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:53:51] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:54:38] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:54:38] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:54:45] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:54:45] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:54:59] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:54:59] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:55:12] Adding product to cart
+[2025-12-01 18:55:12] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 18:55:12] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 18:55:12] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 18:55:12] Found cart item: {"id":57,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":1,"added_at":"2025-12-01 23:24:43"}
+[2025-12-01 18:55:12] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49, Quantity: 1
+[2025-12-01 18:55:12] Updating existing cart item
+[2025-12-01 18:55:12] Adding product to cart: Product ID: 49
+[2025-12-01 18:55:12] SESSION Cart count: 1
+[2025-12-01 18:55:13] Adding product to cart
+[2025-12-01 18:55:13] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 18:55:13] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 18:55:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 18:55:13] Found cart item: {"id":57,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 23:24:43"}
+[2025-12-01 18:55:13] Adding product to cart
+[2025-12-01 18:55:13] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 18:55:13] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 18:55:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 18:55:13] Found cart item: {"id":57,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 23:24:43"}
+[2025-12-01 18:55:13] Adding product to cart
+[2025-12-01 18:55:13] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 18:55:13] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 49
+[2025-12-01 18:55:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 18:55:13] Found cart item: {"id":57,"session_id":"eb7a2e1515459563729f3b8094f54044","product_id":49,"quantity":2,"added_at":"2025-12-01 23:24:43"}
+[2025-12-01 18:56:26] Product: iPhone 13 was viewed.
+[2025-12-01 18:56:26] Product: iPhone 13 was viewed.
+[2025-12-01 18:56:28] Adding product to cart
+[2025-12-01 18:56:28] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 18:56:28] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 50
+[2025-12-01 18:56:28] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 18:56:28] Found cart item: false
+[2025-12-01 18:56:28] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 50, Quantity: 1
+[2025-12-01 18:56:28] Adding new cart item
+[2025-12-01 18:56:28] Adding product to cart: Product ID: 50
+[2025-12-01 18:56:28] SESSION Cart count: 2
+[2025-12-01 18:56:29] Product: iPhone 13 was viewed.
+[2025-12-01 18:56:29] Product: iPhone 13 was viewed.
+[2025-12-01 18:56:30] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 18:56:30] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 18:56:32] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 18:56:44] Creating order
+[2025-12-01 18:56:44] Order total: 2775
+[2025-12-01 18:56:52] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:56:52] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:57:09] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:57:09] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:57:30] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:57:30] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                )
+
+        )
+
+)
+
+[2025-12-01 18:58:36] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-01 18:58:36] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-01 18:58:58] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+        )
+
+)
+
+[2025-12-01 18:58:58] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+        )
+
+)
+
+[2025-12-01 18:59:01] Order details: App\Models\Order Object
+(
+    [id] => 13
+    [user_id] => 1
+    [total_price] => 1084.32
+    [status] => pending
+    [order_date] => 2025-12-01 20:13:24
+    [customer_name] => Syed Muhammad Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 9
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 8
+                    [order_id] => 13
+                    [product_id] => 49
+                    [quantity] => 1
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+        )
+
+)
+
+[2025-12-01 18:59:01] Order details: App\Models\Order Object
+(
+    [id] => 13
+    [user_id] => 1
+    [total_price] => 1084.32
+    [status] => pending
+    [order_date] => 2025-12-01 20:13:24
+    [customer_name] => Syed Muhammad Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 9
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 8
+                    [order_id] => 13
+                    [product_id] => 49
+                    [quantity] => 1
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+        )
+
+)
+
+[2025-12-01 18:59:10] Viewing users
+[2025-12-01 18:59:10] Viewing users
+[2025-12-01 18:59:17] Viewing users
+[2025-12-01 18:59:17] Viewing users
+[2025-12-01 18:59:19] Viewing users
+[2025-12-01 18:59:19] Viewing users
+[2025-12-01 18:59:23] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-01 18:59:23] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+

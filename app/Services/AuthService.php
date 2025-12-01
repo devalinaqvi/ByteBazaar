@@ -20,6 +20,7 @@ class AuthService {
         $_SESSION['user_id'] = $user->id;
         $_SESSION['user_name'] = $user->name;
         $_SESSION['is_admin'] = $user->is_admin;
+        $_SESSION['logged_in'] = true;
         session_regenerate_id(true);  // Security: prevent fixation
     }
 

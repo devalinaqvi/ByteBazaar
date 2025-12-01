@@ -11,6 +11,7 @@ $router->post('/admin/products/create', 'AdminController@storeProduct', 'admin_s
 $router->get('/admin/products/[i:id]/edit', 'AdminController@editProduct', 'admin_edit_product');
 $router->post('/admin/products/[i:id]', 'AdminController@updateProduct', 'admin_update_product');
 $router->post('/admin/products/[i:id]/delete', 'AdminController@deleteProduct', 'admin_delete_product');
+$router->get('/admin/users', 'AdminController@viewUsers', 'admin_view_user');
 
 // Categories CRUD
 $router->get('/admin/categories', 'CategoryController@index', 'admin_categories');
@@ -22,6 +23,6 @@ $router->post('/admin/categories/[i:id]/delete', 'CategoryController@delete', 'a
 
 // Orders
 $router->get('/admin/orders', 'AdminController@orders', 'admin_orders');
-$router->get('/admin/orders/[i:id]', 'AdminController@showOrder', 'admin_order_detail');
-$router->post('/admin/orders/[i:id]/update-status', 'AdminController@updateStatus', 'admin_update_order_status');
+$router->get('/admin/order/[i:id]', 'OrderController@showOrder', 'admin_order_detail');
+$router->post('/admin/order/[i:id]/update-status', 'OrderController@updateStatus', 'admin_update_order_status');
 ?>

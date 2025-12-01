@@ -21,9 +21,11 @@ class ProductController extends BaseController
     public function index(): void
     {
         $list = $this->products->list();
+        $categories = $this->products->categories();
 
         $this->render('pages/public_products', [
             'products' => $list,
+            'categories' => $categories,
             'title' => 'Manage Products',
             'admin_nav_active' => 'products'
         ]);

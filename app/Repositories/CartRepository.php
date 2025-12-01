@@ -25,6 +25,39 @@ class CartRepository
             $rows
         );
     }
+    public function getOrderItems(?int $userId, string $sessionId): array
+    {
+        $sql = "
+            SELECT 
+                c.*, 
+                p.name AS product_name,
+                p.price AS product_price,
+                p.image_url AS product_image,
+                p.description AS product_description
+            FROM cart_items c
+            INNER JOIN products p ON p.id = c.product_id
+            WHERE 
+            c.session_id = ?";
+            $params = [$sessionId];
+
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute($params);
+        $rows = $stmt->fetchAll();
+
+        return array_map(function ($row) {
+            $item = CartItemFactory::fromArray($row);
+
+            $item->product = (object)[
+                'name'        => $row['product_name'],
+                'price'       => $row['product_price'],
+                'image'       => $row['product_image'],
+                'description' => $row['product_description'],
+            ];
+
+            return $item;
+        }, $rows);
+    }
+
 
     public function findItem(?int $userId, string $sessionId, int $productId)
     {
@@ -74,6 +107,7 @@ class CartRepository
 
     public function deleteItem(int $id): bool
     {
+        logMessage('Deleting cart item: ' . $id);
         return $this->db->prepare("DELETE FROM cart_items WHERE id = ?")->execute([$id]);
     }
 
@@ -91,5 +125,24 @@ class CartRepository
         ");
 
         $stmt->execute([$userId, $sessionId]);
+    }
+
+    public function countItems($sessionId): int
+    {
+        $stmt = $this->db->prepare("
+            SELECT COUNT(*) as count FROM cart_items WHERE session_id = ?
+        ");
+        $stmt->execute([$sessionId]);
+        $result = $stmt->fetch();
+        return $result['count'] ?? 0;
+    }
+    public function countItemsByProduct(int $productId): int
+    {
+        $stmt = $this->db->prepare("
+            SELECT SUM(quantity) as total_quantity FROM cart_items WHERE product_id = ?
+        ");
+        $stmt->execute([$productId]);
+        $result = $stmt->fetch();
+        return $result['total_quantity'] ?? 0;
     }
 }

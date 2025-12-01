@@ -23,7 +23,7 @@
                     <div class="h-48 w-full bg-white"></div>
                 </div>
                 <div class="relative py-32">
-                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Byte Bazaar</h1>
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Computer Zone</h1>
                     <div class="mt-4 sm:mt-6">
                         <a href="<?php echo route('products') ?>" class="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 font-medium text-white hover:bg-indigo-700">Shop</a>
                     </div>

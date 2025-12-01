@@ -41,7 +41,7 @@ CREATE TABLE cart_items (
 
 CREATE TABLE orders (
                         id INT AUTO_INCREMENT PRIMARY KEY,
-                        user_id INT NOT NULL,
+                        user_id INT DEFAULT NULL,
                         total_price DECIMAL(10,2) NOT NULL,
                         status VARCHAR(50) DEFAULT 'pending',
                         order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

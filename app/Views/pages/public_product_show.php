@@ -31,7 +31,7 @@
                 <div class="flex items-center">
                     <p class="text-lg text-gray-900 sm:text-xl">$<?= $product->price ?></p>
 
-                    <div class="ml-4 border-l border-gray-300 pl-4">
+                    <div class="hidden ml-4 border-l border-gray-300 pl-4">
                         <h2 class="sr-only">Reviews</h2>
                         <div class="flex items-center">
                             <div>
@@ -83,7 +83,7 @@
             <section aria-labelledby="options-heading">
                 <h2 id="options-heading" class="sr-only">Product options</h2>
 
-                <form id="addToCartForm-<?php echo $product->id ?>" class="grid grid-cols-1 gap-y-6" method="POST">
+                <form id="addToCartForm" class="grid grid-cols-1 gap-y-6" method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $product->id ?>">
                     <div class="mt-3">
                         <button type="submit" data-id="<?php echo $product->id ?>" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 focus:outline-hidden cursor-pointer">Add to bag</button>
@@ -131,7 +131,7 @@
     </section>
 </div>
 
-<section aria-labelledby="reviews-heading" class="bg-white">
+<section aria-labelledby="reviews-heading" class="hidden bg-white">
     <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8 lg:py-32">
         <div class="lg:col-span-4">
             <h2 id="reviews-heading" class="text-2xl font-bold tracking-tight text-gray-900">Customer Reviews</h2>

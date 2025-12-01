@@ -109,10 +109,13 @@
 
                 <div class="space-y-6 border-t border-gray-200 px-4 py-6">
                     <div class="flow-root">
-                        <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Create an account</a>
+                        <a href="<?php echo route('register') ?>" class="-m-2 block p-2 font-medium text-gray-900">Create an account</a>
                     </div>
                     <div class="flow-root">
-                        <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Sign in</a>
+                        <?php if($_SESSION['is_admin'] == 1) : ?>
+                            <a href="<?php echo route('admin') ?>" class="-m-2 block p-2 font-medium text-gray-900">Dashboard</a>
+                        <?php endif; ?>
+                        <a href="<?php echo route('login') ?>" class="-m-2 block p-2 font-medium text-gray-900">Sign in</a>
                     </div>
                 </div>
 
@@ -121,11 +124,7 @@
                     <form>
                         <div class="-ml-2 inline-grid grid-cols-1">
                             <select id="mobile-currency" name="currency" aria-label="Currency" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-0.5 pr-7 pl-2 text-base font-medium text-gray-700 group-hover:text-gray-800 focus:outline-2 sm:text-sm/6">
-                                <option>CAD</option>
-                                <option>USD</option>
-                                <option>AUD</option>
-                                <option>EUR</option>
-                                <option>GBP</option>
+                                <option value="USD">USD</option>
                             </select>
                             <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-1 size-5 self-center justify-self-end fill-gray-500">
                                 <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -156,8 +155,16 @@
                 </form>
 
                 <div class="flex items-center space-x-6">
-                    <a href="<?php echo route('login') ?>" class="text-sm font-medium text-white hover:text-gray-100">Sign in</a>
-                    <a href="<?php echo route('register') ?>" class="text-sm font-medium text-white hover:text-gray-100">Create an account</a>
+                    <?php if(isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) : ?>
+                        <a href="<?php echo route('admin') ?>" class="text-sm font-medium text-white hover:text-gray-100">Dashboard</a>
+                    <?php endif; ?>
+                    <?php if(isset($_SESSION['user_id'])) : ?>
+                        <a href="<?php echo route('logout') ?>" class="text-sm font-medium text-white hover:text-gray-100">Sign out</a>
+                    <?php endif; ?>
+                    <?php if(!isset($_SESSION['user_id'])) : ?>
+                        <a href="<?php echo route('login') ?>" class="text-sm font-medium text-white hover:text-gray-100">Sign in</a>
+                        <a href="<?php echo route('register') ?>" class="text-sm font-medium text-white hover:text-gray-100">Create an account</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -210,7 +217,7 @@
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 shrink-0 text-gray-400 group-hover:text-gray-500">
                                         <path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                    <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                                    <span id="cart-count" class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800"><?php echo $_SESSION['cart_count'] ?? 0; ?></span>
                                     <span class="sr-only">items in cart, view bag</span>
                                 </a>
                             </div>
