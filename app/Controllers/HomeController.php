@@ -20,6 +20,6 @@ class HomeController extends BaseController
     public function index(): void {
         $category = $this->categoryService->list();
         $products = $this->products->list();
-        $this->render('pages/home', ['title' => 'Welcome to Byte Bazaar', 'categories' => $category, 'products' => $products]);
+        $this->render('pages/home', ['title' => 'Welcome to Computer Zone', 'categories' => $category, 'products' => $products]);
     }
 }

@@ -56,7 +56,10 @@ class AuthController extends BaseController
             return;
         }
         $this->authService->login($authenticatedUser);
-        $this->redirect('/admin');
+        if($authenticatedUser->is_admin)
+            $this->redirect('/admin');
+        else
+            $this->redirect('/user/dashboard');
     }
     public function resetPassword(): void {}
 

@@ -18,27 +18,35 @@
                     </svg>
                 </button>
 
-                <div class="hidden">
-                    <form class="divide-y divide-gray-200">
+                <div class="flex">
+                    <form method="GET" class="divide-y divide-gray-200">
                         <div class="py-10 first:pt-0 last:pb-0">
                             <fieldset>
                                 <legend class="block text-sm font-medium text-gray-900">Category</legend>
                                 <div class="space-y-3 pt-6">
                                     <?php if(isset($categories) && !empty($categories)) : ?>
-                                    <?php foreach($categories as $category) : ?>
-                                    <div class="flex gap-3">
-                                        <div class="flex h-5 shrink-0 items-center">
-                                            <div class="group grid size-4 grid-cols-1">
-                                                <input id="category-0" type="checkbox" name="category[]" value="new-arrivals" class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto" />
-                                                <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                    <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                </svg>
+                                        <?php foreach($categories as $category) : ?>
+                                            <div class="flex items-center gap-3">
+                                                <div class="flex h-5 shrink-0 items-center">
+                                                    <div class="group grid size-4 grid-cols-1">
+                                                        <input
+                                                                id="category-<?= $category->id ?>"
+                                                                type="checkbox"
+                                                                name="categories[]"
+                                                                value="<?= $category->id ?>"
+                                                                <?= in_array($category->id, $selected ?? []) ? 'checked' : '' ?>
+                                                        />
+                                                        <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 size-3.5 stroke-white">
+                                                            <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+
+                                                <label for="category-<?= $category->id ?>" class="text-sm text-gray-600">
+                                                    <?= $category->name ?>
+                                                </label>
                                             </div>
-                                        </div>
-                                        <label for="category-0" class="text-sm text-gray-600"><?= $category->name ?></label>
-                                    </div>
-                                    <?php endforeach; ?>
+                                        <?php endforeach; ?>
                                     <?php endif; ?>
                                 </div>
                             </fieldset>
@@ -50,7 +58,7 @@
                 </div>
             </aside>
 
-            <section aria-labelledby="product-heading" class="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-4">
+            <section aria-labelledby="product-heading" class="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-3">
                 <h2 id="product-heading" class="sr-only">Products</h2>
 
                 <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">

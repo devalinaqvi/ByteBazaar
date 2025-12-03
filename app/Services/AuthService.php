@@ -26,7 +26,6 @@ class AuthService {
     }
 
     public function register(array $data): void {
-        $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
         logMessage("AUTH SERVICE: Registering user with email: {$data['email']}");
         $userId = $this->userRepository->create($data['name'], $data['email'], $data['password']);
         $user = $this->userRepository->findById($userId);

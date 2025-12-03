@@ -20,16 +20,19 @@ class ProductController extends BaseController
 
     public function index(): void
     {
-        $list = $this->products->list();
+        $categoryFilters = $this->request->query('categories') ?? [];
+
+        $list = $this->products->listFiltered($categoryFilters);
         $categories = $this->products->categories();
 
         $this->render('pages/public_products', [
-            'products' => $list,
+            'products'   => $list,
             'categories' => $categories,
-            'title' => 'Manage Products',
-            'admin_nav_active' => 'products'
+            'selected'   => $categoryFilters,
+            'title'      => 'Products'
         ]);
     }
+
 
     public function show(string $slug): void
     {

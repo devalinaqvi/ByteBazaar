@@ -16,6 +16,15 @@ class ProductService
     {
         return $this->products->getAll();
     }
+    public function listFiltered(array $categoryIds = []): array
+    {
+        if (empty($categoryIds)) {
+            return $this->products->getAll();
+        }
+
+        return $this->products->getByCategoryIds($categoryIds);
+    }
+
 
     public function categories()
     {

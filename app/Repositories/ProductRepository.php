@@ -34,6 +34,33 @@ class ProductRepository
         return $row ? ProductFactory::fromArray($row) : null;
     }
 
+    public function getByCategoryIds(array $categoryIds): array
+    {
+        if (empty($categoryIds)) {
+            return $this->getAll();
+        }
+
+        $sql = "SELECT * FROM products WHERE isDeleted = 0";
+
+        $params = [];
+
+        // If filters selected, filter categories
+        if (!empty($categoryIds)) {
+            // Create placeholders (?, ?, ?)
+            $placeholders = implode(',', array_fill(0, count($categoryIds), '?'));
+            $sql .= " AND category_id IN ($placeholders)";
+            $params = array_merge($params, $categoryIds);
+        }
+
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute($params);
+
+        return array_map(
+            fn($row) => ProductFactory::fromArray($row),
+            $stmt->fetchAll()
+        );
+    }
+
     public function findBySlug(string $slug): ?Product
     {
         $stmt = $this->db->prepare(
