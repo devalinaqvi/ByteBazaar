@@ -15,105 +15,17 @@
                 </div>
 
                 <!-- Links -->
-                <el-tab-group class="mt-2 block">
-                    <div class="border-b border-gray-200">
-                        <el-tab-list class="-mb-px flex space-x-8 px-4">
-                            <button class="flex-1 border-b-2 border-transparent px-1 py-4 text-base font-medium whitespace-nowrap text-gray-900 aria-selected:border-indigo-600 aria-selected:text-indigo-600">Women</button>
-                            <button class="flex-1 border-b-2 border-transparent px-1 py-4 text-base font-medium whitespace-nowrap text-gray-900 aria-selected:border-indigo-600 aria-selected:text-indigo-600">Men</button>
-                        </el-tab-list>
-                    </div>
-                    <el-tab-panels>
-                        <div class="space-y-12 px-4 py-6">
-                            <div class="grid grid-cols-2 gap-x-4 gap-y-10">
-                                <div class="group relative">
-                                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-01.jpg" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                    <a href="#" class="mt-6 block text-sm font-medium text-gray-900">
-                                        <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                        New Arrivals
-                                    </a>
-                                    <p aria-hidden="true" class="mt-1 text-sm text-gray-500">Shop now</p>
-                                </div>
-                                <div class="group relative">
-                                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-02.jpg" alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                    <a href="#" class="mt-6 block text-sm font-medium text-gray-900">
-                                        <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                        Basic Tees
-                                    </a>
-                                    <p aria-hidden="true" class="mt-1 text-sm text-gray-500">Shop now</p>
-                                </div>
-                                <div class="group relative">
-                                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-03.jpg" alt="Model wearing minimalist watch with black wristband and white watch face." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                    <a href="#" class="mt-6 block text-sm font-medium text-gray-900">
-                                        <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                        Accessories
-                                    </a>
-                                    <p aria-hidden="true" class="mt-1 text-sm text-gray-500">Shop now</p>
-                                </div>
-                                <div class="group relative">
-                                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-04.jpg" alt="Model opening tan leather long wallet with credit card pockets and cash pouch." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                    <a href="#" class="mt-6 block text-sm font-medium text-gray-900">
-                                        <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                        Carry
-                                    </a>
-                                    <p aria-hidden="true" class="mt-1 text-sm text-gray-500">Shop now</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div hidden class="space-y-12 px-4 py-6">
-                            <div class="grid grid-cols-2 gap-x-4 gap-y-10">
-                                <div class="group relative">
-                                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-01.jpg" alt="Hats and sweaters on wood shelves next to various colors of t-shirts on hangers." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                    <a href="#" class="mt-6 block text-sm font-medium text-gray-900">
-                                        <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                        New Arrivals
-                                    </a>
-                                    <p aria-hidden="true" class="mt-1 text-sm text-gray-500">Shop now</p>
-                                </div>
-                                <div class="group relative">
-                                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-02.jpg" alt="Model wearing light heather gray t-shirt." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                    <a href="#" class="mt-6 block text-sm font-medium text-gray-900">
-                                        <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                        Basic Tees
-                                    </a>
-                                    <p aria-hidden="true" class="mt-1 text-sm text-gray-500">Shop now</p>
-                                </div>
-                                <div class="group relative">
-                                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-03.jpg" alt="Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                    <a href="#" class="mt-6 block text-sm font-medium text-gray-900">
-                                        <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                        Accessories
-                                    </a>
-                                    <p aria-hidden="true" class="mt-1 text-sm text-gray-500">Shop now</p>
-                                </div>
-                                <div class="group relative">
-                                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-04.jpg" alt="Model putting folded cash into slim card holder olive leather wallet with hand stitching." class="aspect-square w-full rounded-md bg-gray-100 object-cover group-hover:opacity-75" />
-                                    <a href="#" class="mt-6 block text-sm font-medium text-gray-900">
-                                        <span aria-hidden="true" class="absolute inset-0 z-10"></span>
-                                        Carry
-                                    </a>
-                                    <p aria-hidden="true" class="mt-1 text-sm text-gray-500">Shop now</p>
-                                </div>
-                            </div>
-                        </div>
-                    </el-tab-panels>
-                </el-tab-group>
-
-                <div class="space-y-6 border-t border-gray-200 px-4 py-6">
-                    <div class="flow-root">
-                        <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Company</a>
-                    </div>
-                    <div class="flow-root">
-                        <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Stores</a>
-                    </div>
-                </div>
 
                 <div class="space-y-6 border-t border-gray-200 px-4 py-6">
                     <div class="flow-root">
                         <a href="<?php echo route('register') ?>" class="-m-2 block p-2 font-medium text-gray-900">Create an account</a>
                     </div>
                     <div class="flow-root">
-                        <?php if($_SESSION['is_admin'] == 1) : ?>
+                        <?php if(isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) : ?>
                             <a href="<?php echo route('admin') ?>" class="-m-2 block p-2 font-medium text-gray-900">Dashboard</a>
+                        <?php endif; ?>
+                        <?php if(isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 0) : ?>
+                            <a href="<?php echo route('user/dashboard') ?>" class="-m-2 block p-2 font-medium text-gray-900">Dashboard</a>
                         <?php endif; ?>
                         <a href="<?php echo route('login') ?>" class="-m-2 block p-2 font-medium text-gray-900">Sign in</a>
                     </div>
@@ -158,6 +70,9 @@
                     <?php if(isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) : ?>
                         <a href="<?php echo route('admin') ?>" class="text-sm font-medium text-white hover:text-gray-100">Dashboard</a>
                     <?php endif; ?>
+                    <?php if(isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 0) : ?>
+                        <a href="<?php echo route('user/dashboard') ?>" class="text-sm font-medium text-white hover:text-gray-100">Dashboard</a>
+                    <?php endif; ?>
                     <?php if(isset($_SESSION['user_id'])) : ?>
                         <a href="<?php echo route('logout') ?>" class="text-sm font-medium text-white hover:text-gray-100">Sign out</a>
                     <?php endif; ?>
@@ -190,13 +105,6 @@
                             </svg>
                         </button>
 
-                        <!-- Search -->
-                        <a href="#" class="ml-2 p-2 text-gray-400 hover:text-gray-500">
-                            <span class="sr-only">Search</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-                                <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </a>
                     </div>
 
                     <!-- Logo (lg-) -->

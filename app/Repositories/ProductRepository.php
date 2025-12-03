@@ -47,11 +47,12 @@ class ProductRepository
 
     public function create(array $data): int
     {
+        $final = render_description($data['description'], $data);
         // Map input data to SQL placeholders
         $params = [
             ':name' => $data['name'] ?? null,
             ':slug' => $data['slug'] ?? null,
-            ':description' => $data['description'] ?? null,
+            ':description' => $final,
             ':price' => $data['price'] ?? null,
             ':stock' => $data['stock'] ?? null,
             ':category_id' => $data['category_id'] ?? null,

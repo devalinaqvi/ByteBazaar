@@ -2,9 +2,9 @@
 // config/config.php: Return array for DB + app settings
 return [
     'app' => [
-        'name' => 'Byte Bazaar',
+        'name' => 'Computer Zone',
         'debug' => true,  // Toggle errors
-        'base_url' => '/byte-bazaar'  // For links (adjust for subfolder)
+        'base_url' => '/computer-zone'  // For links (adjust for subfolder)
     ],
     'db' => [
         'host' => 'localhost',

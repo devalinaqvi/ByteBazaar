@@ -48,21 +48,21 @@
                         </div>
                     </div>
 
-                    <div class="border-t border-gray-200 px-4 py-6 sm:px-6 lg:p-8">
-                        <h4 class="sr-only">Status</h4>
-                        <p class="text-sm font-medium text-gray-900">Preparing to ship</p>
-                        <div aria-hidden="true" class="mt-6">
-                            <div class="overflow-hidden rounded-full bg-gray-200">
-                                <div style="width: calc((1 * 2 + 1) / 8 * 100%)" class="h-2 rounded-full bg-indigo-600"></div>
-                            </div>
-                            <div class="mt-6 hidden grid-cols-4 text-sm font-medium text-gray-600 sm:grid">
-                                <div class="text-indigo-600">Order placed</div>
-                                <div class="text-center text-indigo-600">Processing</div>
-                                <div class="text-center">Shipped</div>
-                                <div class="text-right">Delivered</div>
-                            </div>
-                        </div>
-                    </div>
+<!--                    <div class="border-t border-gray-200 px-4 py-6 sm:px-6 lg:p-8">-->
+<!--                        <h4 class="sr-only">Status</h4>-->
+<!--                        <p class="text-sm font-medium text-gray-900">Preparing to ship</p>-->
+<!--                        <div aria-hidden="true" class="mt-6">-->
+<!--                            <div class="overflow-hidden rounded-full bg-gray-200">-->
+<!--                                <div style="width: calc((1 * 2 + 1) / 8 * 100%)" class="h-2 rounded-full bg-indigo-600"></div>-->
+<!--                            </div>-->
+<!--                            <div class="mt-6 hidden grid-cols-4 text-sm font-medium text-gray-600 sm:grid">-->
+<!--                                <div class="text-indigo-600">Order placed</div>-->
+<!--                                <div class="text-center text-indigo-600">Processing</div>-->
+<!--                                <div class="text-center">Shipped</div>-->
+<!--                                <div class="text-right">Delivered</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
                 <?php endforeach; ?>
             </div>

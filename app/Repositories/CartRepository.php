@@ -127,7 +127,7 @@ class CartRepository
         $stmt->execute([$userId, $sessionId]);
     }
 
-    public function countItems($sessionId): int
+    public function countItems(string $sessionId): int
     {
         $stmt = $this->db->prepare("
             SELECT COUNT(*) as count FROM cart_items WHERE session_id = ?
@@ -136,12 +136,12 @@ class CartRepository
         $result = $stmt->fetch();
         return $result['count'] ?? 0;
     }
-    public function countItemsByProduct(int $productId): int
+    public function countItemsByProduct(int $productId, string $session_id): int
     {
         $stmt = $this->db->prepare("
-            SELECT SUM(quantity) as total_quantity FROM cart_items WHERE product_id = ?
+            SELECT SUM(quantity) as total_quantity FROM cart_items WHERE product_id = ? AND session_id = ?
         ");
-        $stmt->execute([$productId]);
+        $stmt->execute([$productId, $session_id]);
         $result = $stmt->fetch();
         return $result['total_quantity'] ?? 0;
     }

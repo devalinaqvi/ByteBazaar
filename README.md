@@ -49,8 +49,8 @@ project-root/
 # 🛠️ Requirements
 
 | Software        | Version       |
-| --------------- | ------------- |
-| PHP             | **8.1+**      |
+| --------------- |---------------|
+| PHP             | **8.2+**      |
 | MySQL           | **5.7 / 8.0** |
 | Composer        | **latest**    |
 | Apache or Nginx | optional      |
@@ -343,6 +343,14 @@ php migrations/seed.php
 ```bash
 composer dump-autoload
 ```
+### Upload File Size Too Large
+* Increase `upload_max_filesize` in `php.ini`
+
+### Nginx 413 Request Entity Too Large
+* Increase `client_max_body_size` in `nginx.conf`
+
+### Apache 500 Internal Server Error
+* Check Apache error logs: `sudo tail -f /var/log/apache2/error.log`
 
 ### Database connection fails
 * Check credentials in `config/config.php`
@@ -358,6 +366,9 @@ Use a different port:
 ```bash
 php -S localhost:8001 -t public/
 ```
+
+### Admin credentials not working
+* Check credentials in `migrations/seed.php`
 
 ---
 

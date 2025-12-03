@@ -15,6 +15,8 @@
                         }
                         ?>
 
+                        <?php if(isset($is_admin) && ($is_admin === true)): ?>
+
                         <a href="<?php echo route('admin') ?>"
                            class="rounded-md px-3 py-2 text-sm font-medium <?php echo isActive('/admin') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white' ?>">
                             Dashboard
@@ -30,9 +32,16 @@
                             Products
                         </a>
                         <a href="<?php echo route('admin/users') ?>"
-                           class="rounded-md px-3 py-2 text-sm font-medium <?php echo isActive('/admin/orders') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white' ?>">
+                           class="rounded-md px-3 py-2 text-sm font-medium <?php echo isActive('/admin/users') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white' ?>">
                             Users
                         </a>
+                        <?php endif; ?>
+                        <?php if(isset($is_admin) && ($is_admin === false)): ?>
+                        <a href="<?php echo route('user/dashboard') ?>"
+                           class="rounded-md px-3 py-2 text-sm font-medium <?php echo isActive('/user/dashboard') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white' ?>">
+                            Dashboard
+                        </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -74,8 +83,8 @@
         <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
             <a href="<?php echo route('admin') ?>" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Dashboard</a>
-            <a href="<?php echo route('admin_categories') ?>" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Categories</a>
-            <a href="<?php echo route('admin_products') ?>" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Products</a>
+            <a href="<?php echo route('admin/categories') ?>" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Categories</a>
+            <a href="<?php echo route('admin/products') ?>" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Products</a>
         </div>
         <div class="border-t border-white/10 pt-4 pb-3">
             <div class="flex items-center px-5">
@@ -83,21 +92,12 @@
                     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="size-10 rounded-full outline -outline-offset-1 outline-white/10" />
                 </div>
                 <div class="ml-3">
-                    <div class="text-base/5 font-medium text-white">Tom Cook</div>
-                    <div class="text-sm font-medium text-gray-400">tom@example.com</div>
+                    <div class="text-base/5 font-medium text-white"><?php echo $_SESSION['username'] ?? ''; ?></div>
+                    <div class="text-sm font-medium text-gray-400"><?php echo $_SESSION['email'] ?? ''; ?></div>
                 </div>
-                <button type="button" class="relative ml-auto shrink-0 rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
-                    <span class="absolute -inset-1.5"></span>
-                    <span class="sr-only">View notifications</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-                        <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
             </div>
             <div class="mt-3 space-y-1 px-2">
-                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-white">Your profile</a>
-                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-white">Settings</a>
-                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-white">Sign out</a>
+                <a href="<?php echo route('logout') ?>" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-white">Sign out</a>
             </div>
         </div>
     </el-disclosure>

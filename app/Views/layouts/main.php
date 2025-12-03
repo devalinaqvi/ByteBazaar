@@ -27,8 +27,20 @@
         </header>
     <?php } ?>
     <?php if (isset($view) && !isset($page_rendered)):
+        logMessage('Rendering view: ' . $view);
         $page_rendered = true;
-        $pagePath = __DIR__ . '/../pages/' . basename($view) . '.php';
+        if(isset($is_admin) && ($is_admin === true))
+        {
+            $pagePath = __DIR__ . '/../pages/admin/' . basename($view) . '.php';
+        }
+        else if(isset($is_user) && ($is_user === true))
+        {
+            $pagePath = __DIR__ . '/../pages/user/' . basename($view) . '.php';
+        }
+        else
+        {
+            $pagePath = __DIR__ . '/../pages/' . basename($view) . '.php';
+        }
         if (file_exists($pagePath)): ?>
             <?php include $pagePath; ?>
         <?php else: ?>

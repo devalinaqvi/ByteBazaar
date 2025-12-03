@@ -12,7 +12,8 @@ class AuthService {
         return [
             'id' => $_SESSION['user_id'],
             'name' => $_SESSION['user_name'] ?? 'User',
-            'is_admin' => $_SESSION['is_admin'] ?? false
+            'is_admin' => $_SESSION['is_admin'] ?? false,
+            'logged_in' => $_SESSION['logged_in'] ?? false
         ];
     }
 
@@ -22,6 +23,15 @@ class AuthService {
         $_SESSION['is_admin'] = $user->is_admin;
         $_SESSION['logged_in'] = true;
         session_regenerate_id(true);  // Security: prevent fixation
+    }
+
+    public function register(array $data): void {
+        $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+        logMessage("AUTH SERVICE: Registering user with email: {$data['email']}");
+        $userId = $this->userRepository->create($data['name'], $data['email'], $data['password']);
+        $user = $this->userRepository->findById($userId);
+        logMessage("AUTH SERVICE: Result: success (user created)");
+        $this->login($user);
     }
 
     public function logout(): void {
@@ -59,5 +69,9 @@ class AuthService {
     public function isUserAdmin(): bool|array {
         $user = $this->getCurrentUser();
         return $user ? $user['is_admin'] : false;
+    }
+
+    public function emailExists(string $email): bool {
+        return $this->userRepository->findByEmail($email) !== null;
     }
 }

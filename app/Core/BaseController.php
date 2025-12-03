@@ -13,7 +13,7 @@ class BaseController {
 
     protected function render(string $view, array $data = []): void {
         if (static::$rendered) {
-            error_log('Render skipped: already rendered once');  // Log dupe
+            logMessage('Render skipped: already rendered once');  // Log dupe
             return;
         }
         static::$rendered = true;
@@ -22,6 +22,7 @@ class BaseController {
         $data['csrf_token'] = $_SESSION['csrf_token'] ?? '';
         $data['is_logged_in'] = isset($_SESSION['user_id']);
         $data['view'] = $view;
+        $is_admin = $data['is_admin'] ?? false;
 
         extract($data, EXTR_SKIP);
 

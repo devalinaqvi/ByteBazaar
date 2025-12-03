@@ -55,4 +55,23 @@ class UserRepository
 
         return (int) $this->pdo->lastInsertId();
     }
+
+    public function findById(int $id): ?User
+    {
+        $stmt = $this->pdo->prepare("SELECT * FROM users WHERE id = :id LIMIT 1");
+        $stmt->execute(['id' => $id]);
+
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($row) {
+            return new User($row);
+        }
+        return null;
+    }
+
+    public function listAllOrders(int $userId): array
+    {
+        $stmt = $this->pdo->prepare("SELECT * FROM orders WHERE user_id = :id");
+        $stmt->execute(['id' => $userId]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

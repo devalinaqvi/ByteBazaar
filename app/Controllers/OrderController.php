@@ -89,7 +89,7 @@ class OrderController extends BaseController
     {
         try {
             $orderDetails = $this->orders->getOrderDetails($orderId);
-            $this->render('pages/order_show', ['title' => 'Order Details', 'body_class' => 'h-full', 'html_class' => 'h-full bg-gray-100', 'header' => true, 'admin_nav_active' => 'active', 'admin_footer_active' => 'active', 'order' => $orderDetails]);
+            $this->render('pages/order_show', ['title' => 'Order Details', 'body_class' => 'h-full', 'html_class' => 'h-full bg-gray-100', 'header' => true, 'is_admin' => true, 'admin_nav_active' => 'active', 'admin_footer_active' => 'active', 'order' => $orderDetails]);
         } catch (\Exception $e) {
             logMessage('Error rendering order show page: ' . $e->getMessage());
             $this->json(['success' => false, 'message' => 'Failed to show order details'], 500);

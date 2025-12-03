@@ -113,6 +113,10 @@ class OrderRepository
             $itemsStmt->execute([$id]);
             $order->items = $itemsStmt->fetchAll(PDO::FETCH_ASSOC);
         }
+        if(!$order)
+        {
+            throw new \Exception('Order not found');
+        }
 
         return $order;
     }

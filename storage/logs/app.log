@@ -4265,3 +4265,3908 @@
 
 )
 
+[2025-12-01 19:07:30] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-01 19:07:30] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-01 19:08:32] Product: iPhone 13 was viewed.
+[2025-12-01 19:08:32] Product: iPhone 13 was viewed.
+[2025-12-01 19:08:34] Adding product to cart
+[2025-12-01 19:08:34] Identified session: eb7a2e1515459563729f3b8094f54044
+[2025-12-01 19:08:34] Finding cart item: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 50
+[2025-12-01 19:08:34] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-01 19:08:34] Found cart item: false
+[2025-12-01 19:08:34] Adding product to cart: User ID: 1, Session ID: eb7a2e1515459563729f3b8094f54044, Product ID: 50, Quantity: 1
+[2025-12-01 19:08:34] Adding new cart item
+[2025-12-01 19:08:34] Adding product to cart: Product ID: 50
+[2025-12-01 19:08:34] SESSION Cart count: 1
+[2025-12-01 19:08:36] Product: iPhone 13 was viewed.
+[2025-12-01 19:08:36] Product: iPhone 13 was viewed.
+[2025-12-01 19:08:39] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 19:08:39] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 19:08:42] Removing item from cart: Item ID: 59
+[2025-12-01 19:08:42] Deleting cart item: 59
+[2025-12-01 19:08:42] SESSION Cart count: 0
+[2025-12-01 19:08:48] Product: MacBook Pro was viewed.
+[2025-12-01 19:08:48] Product: MacBook Pro was viewed.
+[2025-12-01 19:09:09] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 19:09:09] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 19:09:11] Session ID: eb7a2e1515459563729f3b8094f54044 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-01 19:10:03] Product: MacBook Pro was viewed.
+[2025-12-01 19:10:03] Product: MacBook Pro was viewed.
+[2025-12-01 19:24:04] Viewing users
+[2025-12-01 19:24:04] Viewing users
+[2025-12-01 19:24:10] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-01 19:24:10] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-01 19:24:36] Viewing users
+[2025-12-01 19:24:36] Viewing users
+[2025-12-01 19:24:47] Product: MacBook Pro was viewed.
+[2025-12-01 19:24:47] Product: MacBook Pro was viewed.
+[2025-12-02 03:28:49] Product: MacBook Pro was viewed.
+[2025-12-02 03:28:49] Product: MacBook Pro was viewed.
+[2025-12-02 03:29:02] Found user with email: admin@example.com
+[2025-12-02 03:29:02] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-02 03:29:02] AUTH SERVICE: Plain password length: 11
+[2025-12-02 03:29:02] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-02 03:29:02] AUTH SERVICE: Hashed password length: 60
+[2025-12-02 03:29:02] AUTH SERVICE: password_verify result: TRUE
+[2025-12-02 03:29:02] AUTH SERVICE: Result: success
+[2025-12-02 03:29:02] Authenticating user with email: admin@example.com
+[2025-12-02 03:29:02] Result: success
+[2025-12-02 03:29:04] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-02 03:29:04] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-02 03:29:19] Viewing users
+[2025-12-02 03:29:19] Viewing users
+[2025-12-02 03:29:21] Viewing users
+[2025-12-02 03:29:21] Viewing users
+[2025-12-02 03:29:24] Viewing users
+[2025-12-02 03:29:24] Viewing users
+[2025-12-02 03:29:27] Viewing users
+[2025-12-02 03:29:27] Viewing users
+[2025-12-02 03:29:32] Viewing users
+[2025-12-02 03:29:32] Viewing users
+[2025-12-02 03:29:43] Viewing users
+[2025-12-02 03:29:43] Viewing users
+[2025-12-02 03:29:59] Viewing users
+[2025-12-02 03:29:59] Viewing users
+[2025-12-02 03:30:36] Viewing users
+[2025-12-02 03:30:36] Viewing users
+[2025-12-02 03:31:44] Viewing users
+[2025-12-02 03:31:44] Viewing users
+[2025-12-02 03:32:06] Viewing users
+[2025-12-02 03:32:06] Viewing users
+[2025-12-02 03:32:19] Session ID: a88f611eee42d41da9c968884dc2557e User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:32:19] Session ID: a88f611eee42d41da9c968884dc2557e User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:32:20] Session ID: a88f611eee42d41da9c968884dc2557e User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:32:26] Adding product to cart
+[2025-12-02 03:32:26] Identified session: a88f611eee42d41da9c968884dc2557e
+[2025-12-02 03:32:26] Finding cart item: User ID: 1, Session ID: a88f611eee42d41da9c968884dc2557e, Product ID: 49
+[2025-12-02 03:32:26] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-02 03:32:26] Found cart item: false
+[2025-12-02 03:32:26] Adding product to cart: User ID: 1, Session ID: a88f611eee42d41da9c968884dc2557e, Product ID: 49, Quantity: 1
+[2025-12-02 03:32:26] Adding new cart item
+[2025-12-02 03:32:26] Adding product to cart: Product ID: 49
+[2025-12-02 03:32:26] SESSION Cart count: 1
+[2025-12-02 03:32:28] Session ID: a88f611eee42d41da9c968884dc2557e User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:32:28] Session ID: a88f611eee42d41da9c968884dc2557e User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:32:30] Session ID: a88f611eee42d41da9c968884dc2557e User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:45:20] Adding product to cart
+[2025-12-02 03:45:20] Identified session: f8b79cb2fb7a3873f3dbceeaaf0f4b62
+[2025-12-02 03:45:20] Finding cart item: User ID: , Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 49
+[2025-12-02 03:45:20] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-02 03:45:20] Found cart item: false
+[2025-12-02 03:45:20] Adding product to cart: User ID: , Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 49, Quantity: 1
+[2025-12-02 03:45:20] Adding new cart item
+[2025-12-02 03:45:20] Adding product to cart: Product ID: 49
+[2025-12-02 03:45:20] SESSION Cart count: 1
+[2025-12-02 03:45:26] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:45:26] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:45:28] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:45:48] Adding product to cart
+[2025-12-02 03:45:48] Identified session: f8b79cb2fb7a3873f3dbceeaaf0f4b62
+[2025-12-02 03:45:48] Finding cart item: User ID: , Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 49
+[2025-12-02 03:45:48] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-02 03:45:48] Found cart item: {"id":61,"session_id":"f8b79cb2fb7a3873f3dbceeaaf0f4b62","product_id":49,"quantity":1,"added_at":"2025-12-02 08:45:20"}
+[2025-12-02 03:45:48] Adding product to cart: User ID: , Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 49, Quantity: 1
+[2025-12-02 03:45:48] Updating existing cart item
+[2025-12-02 03:45:48] Adding product to cart: Product ID: 49
+[2025-12-02 03:45:48] SESSION Cart count: 1
+[2025-12-02 03:45:55] Adding product to cart
+[2025-12-02 03:45:55] Identified session: f8b79cb2fb7a3873f3dbceeaaf0f4b62
+[2025-12-02 03:45:55] Finding cart item: User ID: , Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 50
+[2025-12-02 03:45:55] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-02 03:45:55] Found cart item: false
+[2025-12-02 03:45:55] Adding product to cart: User ID: , Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 50, Quantity: 1
+[2025-12-02 03:45:55] Adding new cart item
+[2025-12-02 03:45:55] Adding product to cart: Product ID: 50
+[2025-12-02 03:45:55] SESSION Cart count: 2
+[2025-12-02 03:45:56] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:45:56] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:46:00] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:46:06] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:46:06] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:46:07] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:46:32] Found user with email: admin@example.com
+[2025-12-02 03:46:32] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-02 03:46:32] AUTH SERVICE: Plain password length: 11
+[2025-12-02 03:46:32] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-02 03:46:32] AUTH SERVICE: Hashed password length: 60
+[2025-12-02 03:46:32] AUTH SERVICE: password_verify result: FALSE
+[2025-12-02 03:46:32] AUTH SERVICE: Result: failure (password mismatch)
+[2025-12-02 03:46:32] Authenticating user with email: admin@example.com
+[2025-12-02 03:46:32] Result: failure
+[2025-12-02 03:46:41] Found user with email: admin@example.com
+[2025-12-02 03:46:41] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-02 03:46:41] AUTH SERVICE: Plain password length: 11
+[2025-12-02 03:46:41] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-02 03:46:41] AUTH SERVICE: Hashed password length: 60
+[2025-12-02 03:46:41] AUTH SERVICE: password_verify result: TRUE
+[2025-12-02 03:46:41] AUTH SERVICE: Result: success
+[2025-12-02 03:46:41] Authenticating user with email: admin@example.com
+[2025-12-02 03:46:41] Result: success
+[2025-12-02 03:46:44] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-02 03:46:44] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-02 03:46:51] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+        )
+
+)
+
+[2025-12-02 03:46:51] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+        )
+
+)
+
+[2025-12-02 03:46:59] Viewing users
+[2025-12-02 03:46:59] Viewing users
+[2025-12-02 03:47:02] Viewing users
+[2025-12-02 03:47:02] Viewing users
+[2025-12-02 03:47:07] Viewing users
+[2025-12-02 03:47:07] Viewing users
+[2025-12-02 03:47:11] Viewing users
+[2025-12-02 03:47:11] Viewing users
+[2025-12-02 03:47:22] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:22] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:29] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:29] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:34] Adding product to cart
+[2025-12-02 03:47:34] Identified session: f8b79cb2fb7a3873f3dbceeaaf0f4b62
+[2025-12-02 03:47:34] Finding cart item: User ID: 1, Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 49
+[2025-12-02 03:47:34] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-02 03:47:34] Found cart item: {"id":61,"session_id":"f8b79cb2fb7a3873f3dbceeaaf0f4b62","product_id":49,"quantity":2,"added_at":"2025-12-02 08:45:20"}
+[2025-12-02 03:47:34] Adding product to cart: User ID: 1, Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 49, Quantity: 1
+[2025-12-02 03:47:34] Updating existing cart item
+[2025-12-02 03:47:34] Adding product to cart: Product ID: 49
+[2025-12-02 03:47:34] SESSION Cart count: 2
+[2025-12-02 03:47:35] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:35] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:36] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:36] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:38] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:38] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:38] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:38] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:38] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:38] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:41] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:47:41] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:47:45] Removing item from cart: Item ID: 61
+[2025-12-02 03:47:45] Deleting cart item: 61
+[2025-12-02 03:47:45] SESSION Cart count: 1
+[2025-12-02 03:47:48] Removing item from cart: Item ID: 62
+[2025-12-02 03:47:48] Deleting cart item: 62
+[2025-12-02 03:47:48] SESSION Cart count: 0
+[2025-12-02 03:47:53] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:53] Product: MacBook Pro was viewed.
+[2025-12-02 03:47:55] Adding product to cart
+[2025-12-02 03:47:55] Identified session: f8b79cb2fb7a3873f3dbceeaaf0f4b62
+[2025-12-02 03:47:55] Finding cart item: User ID: 1, Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 49
+[2025-12-02 03:47:55] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-02 03:47:55] Found cart item: false
+[2025-12-02 03:47:55] Adding product to cart: User ID: 1, Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62, Product ID: 49, Quantity: 1
+[2025-12-02 03:47:55] Adding new cart item
+[2025-12-02 03:47:55] Adding product to cart: Product ID: 49
+[2025-12-02 03:47:55] SESSION Cart count: 1
+[2025-12-02 03:47:56] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:47:56] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:47:59] Removing item from cart: Item ID: 63
+[2025-12-02 03:47:59] Deleting cart item: 63
+[2025-12-02 03:47:59] SESSION Cart count: 0
+[2025-12-02 03:48:01] Session ID: f8b79cb2fb7a3873f3dbceeaaf0f4b62 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-02 03:48:19] Found user with email: admin@example.com
+[2025-12-02 03:48:19] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-02 03:48:19] AUTH SERVICE: Plain password length: 11
+[2025-12-02 03:48:19] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-02 03:48:19] AUTH SERVICE: Hashed password length: 60
+[2025-12-02 03:48:19] AUTH SERVICE: password_verify result: TRUE
+[2025-12-02 03:48:19] AUTH SERVICE: Result: success
+[2025-12-02 03:48:19] Authenticating user with email: admin@example.com
+[2025-12-02 03:48:19] Result: success
+[2025-12-02 03:48:21] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+        )
+
+)
+
+[2025-12-02 03:48:21] Order details: App\Models\Order Object
+(
+    [id] => 14
+    [user_id] => 1
+    [total_price] => 9715.68
+    [status] => pending
+    [order_date] => 2025-12-01 22:40:35
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 91
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 9
+                    [order_id] => 14
+                    [product_id] => 49
+                    [quantity] => 9
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+        )
+
+)
+
+[2025-12-02 03:48:28] Viewing users
+[2025-12-02 03:48:28] Viewing users
+[2025-12-02 03:48:33] Product: iPhone 13 was viewed.
+[2025-12-02 03:48:33] Product: iPhone 13 was viewed.
+[2025-12-02 03:49:05] Viewing users
+[2025-12-02 03:49:05] Viewing users
+[2025-12-02 03:49:11] Product: iPhone 13 was viewed.
+[2025-12-02 03:49:11] Product: iPhone 13 was viewed.
+[2025-12-03 14:55:41] No route found for GET /favicon.ico
+[2025-12-03 15:33:09] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:09] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:13] Adding product to cart
+[2025-12-03 15:33:13] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:13] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 50
+[2025-12-03 15:33:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:13] Found cart item: false
+[2025-12-03 15:33:14] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 50, Quantity: 1
+[2025-12-03 15:33:14] Adding new cart item
+[2025-12-03 15:33:14] Adding product to cart: Product ID: 50
+[2025-12-03 15:33:14] SESSION Cart count: 1
+[2025-12-03 15:33:15] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:15] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:17] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:24] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:24] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:27] Removing item from cart: Item ID: 64
+[2025-12-03 15:33:27] Deleting cart item: 64
+[2025-12-03 15:33:27] SESSION Cart count: 0
+[2025-12-03 15:33:34] Product: MacBook Pro was viewed.
+[2025-12-03 15:33:34] Product: MacBook Pro was viewed.
+[2025-12-03 15:33:36] Adding product to cart
+[2025-12-03 15:33:36] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:36] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:36] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:36] Found cart item: false
+[2025-12-03 15:33:36] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:36] Adding new cart item
+[2025-12-03 15:33:36] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:36] SESSION Cart count: 1
+[2025-12-03 15:33:38] Product: MacBook Pro was viewed.
+[2025-12-03 15:33:38] Product: MacBook Pro was viewed.
+[2025-12-03 15:33:52] Adding product to cart
+[2025-12-03 15:33:52] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:52] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:52] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:52] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":1,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:52] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:52] Updating existing cart item
+[2025-12-03 15:33:52] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:52] SESSION Cart count: 1
+[2025-12-03 15:33:53] Adding product to cart
+[2025-12-03 15:33:53] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:53] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:53] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:53] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":2,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:53] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:53] Updating existing cart item
+[2025-12-03 15:33:53] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:53] SESSION Cart count: 1
+[2025-12-03 15:33:53] Adding product to cart
+[2025-12-03 15:33:53] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:53] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:53] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:53] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":3,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:53] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:53] Updating existing cart item
+[2025-12-03 15:33:53] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:53] SESSION Cart count: 1
+[2025-12-03 15:33:53] Adding product to cart
+[2025-12-03 15:33:53] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:53] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:53] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:53] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":4,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:53] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:53] Updating existing cart item
+[2025-12-03 15:33:53] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:53] SESSION Cart count: 1
+[2025-12-03 15:33:53] Adding product to cart
+[2025-12-03 15:33:53] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:53] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:53] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:53] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":5,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:53] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:53] Updating existing cart item
+[2025-12-03 15:33:53] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:53] SESSION Cart count: 1
+[2025-12-03 15:33:53] Adding product to cart
+[2025-12-03 15:33:53] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:53] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:53] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:53] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":6,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:53] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:53] Updating existing cart item
+[2025-12-03 15:33:53] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:53] SESSION Cart count: 1
+[2025-12-03 15:33:53] Adding product to cart
+[2025-12-03 15:33:53] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:53] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:53] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:53] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":7,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:53] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:53] Updating existing cart item
+[2025-12-03 15:33:53] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:53] SESSION Cart count: 1
+[2025-12-03 15:33:54] Adding product to cart
+[2025-12-03 15:33:54] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:54] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:54] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:54] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":8,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:54] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:54] Updating existing cart item
+[2025-12-03 15:33:54] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:54] SESSION Cart count: 1
+[2025-12-03 15:33:54] Adding product to cart
+[2025-12-03 15:33:54] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:54] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:54] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:54] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":9,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:54] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:54] Updating existing cart item
+[2025-12-03 15:33:54] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:54] SESSION Cart count: 1
+[2025-12-03 15:33:54] Adding product to cart
+[2025-12-03 15:33:54] Identified session: 67e4fb9a1a92bbd763e61255df515cce
+[2025-12-03 15:33:54] Finding cart item: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49
+[2025-12-03 15:33:54] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 15:33:54] Found cart item: {"id":65,"session_id":"67e4fb9a1a92bbd763e61255df515cce","product_id":49,"quantity":10,"added_at":"2025-12-03 20:33:36"}
+[2025-12-03 15:33:54] Adding product to cart: User ID: , Session ID: 67e4fb9a1a92bbd763e61255df515cce, Product ID: 49, Quantity: 1
+[2025-12-03 15:33:54] Updating existing cart item
+[2025-12-03 15:33:54] Adding product to cart: Product ID: 49
+[2025-12-03 15:33:54] SESSION Cart count: 1
+[2025-12-03 15:33:56] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:56] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:59] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:33:59] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 15:34:03] Removing item from cart: Item ID: 65
+[2025-12-03 15:34:03] Deleting cart item: 65
+[2025-12-03 15:34:03] SESSION Cart count: 0
+[2025-12-03 15:34:05] Session ID: 67e4fb9a1a92bbd763e61255df515cce User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 16:17:52] Found user with email: admin@example.com
+[2025-12-03 16:17:52] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-03 16:17:52] AUTH SERVICE: Plain password length: 11
+[2025-12-03 16:17:52] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-03 16:17:52] AUTH SERVICE: Hashed password length: 60
+[2025-12-03 16:17:52] AUTH SERVICE: password_verify result: TRUE
+[2025-12-03 16:17:52] AUTH SERVICE: Result: success
+[2025-12-03 16:17:52] Authenticating user with email: admin@example.com
+[2025-12-03 16:17:52] Result: success
+[2025-12-03 16:18:22] Session ID: 4585050e5233ea0a2691ff17146ec7dc User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 16:18:22] Session ID: 4585050e5233ea0a2691ff17146ec7dc User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 16:42:32] Found user with email: admin@example.com
+[2025-12-03 16:42:32] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-03 16:42:32] AUTH SERVICE: Plain password length: 11
+[2025-12-03 16:42:32] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-03 16:42:32] AUTH SERVICE: Hashed password length: 60
+[2025-12-03 16:42:32] AUTH SERVICE: password_verify result: TRUE
+[2025-12-03 16:42:32] AUTH SERVICE: Result: success
+[2025-12-03 16:42:32] Authenticating user with email: admin@example.com
+[2025-12-03 16:42:32] Result: success
+[2025-12-03 16:42:37] Viewing users
+[2025-12-03 16:42:37] Viewing users
+[2025-12-03 16:42:46] Viewing users
+[2025-12-03 16:42:46] Viewing users
+[2025-12-03 16:42:49] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:42:49] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:44:28] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:44:28] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:44:38] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:44:38] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:45:05] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:45:05] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:45:37] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:45:37] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:45:49] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:45:49] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:45:59] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:45:59] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:06] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:06] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:21] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:21] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:27] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:27] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:36] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:36] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:42] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:42] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:57] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:46:57] Order details: App\Models\Order Object
+(
+    [id] => 15
+    [user_id] => 1
+    [total_price] => 3002.4
+    [status] => pending
+    [order_date] => 2025-12-01 23:56:44
+    [customer_name] => Ali
+    [customer_email] => ali@companieshouse.sg
+    [shipping_address] => Address
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 99
+    [shipping_country] => CA
+    [phone] => 99
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 10
+                    [order_id] => 15
+                    [product_id] => 49
+                    [quantity] => 2
+                    [unit_price] => 999.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 999.00
+                    [product_image] => /uploads/products/prod_692db046391528.04321377.jpg
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [order_id] => 15
+                    [product_id] => 50
+                    [quantity] => 1
+                    [unit_price] => 777.00
+                    [product_name] => iPhone 13
+                    [product_price] => 777.00
+                    [product_image] => /uploads/products/prod_692de4cf53ff94.50500599.png
+                )
+
+        )
+
+)
+
+[2025-12-03 16:48:55] Error rendering order show page: Order not found
+[2025-12-03 16:49:36] Error rendering order show page: Order not found
+[2025-12-03 16:49:42] Viewing users
+[2025-12-03 16:49:42] Viewing users
+[2025-12-03 16:49:43] Viewing users
+[2025-12-03 16:49:43] Viewing users
+[2025-12-03 16:52:08] Rendering view: pages/admin/admin
+[2025-12-03 16:52:30] Rendering view: /admin/admin
+[2025-12-03 16:52:34] Rendering view: pages/admin/admin
+[2025-12-03 16:53:53] Rendering view: pages/admin
+[2025-12-03 16:54:04] Rendering view: pages/admin
+[2025-12-03 16:54:21] Rendering view: pages/admin
+[2025-12-03 16:54:25] Rendering view: pages/admin_categories
+[2025-12-03 16:54:26] Rendering view: pages/admin_add_category
+[2025-12-03 16:54:27] Rendering view: pages/admin_products
+[2025-12-03 16:54:28] Rendering view: pages/admin_add_product
+[2025-12-03 16:54:31] Viewing users
+[2025-12-03 16:54:31] Rendering view: pages/admin_users
+[2025-12-03 16:54:31] Viewing users
+[2025-12-03 16:54:36] Rendering view: pages/admin
+[2025-12-03 16:54:37] Rendering view: pages/home
+[2025-12-03 16:54:40] Rendering view: pages/public_products
+[2025-12-03 16:54:42] Rendering view: pages/admin
+[2025-12-03 16:57:58] Rendering view: pages/admin
+[2025-12-03 16:57:58] Render skipped: already rendered once
+[2025-12-03 16:58:00] Rendering view: pages/admin
+[2025-12-03 16:58:00] Render skipped: already rendered once
+[2025-12-03 16:58:05] Rendering view: pages/admin_categories
+[2025-12-03 16:58:05] Render skipped: already rendered once
+[2025-12-03 16:58:08] Rendering view: pages/admin_products
+[2025-12-03 16:58:08] Render skipped: already rendered once
+[2025-12-03 16:58:09] Rendering view: pages/admin_add_product
+[2025-12-03 16:58:09] Render skipped: already rendered once
+[2025-12-03 17:01:51] Viewing users
+[2025-12-03 17:01:51] Rendering view: pages/admin_users
+[2025-12-03 17:01:51] Viewing users
+[2025-12-03 17:01:51] Render skipped: already rendered once
+[2025-12-03 17:02:02] Viewing users
+[2025-12-03 17:02:02] Rendering view: pages/admin_users
+[2025-12-03 17:02:02] Viewing users
+[2025-12-03 17:02:02] Render skipped: already rendered once
+[2025-12-03 17:03:38] Viewing users
+[2025-12-03 17:03:38] Rendering view: pages/admin_users
+[2025-12-03 17:03:38] Viewing users
+[2025-12-03 17:03:38] Render skipped: already rendered once
+[2025-12-03 17:03:39] Rendering view: pages/admin
+[2025-12-03 17:03:39] Render skipped: already rendered once
+[2025-12-03 17:03:40] Rendering view: pages/admin_products
+[2025-12-03 17:03:40] Render skipped: already rendered once
+[2025-12-03 17:03:41] Rendering view: pages/admin_add_product
+[2025-12-03 17:03:41] Render skipped: already rendered once
+[2025-12-03 17:03:47] Rendering view: pages/admin_categories
+[2025-12-03 17:03:47] Render skipped: already rendered once
+[2025-12-03 17:04:15] Rendering view: pages/admin_categories
+[2025-12-03 17:04:15] Render skipped: already rendered once
+[2025-12-03 17:04:16] Rendering view: pages/admin
+[2025-12-03 17:04:16] Render skipped: already rendered once
+[2025-12-03 17:04:17] Rendering view: pages/admin_categories
+[2025-12-03 17:04:17] Render skipped: already rendered once
+[2025-12-03 17:04:18] Rendering view: pages/admin_add_category
+[2025-12-03 17:04:18] Render skipped: already rendered once
+[2025-12-03 17:04:22] Rendering view: pages/admin_categories
+[2025-12-03 17:04:22] Render skipped: already rendered once
+[2025-12-03 17:04:24] Rendering view: pages/admin_add_category
+[2025-12-03 17:04:24] Render skipped: already rendered once
+[2025-12-03 17:04:28] Rendering view: pages/admin_categories
+[2025-12-03 17:04:28] Render skipped: already rendered once
+[2025-12-03 17:04:30] Rendering view: pages/admin_add_category
+[2025-12-03 17:04:30] Render skipped: already rendered once
+[2025-12-03 17:04:34] Rendering view: pages/admin_categories
+[2025-12-03 17:04:34] Render skipped: already rendered once
+[2025-12-03 17:04:38] Rendering view: pages/admin_add_category
+[2025-12-03 17:04:38] Render skipped: already rendered once
+[2025-12-03 17:04:48] Rendering view: pages/admin_categories
+[2025-12-03 17:04:48] Render skipped: already rendered once
+[2025-12-03 17:04:51] Rendering view: pages/admin_products
+[2025-12-03 17:04:51] Render skipped: already rendered once
+[2025-12-03 17:04:52] Rendering view: pages/admin_add_product
+[2025-12-03 17:04:52] Render skipped: already rendered once
+[2025-12-03 17:07:16] Rendering view: pages/admin_add_product
+[2025-12-03 17:07:16] Render skipped: already rendered once
+[2025-12-03 17:07:27] Rendering view: pages/admin_add_product
+[2025-12-03 17:07:27] Render skipped: already rendered once
+[2025-12-03 17:07:28] Rendering view: pages/admin_add_product
+[2025-12-03 17:07:28] Render skipped: already rendered once
+[2025-12-03 17:07:29] Rendering view: pages/admin_add_product
+[2025-12-03 17:07:29] Render skipped: already rendered once
+[2025-12-03 17:07:30] Rendering view: pages/admin_add_product
+[2025-12-03 17:07:30] Render skipped: already rendered once
+[2025-12-03 17:07:31] Rendering view: pages/admin_add_product
+[2025-12-03 17:07:31] Render skipped: already rendered once
+[2025-12-03 17:07:31] Rendering view: pages/admin_add_product
+[2025-12-03 17:07:31] Render skipped: already rendered once
+[2025-12-03 17:07:32] Rendering view: pages/admin_add_product
+[2025-12-03 17:07:32] Render skipped: already rendered once
+[2025-12-03 17:07:33] Rendering view: pages/admin_add_product
+[2025-12-03 17:07:33] Render skipped: already rendered once
+[2025-12-03 17:09:42] Rendering view: pages/admin_add_product
+[2025-12-03 17:09:42] Render skipped: already rendered once
+[2025-12-03 17:09:43] Rendering view: pages/admin_add_product
+[2025-12-03 17:09:43] Render skipped: already rendered once
+[2025-12-03 17:09:44] Rendering view: pages/admin_add_product
+[2025-12-03 17:09:44] Render skipped: already rendered once
+[2025-12-03 17:09:45] Rendering view: pages/admin_add_product
+[2025-12-03 17:09:45] Render skipped: already rendered once
+[2025-12-03 17:09:45] Rendering view: pages/admin_add_product
+[2025-12-03 17:09:45] Render skipped: already rendered once
+[2025-12-03 17:09:46] Rendering view: pages/admin_add_product
+[2025-12-03 17:09:46] Render skipped: already rendered once
+[2025-12-03 17:09:47] Rendering view: pages/admin_add_product
+[2025-12-03 17:09:47] Render skipped: already rendered once
+[2025-12-03 17:16:45] Rendering view: pages/admin_products
+[2025-12-03 17:16:45] Render skipped: already rendered once
+[2025-12-03 17:16:48] Rendering view: pages/admin_edit_product
+[2025-12-03 17:16:48] Render skipped: already rendered once
+[2025-12-03 17:16:58] Rendering view: pages/admin_products
+[2025-12-03 17:16:58] Render skipped: already rendered once
+[2025-12-03 17:16:59] Rendering view: pages/admin_categories
+[2025-12-03 17:16:59] Render skipped: already rendered once
+[2025-12-03 17:17:01] Rendering view: pages/admin
+[2025-12-03 17:17:01] Render skipped: already rendered once
+[2025-12-03 17:17:02] Viewing users
+[2025-12-03 17:17:02] Rendering view: pages/admin_users
+[2025-12-03 17:17:02] Viewing users
+[2025-12-03 17:17:02] Render skipped: already rendered once
+[2025-12-03 17:17:03] Rendering view: pages/admin_products
+[2025-12-03 17:17:03] Render skipped: already rendered once
+[2025-12-03 17:17:03] Rendering view: pages/admin_categories
+[2025-12-03 17:17:03] Render skipped: already rendered once
+[2025-12-03 17:17:04] Rendering view: pages/admin
+[2025-12-03 17:17:04] Render skipped: already rendered once
+[2025-12-03 17:17:04] Rendering view: pages/home
+[2025-12-03 17:17:04] Render skipped: already rendered once
+[2025-12-03 17:17:13] Product: iPhone was viewed.
+[2025-12-03 17:17:13] Rendering view: pages/public_product_show
+[2025-12-03 17:17:13] Product: iPhone was viewed.
+[2025-12-03 17:17:13] Render skipped: already rendered once
+[2025-12-03 17:17:16] Rendering view: pages/home
+[2025-12-03 17:17:16] Render skipped: already rendered once
+[2025-12-03 17:17:20] Product: iPhone was viewed.
+[2025-12-03 17:17:20] Rendering view: pages/public_product_show
+[2025-12-03 17:17:20] Product: iPhone was viewed.
+[2025-12-03 17:17:20] Render skipped: already rendered once
+[2025-12-03 17:17:22] Adding product to cart
+[2025-12-03 17:17:22] Identified session: 73aaeae5ce873f4e21efb7e53a13392e
+[2025-12-03 17:17:22] Finding cart item: User ID: 1, Session ID: 73aaeae5ce873f4e21efb7e53a13392e, Product ID: 51
+[2025-12-03 17:17:22] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 17:17:22] Found cart item: false
+[2025-12-03 17:17:22] Adding product to cart: User ID: 1, Session ID: 73aaeae5ce873f4e21efb7e53a13392e, Product ID: 51, Quantity: 1
+[2025-12-03 17:17:22] Adding new cart item
+[2025-12-03 17:17:23] Adding product to cart: Product ID: 51
+[2025-12-03 17:17:23] SESSION Cart count: 1
+[2025-12-03 17:17:24] Product: iPhone was viewed.
+[2025-12-03 17:17:24] Rendering view: pages/public_product_show
+[2025-12-03 17:17:24] Product: iPhone was viewed.
+[2025-12-03 17:17:24] Render skipped: already rendered once
+[2025-12-03 17:17:33] Session ID: 73aaeae5ce873f4e21efb7e53a13392e User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 17:17:33] Rendering view: pages/cart
+[2025-12-03 17:17:33] Session ID: 73aaeae5ce873f4e21efb7e53a13392e User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 17:17:33] Render skipped: already rendered once
+[2025-12-03 17:17:41] Rendering view: pages/checkout
+[2025-12-03 17:17:41] Render skipped: already rendered once
+[2025-12-03 17:17:41] Session ID: 73aaeae5ce873f4e21efb7e53a13392e User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 17:22:06] Creating order
+[2025-12-03 17:22:06] Order total: 50
+[2025-12-03 17:22:07] Rendering view: pages/home
+[2025-12-03 17:22:07] Render skipped: already rendered once
+[2025-12-03 17:22:12] Rendering view: pages/admin
+[2025-12-03 17:22:12] Render skipped: already rendered once
+[2025-12-03 17:22:16] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 17:22:16] Rendering view: pages/order_show
+[2025-12-03 17:22:16] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 17:22:16] Render skipped: already rendered once
+[2025-12-03 17:22:19] Rendering view: pages/admin
+[2025-12-03 17:22:19] Render skipped: already rendered once
+[2025-12-03 17:22:20] Rendering view: pages/admin_categories
+[2025-12-03 17:22:20] Render skipped: already rendered once
+[2025-12-03 17:22:21] Rendering view: pages/admin_products
+[2025-12-03 17:22:21] Render skipped: already rendered once
+[2025-12-03 17:22:22] Viewing users
+[2025-12-03 17:22:22] Rendering view: pages/admin_users
+[2025-12-03 17:22:22] Viewing users
+[2025-12-03 17:22:22] Render skipped: already rendered once
+[2025-12-03 17:22:23] Rendering view: pages/admin_products
+[2025-12-03 17:22:23] Render skipped: already rendered once
+[2025-12-03 17:22:27] Rendering view: pages/admin_edit_product
+[2025-12-03 17:22:27] Render skipped: already rendered once
+[2025-12-03 17:22:30] Rendering view: pages/admin_products
+[2025-12-03 17:22:30] Render skipped: already rendered once
+[2025-12-03 17:22:31] Rendering view: pages/admin_categories
+[2025-12-03 17:22:31] Render skipped: already rendered once
+[2025-12-03 17:22:32] Viewing users
+[2025-12-03 17:22:32] Rendering view: pages/admin_users
+[2025-12-03 17:22:32] Viewing users
+[2025-12-03 17:22:32] Render skipped: already rendered once
+[2025-12-03 17:22:33] Rendering view: pages/admin
+[2025-12-03 17:22:33] Render skipped: already rendered once
+[2025-12-03 19:13:11] Rendering view: pages/login
+[2025-12-03 19:13:11] Render skipped: already rendered once
+[2025-12-03 19:13:14] Rendering view: pages/register
+[2025-12-03 19:13:14] Render skipped: already rendered once
+[2025-12-03 19:13:18] Rendering view: pages/login
+[2025-12-03 19:13:18] Render skipped: already rendered once
+[2025-12-03 19:15:37] Found user with email: thassan@algomau.ca
+[2025-12-03 19:15:37] AUTH SERVICE: Authenticating user with email: thassan@algomau.ca
+[2025-12-03 19:15:37] AUTH SERVICE: Plain password length: 11
+[2025-12-03 19:15:37] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-03 19:15:37] AUTH SERVICE: Hashed password length: 60
+[2025-12-03 19:15:37] AUTH SERVICE: password_verify result: TRUE
+[2025-12-03 19:15:37] AUTH SERVICE: Result: success
+[2025-12-03 19:15:37] Authenticating user with email: thassan@algomau.ca
+[2025-12-03 19:15:37] Result: success
+[2025-12-03 19:15:37] Rendering view: pages/admin
+[2025-12-03 19:15:37] Render skipped: already rendered once
+[2025-12-03 19:15:45] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:15:45] Rendering view: pages/order_show
+[2025-12-03 19:15:45] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:15:45] Render skipped: already rendered once
+[2025-12-03 19:21:02] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:21:02] Rendering view: pages/order_show
+[2025-12-03 19:21:02] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:21:02] Render skipped: already rendered once
+[2025-12-03 19:21:03] Rendering view: pages/home
+[2025-12-03 19:21:03] Render skipped: already rendered once
+[2025-12-03 19:21:05] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:21:05] Rendering view: pages/order_show
+[2025-12-03 19:21:05] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:21:05] Render skipped: already rendered once
+[2025-12-03 19:22:06] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:22:06] Rendering view: pages/order_show
+[2025-12-03 19:22:06] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:22:06] Render skipped: already rendered once
+[2025-12-03 19:22:16] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:22:16] Rendering view: pages/order_show
+[2025-12-03 19:22:17] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:22:17] Render skipped: already rendered once
+[2025-12-03 19:23:13] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:23:13] Rendering view: pages/order_show
+[2025-12-03 19:23:13] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:23:13] Render skipped: already rendered once
+[2025-12-03 19:23:27] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:23:27] Rendering view: pages/order_show
+[2025-12-03 19:23:27] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:23:27] Render skipped: already rendered once
+[2025-12-03 19:23:44] Rendering view: pages/admin
+[2025-12-03 19:23:44] Render skipped: already rendered once
+[2025-12-03 19:24:06] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:24:06] Rendering view: pages/order_show
+[2025-12-03 19:24:06] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:24:06] Render skipped: already rendered once
+[2025-12-03 19:24:18] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:24:18] Rendering view: pages/order_show
+[2025-12-03 19:24:18] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:24:18] Render skipped: already rendered once
+[2025-12-03 19:24:23] Rendering view: pages/admin
+[2025-12-03 19:24:23] Render skipped: already rendered once
+[2025-12-03 19:24:24] Rendering view: pages/admin_categories
+[2025-12-03 19:24:24] Render skipped: already rendered once
+[2025-12-03 19:24:25] Rendering view: pages/admin_products
+[2025-12-03 19:24:25] Render skipped: already rendered once
+[2025-12-03 19:24:25] Viewing users
+[2025-12-03 19:24:25] Rendering view: pages/admin_users
+[2025-12-03 19:24:25] Viewing users
+[2025-12-03 19:24:25] Render skipped: already rendered once
+[2025-12-03 19:24:26] Viewing users
+[2025-12-03 19:24:26] Rendering view: pages/admin_users
+[2025-12-03 19:24:26] Viewing users
+[2025-12-03 19:24:26] Render skipped: already rendered once
+[2025-12-03 19:24:27] Rendering view: pages/admin
+[2025-12-03 19:24:27] Render skipped: already rendered once
+[2025-12-03 19:24:27] Rendering view: pages/admin_categories
+[2025-12-03 19:24:27] Render skipped: already rendered once
+[2025-12-03 19:24:28] Rendering view: pages/admin_products
+[2025-12-03 19:24:28] Render skipped: already rendered once
+[2025-12-03 19:24:29] Viewing users
+[2025-12-03 19:24:29] Rendering view: pages/admin_users
+[2025-12-03 19:24:29] Viewing users
+[2025-12-03 19:24:29] Render skipped: already rendered once
+[2025-12-03 19:24:30] Rendering view: pages/admin
+[2025-12-03 19:24:30] Render skipped: already rendered once
+[2025-12-03 19:24:31] Rendering view: pages/home
+[2025-12-03 19:24:31] Render skipped: already rendered once
+[2025-12-03 19:24:33] Rendering view: pages/public_products
+[2025-12-03 19:24:33] Render skipped: already rendered once
+[2025-12-03 19:24:37] Product: iPhone was viewed.
+[2025-12-03 19:24:37] Rendering view: pages/public_product_show
+[2025-12-03 19:24:37] Product: iPhone was viewed.
+[2025-12-03 19:24:37] Render skipped: already rendered once
+[2025-12-03 19:24:40] Rendering view: pages/public_products
+[2025-12-03 19:24:40] Render skipped: already rendered once
+[2025-12-03 19:24:41] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:24:41] Rendering view: pages/cart
+[2025-12-03 19:24:41] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:24:41] Render skipped: already rendered once
+[2025-12-03 19:29:12] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:29:12] Rendering view: pages/cart
+[2025-12-03 19:29:12] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:29:12] Render skipped: already rendered once
+[2025-12-03 19:29:15] Rendering view: pages/checkout
+[2025-12-03 19:29:15] Render skipped: already rendered once
+[2025-12-03 19:29:16] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:29:26] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:29:26] Rendering view: pages/cart
+[2025-12-03 19:29:26] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:29:26] Render skipped: already rendered once
+[2025-12-03 19:29:33] Rendering view: pages/public_products
+[2025-12-03 19:29:33] Render skipped: already rendered once
+[2025-12-03 19:29:35] Adding product to cart
+[2025-12-03 19:29:35] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:29:35] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:29:35] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:29:35] Found cart item: false
+[2025-12-03 19:29:35] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:29:35] Adding new cart item
+[2025-12-03 19:29:35] Adding product to cart: Product ID: 51
+[2025-12-03 19:29:35] SESSION Cart count: 1
+[2025-12-03 19:29:40] Rendering view: pages/public_products
+[2025-12-03 19:29:40] Render skipped: already rendered once
+[2025-12-03 19:29:41] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:29:41] Rendering view: pages/cart
+[2025-12-03 19:29:41] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:29:41] Render skipped: already rendered once
+[2025-12-03 19:29:47] Rendering view: pages/public_products
+[2025-12-03 19:29:47] Render skipped: already rendered once
+[2025-12-03 19:29:48] Product: iPhone was viewed.
+[2025-12-03 19:29:48] Rendering view: pages/public_product_show
+[2025-12-03 19:29:48] Product: iPhone was viewed.
+[2025-12-03 19:29:48] Render skipped: already rendered once
+[2025-12-03 19:29:49] Adding product to cart
+[2025-12-03 19:29:49] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:29:49] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:29:49] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:29:49] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":1,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:29:49] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:29:49] Updating existing cart item
+[2025-12-03 19:29:49] Adding product to cart: Product ID: 51
+[2025-12-03 19:29:49] SESSION Cart count: 1
+[2025-12-03 19:29:51] Product: iPhone was viewed.
+[2025-12-03 19:29:51] Rendering view: pages/public_product_show
+[2025-12-03 19:29:51] Product: iPhone was viewed.
+[2025-12-03 19:29:51] Render skipped: already rendered once
+[2025-12-03 19:29:52] Adding product to cart
+[2025-12-03 19:29:52] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:29:52] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:29:52] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:29:52] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":2,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:29:52] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:29:52] Updating existing cart item
+[2025-12-03 19:29:52] Adding product to cart: Product ID: 51
+[2025-12-03 19:29:52] SESSION Cart count: 1
+[2025-12-03 19:29:54] Product: iPhone was viewed.
+[2025-12-03 19:29:54] Rendering view: pages/public_product_show
+[2025-12-03 19:29:54] Product: iPhone was viewed.
+[2025-12-03 19:29:54] Render skipped: already rendered once
+[2025-12-03 19:29:56] Product: iPhone was viewed.
+[2025-12-03 19:29:56] Rendering view: pages/public_product_show
+[2025-12-03 19:29:56] Product: iPhone was viewed.
+[2025-12-03 19:29:56] Render skipped: already rendered once
+[2025-12-03 19:29:57] Adding product to cart
+[2025-12-03 19:29:57] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:29:57] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:29:57] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:29:57] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":3,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:29:57] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:29:57] Updating existing cart item
+[2025-12-03 19:29:57] Adding product to cart: Product ID: 51
+[2025-12-03 19:29:57] SESSION Cart count: 1
+[2025-12-03 19:29:59] Product: iPhone was viewed.
+[2025-12-03 19:29:59] Rendering view: pages/public_product_show
+[2025-12-03 19:29:59] Product: iPhone was viewed.
+[2025-12-03 19:29:59] Render skipped: already rendered once
+[2025-12-03 19:29:59] Adding product to cart
+[2025-12-03 19:29:59] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:29:59] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:29:59] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:29:59] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":4,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:29:59] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:29:59] Updating existing cart item
+[2025-12-03 19:29:59] Adding product to cart: Product ID: 51
+[2025-12-03 19:29:59] SESSION Cart count: 1
+[2025-12-03 19:30:01] Product: iPhone was viewed.
+[2025-12-03 19:30:01] Rendering view: pages/public_product_show
+[2025-12-03 19:30:01] Product: iPhone was viewed.
+[2025-12-03 19:30:01] Render skipped: already rendered once
+[2025-12-03 19:30:02] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:30:02] Rendering view: pages/cart
+[2025-12-03 19:30:02] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:30:02] Render skipped: already rendered once
+[2025-12-03 19:30:09] Rendering view: pages/public_products
+[2025-12-03 19:30:09] Render skipped: already rendered once
+[2025-12-03 19:30:12] Adding product to cart
+[2025-12-03 19:30:12] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:12] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:12] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:12] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":5,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:12] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:30:12] Updating existing cart item
+[2025-12-03 19:30:12] Adding product to cart: Product ID: 51
+[2025-12-03 19:30:12] SESSION Cart count: 1
+[2025-12-03 19:30:12] Adding product to cart
+[2025-12-03 19:30:12] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:12] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:12] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:12] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":6,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:12] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:30:12] Updating existing cart item
+[2025-12-03 19:30:12] Adding product to cart: Product ID: 51
+[2025-12-03 19:30:12] SESSION Cart count: 1
+[2025-12-03 19:30:13] Adding product to cart
+[2025-12-03 19:30:13] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:13] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:13] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":7,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:13] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:30:13] Updating existing cart item
+[2025-12-03 19:30:13] Adding product to cart: Product ID: 51
+[2025-12-03 19:30:13] SESSION Cart count: 1
+[2025-12-03 19:30:13] Adding product to cart
+[2025-12-03 19:30:13] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:13] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:13] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:13] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":8,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:13] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:30:13] Updating existing cart item
+[2025-12-03 19:30:13] Adding product to cart: Product ID: 51
+[2025-12-03 19:30:13] SESSION Cart count: 1
+[2025-12-03 19:30:14] Adding product to cart
+[2025-12-03 19:30:14] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:14] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:14] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":9,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:14] Adding product to cart: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51, Quantity: 1
+[2025-12-03 19:30:14] Updating existing cart item
+[2025-12-03 19:30:14] Adding product to cart: Product ID: 51
+[2025-12-03 19:30:14] SESSION Cart count: 1
+[2025-12-03 19:30:14] Adding product to cart
+[2025-12-03 19:30:14] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:14] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:14] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":10,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:14] Adding product to cart
+[2025-12-03 19:30:14] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:14] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:14] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":10,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:14] Adding product to cart
+[2025-12-03 19:30:14] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:14] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:14] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":10,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:14] Adding product to cart
+[2025-12-03 19:30:14] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:14] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:14] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":10,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:14] Adding product to cart
+[2025-12-03 19:30:14] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:14] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:14] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:14] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":10,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:15] Adding product to cart
+[2025-12-03 19:30:15] Identified session: 8ddabfef3a7fa864bcc89659b9477af9
+[2025-12-03 19:30:15] Finding cart item: User ID: 1, Session ID: 8ddabfef3a7fa864bcc89659b9477af9, Product ID: 51
+[2025-12-03 19:30:15] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 19:30:15] Found cart item: {"id":67,"session_id":"8ddabfef3a7fa864bcc89659b9477af9","product_id":51,"quantity":10,"added_at":"2025-12-04 00:29:35"}
+[2025-12-03 19:30:16] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:30:16] Rendering view: pages/cart
+[2025-12-03 19:30:16] Session ID: 8ddabfef3a7fa864bcc89659b9477af9 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 19:30:16] Render skipped: already rendered once
+[2025-12-03 19:30:20] Removing item from cart: Item ID: 67
+[2025-12-03 19:30:20] Deleting cart item: 67
+[2025-12-03 19:30:20] SESSION Cart count: 0
+[2025-12-03 19:30:23] Rendering view: pages/home
+[2025-12-03 19:30:23] Render skipped: already rendered once
+[2025-12-03 19:30:24] Rendering view: pages/admin
+[2025-12-03 19:30:24] Render skipped: already rendered once
+[2025-12-03 19:30:27] Rendering view: pages/admin
+[2025-12-03 19:30:27] Render skipped: already rendered once
+[2025-12-03 19:30:29] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:30:29] Rendering view: pages/order_show
+[2025-12-03 19:30:29] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:30:29] Render skipped: already rendered once
+[2025-12-03 19:30:32] Rendering view: pages/admin
+[2025-12-03 19:30:32] Render skipped: already rendered once
+[2025-12-03 19:30:34] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:30:34] Rendering view: pages/order_show
+[2025-12-03 19:30:34] Order details: App\Models\Order Object
+(
+    [id] => 16
+    [user_id] => 1
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-03 22:22:06
+    [customer_name] => Tabish Hassan
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => ABC
+    [shipping_city] => ABC City
+    [shipping_postal_code] => 789
+    [shipping_country] => CA
+    [phone] => 987
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [order_id] => 16
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 19:30:34] Render skipped: already rendered once
+[2025-12-03 19:30:37] Rendering view: pages/admin
+[2025-12-03 19:30:37] Render skipped: already rendered once
+[2025-12-03 19:30:39] Rendering view: pages/admin_categories
+[2025-12-03 19:30:39] Render skipped: already rendered once
+[2025-12-03 19:30:40] Rendering view: pages/admin_products
+[2025-12-03 19:30:40] Render skipped: already rendered once
+[2025-12-03 19:30:41] Viewing users
+[2025-12-03 19:30:41] Rendering view: pages/admin_users
+[2025-12-03 19:30:41] Viewing users
+[2025-12-03 19:30:41] Render skipped: already rendered once
+[2025-12-03 19:30:42] Rendering view: pages/admin
+[2025-12-03 19:30:42] Render skipped: already rendered once
+[2025-12-03 19:30:46] Rendering view: pages/home
+[2025-12-03 19:30:46] Render skipped: already rendered once
+[2025-12-03 19:34:19] Rendering view: pages/admin
+[2025-12-03 19:34:19] Render skipped: already rendered once
+[2025-12-03 19:34:26] Rendering view: pages/home
+[2025-12-03 19:34:26] Render skipped: already rendered once
+[2025-12-03 19:34:28] Rendering view: pages/login
+[2025-12-03 19:34:28] Render skipped: already rendered once
+[2025-12-03 19:34:30] Rendering view: pages/register
+[2025-12-03 19:34:30] Render skipped: already rendered once
+[2025-12-03 19:34:48] Rendering view: pages/register
+[2025-12-03 19:34:48] Render skipped: already rendered once
+[2025-12-03 19:40:19] Rendering view: pages/register
+[2025-12-03 19:40:19] Render skipped: already rendered once
+[2025-12-03 19:40:20] Rendering view: pages/register
+[2025-12-03 19:40:20] Render skipped: already rendered once
+[2025-12-03 19:42:20] AUTH SERVICE: Registering user with email: thassan@algomau.ca
+[2025-12-03 19:44:34] Found user with email: thassan@algomau.ca
+[2025-12-03 19:44:34] Rendering view: pages/register
+[2025-12-03 19:44:34] Render skipped: already rendered once
+[2025-12-03 19:44:57] Found user with email: thassan@algomau.ca
+[2025-12-03 19:45:24] Found user with email: thassan@algomau.ca
+[2025-12-03 19:45:26] Rendering view: pages/register
+[2025-12-03 19:45:26] Render skipped: already rendered once
+[2025-12-03 19:45:29] Found user with email: thassan@algomau.ca
+[2025-12-03 19:46:18] Rendering view: pages/register
+[2025-12-03 19:46:18] Render skipped: already rendered once
+[2025-12-03 19:46:18] Rendering view: pages/register
+[2025-12-03 19:46:18] Render skipped: already rendered once
+[2025-12-03 19:46:27] Found user with email: thassan@algomau.ca
+[2025-12-03 19:47:13] Rendering view: pages/register
+[2025-12-03 19:47:13] Render skipped: already rendered once
+[2025-12-03 19:47:14] Rendering view: pages/register
+[2025-12-03 19:47:14] Render skipped: already rendered once
+[2025-12-03 19:47:29] User not found with email: hassan@algomau.ca
+[2025-12-03 19:47:29] AUTH SERVICE: Registering user with email: hassan@algomau.ca
+[2025-12-03 19:47:29] AUTH SERVICE: Result: success (user created)
+[2025-12-03 19:47:29] Rendering view: pages/home
+[2025-12-03 19:47:29] Render skipped: already rendered once
+[2025-12-03 19:47:34] Rendering view: pages/home
+[2025-12-03 19:47:34] Render skipped: already rendered once
+[2025-12-03 19:47:35] Rendering view: pages/public_products
+[2025-12-03 19:47:35] Render skipped: already rendered once
+[2025-12-03 19:47:37] Rendering view: pages/home
+[2025-12-03 19:47:37] Render skipped: already rendered once
+[2025-12-03 19:47:42] Rendering view: pages/home
+[2025-12-03 19:47:42] Render skipped: already rendered once
+[2025-12-03 19:47:46] Rendering view: pages/home
+[2025-12-03 19:47:46] Render skipped: already rendered once
+[2025-12-03 19:47:55] Rendering view: pages/home
+[2025-12-03 19:47:55] Render skipped: already rendered once
+[2025-12-03 19:49:55] Rendering view: pages/home
+[2025-12-03 19:49:55] Render skipped: already rendered once
+[2025-12-03 19:54:30] Rendering view: pages/public_products
+[2025-12-03 19:54:30] Render skipped: already rendered once
+[2025-12-03 19:54:32] Product: iPhone was viewed.
+[2025-12-03 19:54:32] Rendering view: pages/public_product_show
+[2025-12-03 19:54:32] Product: iPhone was viewed.
+[2025-12-03 19:54:32] Render skipped: already rendered once
+[2025-12-03 19:54:35] Rendering view: pages/home
+[2025-12-03 19:54:35] Render skipped: already rendered once
+[2025-12-03 20:02:00] No route found for GET /user_dashboard
+[2025-12-03 20:03:13] No route found for GET /user_dashboard
+[2025-12-03 20:03:14] No route found for GET /user_dashboard
+[2025-12-03 20:05:09] No route found for GET /user_dashboard
+[2025-12-03 20:05:10] No route found for GET /user_dashboard
+[2025-12-03 20:05:42] No route found for GET /user_dashboard
+[2025-12-03 20:05:44] Rendering view: pages/home
+[2025-12-03 20:05:44] Render skipped: already rendered once
+[2025-12-03 20:05:44] Rendering view: pages/home
+[2025-12-03 20:05:44] Render skipped: already rendered once
+[2025-12-03 20:05:47] Rendering view: pages/user/index
+[2025-12-03 20:05:47] Render skipped: already rendered once
+[2025-12-03 20:06:00] Rendering view: pages/home
+[2025-12-03 20:06:00] Render skipped: already rendered once
+[2025-12-03 20:07:16] Rendering view: pages/home
+[2025-12-03 20:07:16] Render skipped: already rendered once
+[2025-12-03 20:07:22] Rendering view: pages/home
+[2025-12-03 20:07:22] Render skipped: already rendered once
+[2025-12-03 20:07:27] Rendering view: pages/home
+[2025-12-03 20:07:27] Render skipped: already rendered once
+[2025-12-03 20:07:38] Rendering view: pages/home
+[2025-12-03 20:07:38] Render skipped: already rendered once
+[2025-12-03 20:07:41] Rendering view: pages/home
+[2025-12-03 20:07:41] Render skipped: already rendered once
+[2025-12-03 20:07:43] Rendering view: pages/home
+[2025-12-03 20:07:43] Render skipped: already rendered once
+[2025-12-03 20:07:52] Rendering view: pages/home
+[2025-12-03 20:07:52] Render skipped: already rendered once
+[2025-12-03 20:07:54] Rendering view: pages/user/index
+[2025-12-03 20:07:54] Render skipped: already rendered once
+[2025-12-03 20:08:13] Rendering view: pages/home
+[2025-12-03 20:08:13] Render skipped: already rendered once
+[2025-12-03 20:08:21] Rendering view: pages/home
+[2025-12-03 20:08:21] Render skipped: already rendered once
+[2025-12-03 20:09:34] Rendering view: pages/home
+[2025-12-03 20:09:34] Render skipped: already rendered once
+[2025-12-03 20:09:37] Rendering view: pages/user/index
+[2025-12-03 20:09:37] Render skipped: already rendered once
+[2025-12-03 20:09:53] No route found for GET /admin_categories
+[2025-12-03 20:10:00] No route found for GET /admin_products
+[2025-12-03 20:10:07] Rendering view: pages/home
+[2025-12-03 20:10:07] Render skipped: already rendered once
+[2025-12-03 20:10:10] Rendering view: pages/home
+[2025-12-03 20:10:10] Render skipped: already rendered once
+[2025-12-03 20:10:11] Rendering view: pages/user/index
+[2025-12-03 20:10:11] Render skipped: already rendered once
+[2025-12-03 20:10:33] Rendering view: pages/home
+[2025-12-03 20:10:33] Render skipped: already rendered once
+[2025-12-03 20:10:34] Rendering view: pages/login
+[2025-12-03 20:10:34] Render skipped: already rendered once
+[2025-12-03 20:10:37] Rendering view: pages/home
+[2025-12-03 20:10:37] Render skipped: already rendered once
+[2025-12-03 20:10:55] Rendering view: pages/home
+[2025-12-03 20:10:55] Render skipped: already rendered once
+[2025-12-03 20:10:59] Rendering view: pages/login
+[2025-12-03 20:10:59] Render skipped: already rendered once
+[2025-12-03 20:11:02] Rendering view: pages/register
+[2025-12-03 20:11:02] Render skipped: already rendered once
+[2025-12-03 20:11:07] Rendering view: pages/home
+[2025-12-03 20:11:07] Render skipped: already rendered once
+[2025-12-03 20:12:18] Session ID: d4089e9d3ef506119fd6e9e10b46b9f8 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:12:18] Rendering view: pages/cart
+[2025-12-03 20:12:18] Session ID: d4089e9d3ef506119fd6e9e10b46b9f8 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:12:18] Render skipped: already rendered once
+[2025-12-03 20:12:21] Rendering view: pages/public_products
+[2025-12-03 20:12:21] Render skipped: already rendered once
+[2025-12-03 20:12:23] Adding product to cart
+[2025-12-03 20:12:23] Identified session: d4089e9d3ef506119fd6e9e10b46b9f8
+[2025-12-03 20:12:23] Finding cart item: User ID: , Session ID: d4089e9d3ef506119fd6e9e10b46b9f8, Product ID: 51
+[2025-12-03 20:12:23] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 20:12:23] Found cart item: false
+[2025-12-03 20:12:23] Adding product to cart: User ID: , Session ID: d4089e9d3ef506119fd6e9e10b46b9f8, Product ID: 51, Quantity: 1
+[2025-12-03 20:12:23] Adding new cart item
+[2025-12-03 20:12:23] Adding product to cart: Product ID: 51
+[2025-12-03 20:12:23] SESSION Cart count: 1
+[2025-12-03 20:12:28] Product: iPhone was viewed.
+[2025-12-03 20:12:28] Rendering view: pages/public_product_show
+[2025-12-03 20:12:28] Product: iPhone was viewed.
+[2025-12-03 20:12:28] Render skipped: already rendered once
+[2025-12-03 20:12:35] Rendering view: pages/public_products
+[2025-12-03 20:12:35] Render skipped: already rendered once
+[2025-12-03 20:12:43] Rendering view: pages/home
+[2025-12-03 20:12:43] Render skipped: already rendered once
+[2025-12-03 20:13:15] Rendering view: pages/home
+[2025-12-03 20:13:15] Render skipped: already rendered once
+[2025-12-03 20:13:43] Rendering view: pages/home
+[2025-12-03 20:13:43] Render skipped: already rendered once
+[2025-12-03 20:14:43] Rendering view: pages/login
+[2025-12-03 20:14:43] Render skipped: already rendered once
+[2025-12-03 20:14:50] Found user with email: hassan@algomau.ca
+[2025-12-03 20:14:50] AUTH SERVICE: Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:14:50] AUTH SERVICE: Plain password length: 11
+[2025-12-03 20:14:50] AUTH SERVICE: Hashed password from DB: $2y$10$UX.ZKaoK6deqjNTvuWufO.SFZiVNV5kFoA92GnWuHRd6kdiurfH5S
+[2025-12-03 20:14:50] AUTH SERVICE: Hashed password length: 60
+[2025-12-03 20:14:50] AUTH SERVICE: password_verify result: FALSE
+[2025-12-03 20:14:50] AUTH SERVICE: Result: failure (password mismatch)
+[2025-12-03 20:14:50] Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:14:50] Result: failure
+[2025-12-03 20:14:50] Rendering view: pages/login
+[2025-12-03 20:14:50] Render skipped: already rendered once
+[2025-12-03 20:15:00] Found user with email: hassan@algomau.ca
+[2025-12-03 20:15:00] AUTH SERVICE: Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:15:00] AUTH SERVICE: Plain password length: 11
+[2025-12-03 20:15:00] AUTH SERVICE: Hashed password from DB: $2y$10$UX.ZKaoK6deqjNTvuWufO.SFZiVNV5kFoA92GnWuHRd6kdiurfH5S
+[2025-12-03 20:15:00] AUTH SERVICE: Hashed password length: 60
+[2025-12-03 20:15:00] AUTH SERVICE: password_verify result: FALSE
+[2025-12-03 20:15:00] AUTH SERVICE: Result: failure (password mismatch)
+[2025-12-03 20:15:00] Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:15:00] Result: failure
+[2025-12-03 20:15:00] Rendering view: pages/login
+[2025-12-03 20:15:00] Render skipped: already rendered once
+[2025-12-03 20:15:08] Found user with email: hassan@algomau.ca
+[2025-12-03 20:15:08] AUTH SERVICE: Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:15:08] AUTH SERVICE: Plain password length: 11
+[2025-12-03 20:15:08] AUTH SERVICE: Hashed password from DB: $2y$10$UX.ZKaoK6deqjNTvuWufO.SFZiVNV5kFoA92GnWuHRd6kdiurfH5S
+[2025-12-03 20:15:08] AUTH SERVICE: Hashed password length: 60
+[2025-12-03 20:15:08] AUTH SERVICE: password_verify result: FALSE
+[2025-12-03 20:15:08] AUTH SERVICE: Result: failure (password mismatch)
+[2025-12-03 20:15:08] Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:15:08] Result: failure
+[2025-12-03 20:15:08] Rendering view: pages/login
+[2025-12-03 20:15:08] Render skipped: already rendered once
+[2025-12-03 20:15:29] Found user with email: hassan@algomau.ca
+[2025-12-03 20:15:29] AUTH SERVICE: Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:15:29] AUTH SERVICE: Plain password length: 11
+[2025-12-03 20:15:29] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-03 20:15:29] AUTH SERVICE: Hashed password length: 60
+[2025-12-03 20:15:29] AUTH SERVICE: password_verify result: TRUE
+[2025-12-03 20:15:29] AUTH SERVICE: Result: success
+[2025-12-03 20:15:29] Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:15:29] Result: success
+[2025-12-03 20:15:29] Rendering view: pages/home
+[2025-12-03 20:15:29] Render skipped: already rendered once
+[2025-12-03 20:15:34] Rendering view: pages/user/index
+[2025-12-03 20:15:34] Render skipped: already rendered once
+[2025-12-03 20:15:36] Rendering view: pages/user/index
+[2025-12-03 20:15:36] Render skipped: already rendered once
+[2025-12-03 20:15:36] Rendering view: pages/user/index
+[2025-12-03 20:15:36] Render skipped: already rendered once
+[2025-12-03 20:16:21] Rendering view: pages/user/index
+[2025-12-03 20:16:21] Render skipped: already rendered once
+[2025-12-03 20:16:22] No route found for GET /shop
+[2025-12-03 20:16:27] Rendering view: pages/home
+[2025-12-03 20:16:27] Render skipped: already rendered once
+[2025-12-03 20:16:29] Rendering view: pages/public_products
+[2025-12-03 20:16:29] Render skipped: already rendered once
+[2025-12-03 20:16:37] Rendering view: pages/user/index
+[2025-12-03 20:16:37] Render skipped: already rendered once
+[2025-12-03 20:16:43] No route found for GET /admin_categories
+[2025-12-03 20:18:17] Rendering view: pages/user/index
+[2025-12-03 20:18:17] Render skipped: already rendered once
+[2025-12-03 20:18:25] Rendering view: pages/login
+[2025-12-03 20:18:25] Render skipped: already rendered once
+[2025-12-03 20:18:31] Found user with email: hassan@algomau.ca
+[2025-12-03 20:18:31] AUTH SERVICE: Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:18:31] AUTH SERVICE: Plain password length: 11
+[2025-12-03 20:18:31] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-03 20:18:31] AUTH SERVICE: Hashed password length: 60
+[2025-12-03 20:18:31] AUTH SERVICE: password_verify result: TRUE
+[2025-12-03 20:18:31] AUTH SERVICE: Result: success
+[2025-12-03 20:18:31] Authenticating user with email: hassan@algomau.ca
+[2025-12-03 20:18:31] Result: success
+[2025-12-03 20:18:31] Rendering view: pages/home
+[2025-12-03 20:18:31] Render skipped: already rendered once
+[2025-12-03 20:18:33] Rendering view: pages/user/index
+[2025-12-03 20:18:33] Render skipped: already rendered once
+[2025-12-03 20:19:08] Rendering view: pages/user/index
+[2025-12-03 20:19:08] Render skipped: already rendered once
+[2025-12-03 20:19:10] Rendering view: pages/home
+[2025-12-03 20:19:10] Render skipped: already rendered once
+[2025-12-03 20:19:12] Rendering view: pages/user/index
+[2025-12-03 20:19:12] Render skipped: already rendered once
+[2025-12-03 20:19:15] Rendering view: pages/home
+[2025-12-03 20:19:15] Render skipped: already rendered once
+[2025-12-03 20:19:17] Rendering view: pages/user/index
+[2025-12-03 20:19:17] Render skipped: already rendered once
+[2025-12-03 20:19:23] Rendering view: pages/user/index
+[2025-12-03 20:19:23] Render skipped: already rendered once
+[2025-12-03 20:19:25] Rendering view: pages/public_products
+[2025-12-03 20:19:25] Render skipped: already rendered once
+[2025-12-03 20:19:26] Adding product to cart
+[2025-12-03 20:19:26] Identified session: 04380fec86e91f63849275b155d9a95c
+[2025-12-03 20:19:26] Finding cart item: User ID: 3, Session ID: 04380fec86e91f63849275b155d9a95c, Product ID: 51
+[2025-12-03 20:19:26] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 20:19:26] Found cart item: false
+[2025-12-03 20:19:26] Adding product to cart: User ID: 3, Session ID: 04380fec86e91f63849275b155d9a95c, Product ID: 51, Quantity: 1
+[2025-12-03 20:19:26] Adding new cart item
+[2025-12-03 20:19:27] Adding product to cart: Product ID: 51
+[2025-12-03 20:19:27] SESSION Cart count: 1
+[2025-12-03 20:19:28] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:19:28] Rendering view: pages/cart
+[2025-12-03 20:19:28] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:19:28] Render skipped: already rendered once
+[2025-12-03 20:19:31] Removing item from cart: Item ID: 69
+[2025-12-03 20:19:31] Deleting cart item: 69
+[2025-12-03 20:19:32] SESSION Cart count: 0
+[2025-12-03 20:19:33] Rendering view: pages/public_products
+[2025-12-03 20:19:33] Render skipped: already rendered once
+[2025-12-03 20:19:35] Adding product to cart
+[2025-12-03 20:19:35] Identified session: 04380fec86e91f63849275b155d9a95c
+[2025-12-03 20:19:35] Finding cart item: User ID: 3, Session ID: 04380fec86e91f63849275b155d9a95c, Product ID: 51
+[2025-12-03 20:19:35] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 20:19:35] Found cart item: false
+[2025-12-03 20:19:35] Adding product to cart: User ID: 3, Session ID: 04380fec86e91f63849275b155d9a95c, Product ID: 51, Quantity: 1
+[2025-12-03 20:19:35] Adding new cart item
+[2025-12-03 20:19:35] Adding product to cart: Product ID: 51
+[2025-12-03 20:19:35] SESSION Cart count: 1
+[2025-12-03 20:19:36] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:19:36] Rendering view: pages/cart
+[2025-12-03 20:19:36] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:19:36] Render skipped: already rendered once
+[2025-12-03 20:19:37] Rendering view: pages/checkout
+[2025-12-03 20:19:37] Render skipped: already rendered once
+[2025-12-03 20:19:37] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:21:09] Rendering view: pages/checkout
+[2025-12-03 20:21:09] Render skipped: already rendered once
+[2025-12-03 20:21:09] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:21:16] Rendering view: pages/checkout
+[2025-12-03 20:21:16] Render skipped: already rendered once
+[2025-12-03 20:21:16] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:21:40] Rendering view: pages/checkout
+[2025-12-03 20:21:40] Render skipped: already rendered once
+[2025-12-03 20:21:40] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:22:18] Creating order
+[2025-12-03 20:22:18] Order total: 50
+[2025-12-03 20:22:19] Rendering view: pages/home
+[2025-12-03 20:22:19] Render skipped: already rendered once
+[2025-12-03 20:22:21] Rendering view: pages/user/index
+[2025-12-03 20:22:21] Render skipped: already rendered once
+[2025-12-03 20:23:24] Rendering view: pages/user/index
+[2025-12-03 20:23:24] Render skipped: already rendered once
+[2025-12-03 20:24:06] Rendering view: pages/user/index
+[2025-12-03 20:24:06] Render skipped: already rendered once
+[2025-12-03 20:24:08] Rendering view: pages/home
+[2025-12-03 20:24:08] Render skipped: already rendered once
+[2025-12-03 20:24:11] Rendering view: pages/user/index
+[2025-12-03 20:24:11] Render skipped: already rendered once
+[2025-12-03 20:25:23] Rendering view: pages/user/index
+[2025-12-03 20:25:23] Render skipped: already rendered once
+[2025-12-03 20:25:24] Rendering view: pages/home
+[2025-12-03 20:25:24] Render skipped: already rendered once
+[2025-12-03 20:25:29] Rendering view: pages/public_products
+[2025-12-03 20:25:29] Render skipped: already rendered once
+[2025-12-03 20:25:30] Adding product to cart
+[2025-12-03 20:25:30] Identified session: 04380fec86e91f63849275b155d9a95c
+[2025-12-03 20:25:30] Finding cart item: User ID: 3, Session ID: 04380fec86e91f63849275b155d9a95c, Product ID: 51
+[2025-12-03 20:25:30] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-03 20:25:30] Found cart item: false
+[2025-12-03 20:25:30] Adding product to cart: User ID: 3, Session ID: 04380fec86e91f63849275b155d9a95c, Product ID: 51, Quantity: 1
+[2025-12-03 20:25:30] Adding new cart item
+[2025-12-03 20:25:31] Adding product to cart: Product ID: 51
+[2025-12-03 20:25:31] SESSION Cart count: 1
+[2025-12-03 20:25:33] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:25:33] Rendering view: pages/cart
+[2025-12-03 20:25:33] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:25:33] Render skipped: already rendered once
+[2025-12-03 20:25:34] Rendering view: pages/checkout
+[2025-12-03 20:25:34] Render skipped: already rendered once
+[2025-12-03 20:25:34] Session ID: 04380fec86e91f63849275b155d9a95c User ID: 3 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 20:25:53] Creating order
+[2025-12-03 20:25:53] Order total: 50
+[2025-12-03 20:25:55] Rendering view: pages/home
+[2025-12-03 20:25:55] Render skipped: already rendered once
+[2025-12-03 20:25:56] Rendering view: pages/user/index
+[2025-12-03 20:25:56] Render skipped: already rendered once
+[2025-12-03 20:25:59] Rendering view: pages/home
+[2025-12-03 20:25:59] Render skipped: already rendered once
+[2025-12-03 20:26:18] Rendering view: pages/user/index
+[2025-12-03 20:26:18] Render skipped: already rendered once
+[2025-12-03 20:26:19] Rendering view: pages/home
+[2025-12-03 20:26:19] Render skipped: already rendered once
+[2025-12-03 20:26:21] Rendering view: pages/user/index
+[2025-12-03 20:26:21] Render skipped: already rendered once
+[2025-12-03 20:26:22] Rendering view: pages/home
+[2025-12-03 20:26:22] Render skipped: already rendered once
+[2025-12-03 20:27:04] Rendering view: pages/user/index
+[2025-12-03 20:27:04] Render skipped: already rendered once
+[2025-12-03 20:27:25] Rendering view: pages/user/index
+[2025-12-03 20:27:25] Render skipped: already rendered once
+[2025-12-03 20:27:27] Order details: App\Models\Order Object
+(
+    [id] => 17
+    [user_id] => 3
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-04 01:22:18
+    [customer_name] => T. Hassan
+    [customer_email] => thassan@mail.com
+    [shipping_address] => ABC
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 987
+    [shipping_country] => CA
+    [phone] => 789
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [order_id] => 17
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 20:27:27] Rendering view: pages/order_show
+[2025-12-03 20:27:27] Order details: App\Models\Order Object
+(
+    [id] => 17
+    [user_id] => 3
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-04 01:22:18
+    [customer_name] => T. Hassan
+    [customer_email] => thassan@mail.com
+    [shipping_address] => ABC
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 987
+    [shipping_country] => CA
+    [phone] => 789
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [order_id] => 17
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 20:27:27] Render skipped: already rendered once
+[2025-12-03 20:27:32] Order details: App\Models\Order Object
+(
+    [id] => 18
+    [user_id] => 3
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-04 01:25:53
+    [customer_name] => Sam
+    [customer_email] => Sam@mail.com
+    [shipping_address] => ABC
+    [shipping_city] => ABC
+    [shipping_postal_code] => 987
+    [shipping_country] => CA
+    [phone] => 789
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 14
+                    [order_id] => 18
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 20:27:32] Rendering view: pages/order_show
+[2025-12-03 20:27:32] Order details: App\Models\Order Object
+(
+    [id] => 18
+    [user_id] => 3
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-04 01:25:53
+    [customer_name] => Sam
+    [customer_email] => Sam@mail.com
+    [shipping_address] => ABC
+    [shipping_city] => ABC
+    [shipping_postal_code] => 987
+    [shipping_country] => CA
+    [phone] => 789
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 14
+                    [order_id] => 18
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 20:27:32] Render skipped: already rendered once
+[2025-12-03 20:27:40] Order details: App\Models\Order Object
+(
+    [id] => 17
+    [user_id] => 3
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-04 01:22:18
+    [customer_name] => T. Hassan
+    [customer_email] => thassan@mail.com
+    [shipping_address] => ABC
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 987
+    [shipping_country] => CA
+    [phone] => 789
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [order_id] => 17
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 20:27:40] Rendering view: pages/order_show
+[2025-12-03 20:27:40] Order details: App\Models\Order Object
+(
+    [id] => 17
+    [user_id] => 3
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-04 01:22:18
+    [customer_name] => T. Hassan
+    [customer_email] => thassan@mail.com
+    [shipping_address] => ABC
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 987
+    [shipping_country] => CA
+    [phone] => 789
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [order_id] => 17
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 20:27:40] Render skipped: already rendered once
+[2025-12-03 20:27:44] Order details: App\Models\Order Object
+(
+    [id] => 17
+    [user_id] => 3
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-04 01:22:18
+    [customer_name] => T. Hassan
+    [customer_email] => thassan@mail.com
+    [shipping_address] => ABC
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 987
+    [shipping_country] => CA
+    [phone] => 789
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [order_id] => 17
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 20:27:44] Rendering view: pages/order_show
+[2025-12-03 20:27:44] Order details: App\Models\Order Object
+(
+    [id] => 17
+    [user_id] => 3
+    [total_price] => 59.4
+    [status] => pending
+    [order_date] => 2025-12-04 01:22:18
+    [customer_name] => T. Hassan
+    [customer_email] => thassan@mail.com
+    [shipping_address] => ABC
+    [shipping_city] => Toronto
+    [shipping_postal_code] => 987
+    [shipping_country] => CA
+    [phone] => 789
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [order_id] => 17
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+        )
+
+)
+
+[2025-12-03 20:27:44] Render skipped: already rendered once
+[2025-12-03 20:27:49] Rendering view: pages/home
+[2025-12-03 20:27:49] Render skipped: already rendered once
+[2025-12-03 20:27:52] Rendering view: pages/home
+[2025-12-03 20:27:52] Render skipped: already rendered once

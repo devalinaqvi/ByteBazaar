@@ -90,7 +90,7 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="col-span-2">
                             <label for="postal-code" class="block text-sm/6 font-medium text-gray-700">Postal code</label>
                             <div class="mt-2">
                                 <input

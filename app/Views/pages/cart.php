@@ -56,7 +56,7 @@
             </div>
 
             <div class="mt-10 w-full">
-                <a href="<?php echo route('checkout') ?>" class="w-full rounded-md border border-transparent bg-indigo-600 px-4 py-3 text-base font-medium text-white shadow-xs hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 focus:outline-hidden">Checkout</a>
+                <a href="<?php echo route('checkout') ?>" class="flex justify-center w-full rounded-md border border-transparent bg-indigo-600 px-4 py-3 text-base font-medium text-white shadow-xs hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 focus:outline-hidden">Checkout</a>
             </div>
 
             <div class="mt-6 text-center text-sm text-gray-500">

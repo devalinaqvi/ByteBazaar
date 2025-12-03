@@ -24,6 +24,7 @@ class CategoryController extends BaseController
             'body_class' => 'h-full',
             'html_class' => 'h-full bg-gray-100',
             'header' => true,
+            'is_admin' => true,
             'admin_nav_active' => 'active',
             'admin_footer_active' => 'active',
             'categories' => $list,
@@ -37,6 +38,7 @@ class CategoryController extends BaseController
             'body_class' => 'h-full',
             'html_class' => 'h-full bg-gray-100',
             'header' => true,
+            'is_admin' => true,
             'admin_nav_active' => 'active',
             'admin_footer_active' => 'active',
         ]);
@@ -58,6 +60,7 @@ class CategoryController extends BaseController
             'body_class' => 'h-full',
             'html_class' => 'h-full bg-gray-100',
             'header' => true,
+            'is_admin' => true,
             'admin_nav_active' => 'active',
             'admin_footer_active' => 'active',
             'category' => $category

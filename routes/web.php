@@ -10,7 +10,7 @@ $router->get('/product/[*:id]', 'ProductController@show', 'public_product_detail
 $router->get('/login', 'AuthController@login', 'guest_login');
 $router->post('/login', 'AuthController@authenticate', 'guest_login_post');
 $router->get('/register', 'AuthController@register', 'guest_register');
-$router->post('/register', 'AuthController@create', 'guest_register_post');
+$router->post('/register', 'AuthController@postRegister', 'guest_register_post');
 $router->get('/logout', 'AuthController@logout', 'public_logout');
 
 // Protected routes (auth required: cart, orders)

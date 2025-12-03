@@ -4,11 +4,15 @@ namespace App\Services;
 
 use App\Repositories\CartRepository;
 use App\Repositories\ProductRepository;
+use Random\RandomException;
 
 class CartService
 {
     public function __construct(private CartRepository $cartRepo, private ProductRepository $productRepo) {}
 
+    /**
+     * @throws RandomException
+     */
     private function identifyUser(): array
     {
         $userId = $_SESSION['user_id'] ?? null;
@@ -77,6 +81,10 @@ class CartService
         return $product->name;
     }
 
+    /**
+     * @throws RandomException
+     * @throws \Exception
+     */
     public function addToCart(int $productId, int $qty = 1)
     {
         logMessage('Adding product to cart');
@@ -87,15 +95,7 @@ class CartService
 
         $existing = $this->cartRepo->findItem($userId, $sessionId, $productId);
 
-        //check in stock
-        $product = $this->productRepo->find($productId);
-        $alreadyAdded = $this->cartRepo->countItemsByProduct($productId);
-        if (!$product) {
-            throw new \Exception('Product not found');
-        }
-        if ($product->stock < $alreadyAdded) {
-            throw new \Exception('Out of stock');
-        }
+        $this->checkAvailability($productId, $sessionId);
 
         logMessage('Adding product to cart: User ID: ' . $userId . ', Session ID: ' . $sessionId . ', Product ID: ' . $productId . ', Quantity: ' . $qty);
 
@@ -110,6 +110,20 @@ class CartService
             'product_id' => $productId,
             'quantity' => $qty,
         ]);
+    }
+
+    /**
+     * @throws \Exception
+     */
+    private function checkAvailability(int $productId, string $sessionId): void
+    {
+        $product = $this->productRepo->find($productId);
+        if (!$product) {
+            throw new \Exception('Product not found');
+        }
+        if ($product->stock < $this->cartRepo->countItemsByProduct($productId, $sessionId)) {
+            throw new \Exception('Out of stock');
+        }
     }
 
     public function remove(int $id)

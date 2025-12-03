@@ -24,6 +24,19 @@ class AuthController extends BaseController
         $this->render('pages/register', ['title' => 'Register', 'nav_rendered' => false, 'footer_rendered' => false, 'body_class' => 'h-full', 'html_class' => 'bg-gray-100']);
     }
 
+    public function postRegister(): void {
+        $data = $this->request->all();
+        $email = $data['email'];
+        if ($this->authService->emailExists($email)) {
+            $this->json([
+                'success' => false,
+                'message' => 'Email already exists'
+            ]);
+        }
+        $this->authService->register($data);
+        $this->redirect('/login');
+    }
+
     public function logout(): void {
         $this->authService->logout();
         $this->redirect('/login');

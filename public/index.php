@@ -77,12 +77,14 @@ $container->bind('\\App\\Controllers\\AdminController', fn($c) => new \App\Contr
 $container->bind('\\App\\Controllers\\CategoryController', fn($c) => new \App\Controllers\CategoryController($c->get('categoryService'), $c->get('request')));
 $container->bind('\\App\\Controllers\\ProductController', fn($c) => new \App\Controllers\ProductController($c->get('productService'), $c->get('request')));
 $container->bind('\\App\\Controllers\\OrderController', fn($c) => new \App\Controllers\OrderController($c->get('orderService'), $c->get('productService'), $c->get('cartService'), $c->get('request')));
+$container->bind('\\App\\Controllers\\UserController', fn($c) => new \App\Controllers\UserController($c->get('userService'), $c->get('request')));
 
 $router = new \App\Core\Router($container);
 
 // Load routes
 require_once __DIR__ . '/../routes/web.php';
 require_once __DIR__ . '/../routes/admin.php';
+require_once __DIR__ . '/../routes/user.php';
 
 // Dispatch
 $router->dispatch($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);

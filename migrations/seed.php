@@ -27,6 +27,6 @@ foreach ($products as $p) {
 // Admin user
 $hashed = password_hash('password123', PASSWORD_DEFAULT);
 $stmt = $pdo->prepare("INSERT INTO users (name, email, password, is_admin) VALUES (?, ?, ?, 1)");
-$stmt->execute(['Admin User', 'admin@example.com', $hashed]);
+$stmt->execute(['Admin User', 'thassan@algomau.ca', $hashed]);
 
-echo "Seeded! Admin: admin@example.com / password123\n";
+echo "Seeded! Admin: thassan@algomau.ca / password123\n";
