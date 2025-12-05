@@ -4,7 +4,7 @@
             <div aria-hidden="true" class="absolute inset-0 hidden sm:flex sm:flex-col">
                 <div class="relative w-full flex-1 bg-gray-800">
                     <div class="absolute inset-0 overflow-hidden">
-                        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-04-hero-full-width.jpg" alt="" class="size-full object-cover" />
+                        <img src="<?php echo returnBannerImage('default'); ?>" alt="" class="size-full object-cover" />
                     </div>
                     <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
                 </div>

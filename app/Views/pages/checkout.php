@@ -227,12 +227,12 @@
 
             // Calculate totals
             const shipping = 0.00;
-            const taxRate = 0.0;
+            const taxRate = 0.00;
             const taxes = (subtotal + shipping) * taxRate;
-            const total = subtotal + shipping + taxes;
+            const total = subtotal;
 
             document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
-            document.getElementById('taxes').textContent = `$${taxes.toFixed(2)}`;
+            // document.getElementById('taxes').textContent = `$${taxes.toFixed(2)}`;
             document.getElementById('total').textContent = `$${total.toFixed(2)}`;
 
         } catch (error) {

@@ -165,6 +165,30 @@ function mapCategoryImage(string $category): string
     return asset('images/categories/default.webp');
 }
 
+function returnBannerImage(string $banner): string
+{
+    $banner = strtolower($banner);
+
+    $possibleFiles = [
+        $banner . '.jpg',
+        $banner . '.png',
+        $banner . '.webp',
+    ];
+
+    foreach ($possibleFiles as $filename) {
+        // Use public_path() to get the correct filesystem path
+        $filePath = public_path('assets/images/banner/' . $filename);
+
+        if (file_exists($filePath)) {
+            // Return the URL using asset() helper
+            return asset('images/banner/' . $filename);
+        }
+    }
+
+    // Return default image URL
+    return asset('images/banner/default.webp');
+}
+
 
 if (!function_exists('generate_product_description')) {
 

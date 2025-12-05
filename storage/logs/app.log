@@ -9802,3 +9802,90 @@
 [2025-12-05 05:58:16] Render skipped: already rendered once
 [2025-12-05 06:05:45] Rendering view: pages/home
 [2025-12-05 06:05:45] Render skipped: already rendered once
+[2025-12-05 06:11:31] Rendering view: pages/home
+[2025-12-05 06:11:31] Render skipped: already rendered once
+[2025-12-05 06:11:31] No route found for GET /favicon.ico
+[2025-12-05 06:11:33] Rendering view: pages/public_products
+[2025-12-05 06:11:33] Render skipped: already rendered once
+[2025-12-05 06:11:34] Rendering view: pages/public_products
+[2025-12-05 06:11:34] Render skipped: already rendered once
+[2025-12-05 06:11:35] No route found for GET /favicon.ico
+[2025-12-05 06:11:35] Session ID: 8b5114ea3d708da4102901995a3beb71 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:11:35] Rendering view: pages/cart
+[2025-12-05 06:11:35] Session ID: 8b5114ea3d708da4102901995a3beb71 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:11:35] Render skipped: already rendered once
+[2025-12-05 06:11:38] Rendering view: pages/checkout
+[2025-12-05 06:11:38] Render skipped: already rendered once
+[2025-12-05 06:11:38] Session ID: 8b5114ea3d708da4102901995a3beb71 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:11:43] Rendering view: pages/home
+[2025-12-05 06:11:43] Render skipped: already rendered once
+[2025-12-05 06:11:48] Rendering view: pages/home
+[2025-12-05 06:11:48] Render skipped: already rendered once
+[2025-12-05 06:11:59] Rendering view: pages/home
+[2025-12-05 06:11:59] Render skipped: already rendered once
+[2025-12-05 06:12:01] Rendering view: pages/home
+[2025-12-05 06:12:01] Render skipped: already rendered once
+[2025-12-05 06:12:01] No route found for GET /favicon.ico
+[2025-12-05 06:12:14] Rendering view: pages/home
+[2025-12-05 06:12:14] Render skipped: already rendered once
+[2025-12-05 06:12:27] Rendering view: pages/public_products
+[2025-12-05 06:12:27] Render skipped: already rendered once
+[2025-12-05 06:12:28] Product: Graphics Card was viewed.
+[2025-12-05 06:12:28] Rendering view: pages/public_product_show
+[2025-12-05 06:12:28] Product: Graphics Card was viewed.
+[2025-12-05 06:12:28] Render skipped: already rendered once
+[2025-12-05 06:12:29] Adding product to cart
+[2025-12-05 06:12:29] Identified session: c4b037395f84b0ed1e963756fa8f8049
+[2025-12-05 06:12:29] Finding cart item: User ID: , Session ID: c4b037395f84b0ed1e963756fa8f8049, Product ID: 55
+[2025-12-05 06:12:29] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-05 06:12:29] Found cart item: false
+[2025-12-05 06:12:29] Adding product to cart: User ID: , Session ID: c4b037395f84b0ed1e963756fa8f8049, Product ID: 55, Quantity: 1
+[2025-12-05 06:12:29] Adding new cart item
+[2025-12-05 06:12:29] Adding product to cart: Product ID: 55
+[2025-12-05 06:12:29] SESSION Cart count: 1
+[2025-12-05 06:12:31] Product: Graphics Card was viewed.
+[2025-12-05 06:12:31] Rendering view: pages/public_product_show
+[2025-12-05 06:12:31] Product: Graphics Card was viewed.
+[2025-12-05 06:12:31] Render skipped: already rendered once
+[2025-12-05 06:12:31] Rendering view: pages/home
+[2025-12-05 06:12:31] Render skipped: already rendered once
+[2025-12-05 06:19:37] Rendering view: pages/public_products
+[2025-12-05 06:19:37] Render skipped: already rendered once
+[2025-12-05 06:19:39] Adding product to cart
+[2025-12-05 06:19:39] Identified session: c4b037395f84b0ed1e963756fa8f8049
+[2025-12-05 06:19:39] Finding cart item: User ID: , Session ID: c4b037395f84b0ed1e963756fa8f8049, Product ID: 53
+[2025-12-05 06:19:39] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-05 06:19:39] Found cart item: false
+[2025-12-05 06:19:39] Adding product to cart: User ID: , Session ID: c4b037395f84b0ed1e963756fa8f8049, Product ID: 53, Quantity: 1
+[2025-12-05 06:19:39] Adding new cart item
+[2025-12-05 06:19:39] Adding product to cart: Product ID: 53
+[2025-12-05 06:19:39] SESSION Cart count: 2
+[2025-12-05 06:19:41] Session ID: c4b037395f84b0ed1e963756fa8f8049 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:19:41] Rendering view: pages/cart
+[2025-12-05 06:19:41] Session ID: c4b037395f84b0ed1e963756fa8f8049 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:19:41] Render skipped: already rendered once
+[2025-12-05 06:19:43] Rendering view: pages/checkout
+[2025-12-05 06:19:43] Render skipped: already rendered once
+[2025-12-05 06:19:43] Session ID: c4b037395f84b0ed1e963756fa8f8049 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:19:55] Rendering view: pages/checkout
+[2025-12-05 06:19:55] Render skipped: already rendered once
+[2025-12-05 06:19:55] Session ID: c4b037395f84b0ed1e963756fa8f8049 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:20:09] Rendering view: pages/checkout
+[2025-12-05 06:20:09] Render skipped: already rendered once
+[2025-12-05 06:20:09] Session ID: c4b037395f84b0ed1e963756fa8f8049 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:20:32] Rendering view: pages/checkout
+[2025-12-05 06:20:32] Render skipped: already rendered once
+[2025-12-05 06:20:44] Rendering view: pages/checkout
+[2025-12-05 06:20:44] Render skipped: already rendered once
+[2025-12-05 06:20:45] Session ID: c4b037395f84b0ed1e963756fa8f8049 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:20:51] Rendering view: pages/checkout
+[2025-12-05 06:20:51] Render skipped: already rendered once
+[2025-12-05 06:20:52] Session ID: c4b037395f84b0ed1e963756fa8f8049 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 06:21:32] Rendering view: pages/home
+[2025-12-05 06:21:32] Render skipped: already rendered once
+[2025-12-05 06:22:42] Rendering view: pages/home
+[2025-12-05 06:22:42] Render skipped: already rendered once
+[2025-12-05 06:23:41] Rendering view: pages/home
+[2025-12-05 06:23:41] Render skipped: already rendered once
+[2025-12-05 06:24:24] Rendering view: pages/home
+[2025-12-05 06:24:24] Render skipped: already rendered once
