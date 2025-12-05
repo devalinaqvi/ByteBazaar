@@ -129,7 +129,7 @@ class ProductRepository
     public function softDelete(int $id): bool
     {
         $stmt = $this->db->prepare("
-            UPDATE products SET deleted_at = NOW() WHERE id = ?
+            UPDATE products SET deleted_at = NOW(), isDeleted = 1 WHERE id = ?
         ");
         return $stmt->execute([$id]);
     }
