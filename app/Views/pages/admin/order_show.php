@@ -15,7 +15,7 @@
                 <div class="border-t border-b border-gray-200 bg-white shadow-xs sm:rounded-lg sm:border">
                     <div class="px-4 py-6 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:p-8">
                         <div class="sm:flex lg:col-span-7">
-                            <img src="<?= $item['product_image'] ?? '' ?>" alt="Insulated bottle with white base and black snap lid." class="aspect-square w-full shrink-0 rounded-lg object-cover sm:size-40" />
+                            <img src="<?= $item['product_image'] ?? '' ?>" alt="<?= $item['product_name'] ?? 'N/A' ?>" class="aspect-square w-full shrink-0 rounded-lg object-cover sm:size-40" />
 
                             <div class="mt-6 sm:mt-0 sm:ml-6">
                                 <h3 class="text-base font-medium text-gray-900">
