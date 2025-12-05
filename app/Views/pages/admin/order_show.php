@@ -99,7 +99,7 @@
                     </div>
                     <div class="flex items-center justify-between pb-4">
                         <dt class="text-gray-600">Tax</dt>
-                        <dd class="font-medium text-gray-900">$<?= $tax = (($order->total_price + 5.00) *0.08) ?? 'N/A' ?></dd>
+                        <dd class="font-medium text-gray-900">$<?= $tax = (($subtotal + 5.00) *0.08) ?? 'N/A' ?></dd>
                     </div>
                     <div class="flex items-center justify-between pt-4">
                         <dt class="font-medium text-gray-900">Order total</dt>
