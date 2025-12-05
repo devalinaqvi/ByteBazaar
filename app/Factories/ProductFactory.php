@@ -12,6 +12,10 @@ class ProductFactory
 
         foreach ($data as $key => $value) {
             if (property_exists($product, $key)) {
+                if($value == null)
+                {
+                    continue;
+                }
                 $product->$key = $value;
             }
         }

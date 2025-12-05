@@ -21,7 +21,7 @@
                                 <h3 class="text-base font-medium text-gray-900">
                                     <a href="#"><?= $item['product_name'] ?? 'N/A' ?></a>
                                 </h3>
-                                <p class="mt-2 text-sm font-medium text-gray-900">$<?= $item['product_price'] ?? 'N/A' ?></p>
+                                <p class="mt-2 text-sm font-medium text-gray-900">$<?= $item['unit_price'] ?? 'N/A' ?></p>
                                 <p class="mt-3 text-sm text-gray-500"><?= $item['product_description'] ?? 'No description available' ?></p>
                                 <p class="mt-3 text-sm text-gray-500">Quantity: <?= $item['quantity'] ?? 'N/A' ?></p>
                             </div>

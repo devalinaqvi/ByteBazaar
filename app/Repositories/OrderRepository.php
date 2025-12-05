@@ -112,6 +112,7 @@ class OrderRepository
             $itemsStmt = $this->db->prepare($itemsStmt);
             $itemsStmt->execute([$id]);
             $order->items = $itemsStmt->fetchAll(PDO::FETCH_ASSOC);
+            logMessage('OrderItems: ' . print_r($order->items, true));
         }
         if(!$order)
         {
