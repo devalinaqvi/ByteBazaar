@@ -75,7 +75,7 @@
 
         <!-- Product image -->
         <div class="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
-            <img src="<?= $product->image_url ?>" alt="Light green canvas bag with black straps, handle, front zipper pouch, and drawstring top." class="aspect-square w-full rounded-lg object-cover" />
+            <img src="<?= $product->image_url ?>" alt="<?= $product->name ?>" class="aspect-square w-full rounded-lg object-cover" />
         </div>
 
         <!-- Product form -->
