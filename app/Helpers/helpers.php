@@ -144,7 +144,6 @@ function csrf_hash(): string
 function mapCategoryImage(string $category): string
 {
     $category = strtolower($category);
-    $baseDir = '/assets/images/categories/';
 
     $possibleFiles = [
         $category . '.jpg',
@@ -153,13 +152,17 @@ function mapCategoryImage(string $category): string
     ];
 
     foreach ($possibleFiles as $filename) {
-        $path = $_SERVER['DOCUMENT_ROOT'] . $baseDir . $filename;
-        if (file_exists($path)) {
-            return $baseDir . $filename;
+        // Use public_path() to get the correct filesystem path
+        $filePath = public_path('assets/images/categories/' . $filename);
+
+        if (file_exists($filePath)) {
+            // Return the URL using asset() helper
+            return asset('images/categories/' . $filename);
         }
     }
 
-    return '/assets/images/categories/default.webp';
+    // Return default image URL
+    return asset('images/categories/default.webp');
 }
 
 
