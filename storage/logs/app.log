@@ -9165,3 +9165,632 @@
 [2025-12-03 21:17:49] Render skipped: already rendered once
 [2025-12-03 21:17:49] Rendering view: pages/home
 [2025-12-03 21:17:49] Render skipped: already rendered once
+[2025-12-03 21:33:57] Product: Samsung was viewed.
+[2025-12-03 21:33:57] Rendering view: pages/public_product_show
+[2025-12-03 21:33:57] Product: Samsung was viewed.
+[2025-12-03 21:33:57] Render skipped: already rendered once
+[2025-12-03 21:34:04] Rendering view: pages/public_products
+[2025-12-03 21:34:04] Render skipped: already rendered once
+[2025-12-03 21:34:05] Session ID: 5f69396ef42d39372fdacce794758900 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 21:34:05] Rendering view: pages/cart
+[2025-12-03 21:34:05] Session ID: 5f69396ef42d39372fdacce794758900 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-03 21:34:05] Render skipped: already rendered once
+[2025-12-03 21:34:07] Rendering view: pages/admin
+[2025-12-03 21:34:07] Render skipped: already rendered once
+[2025-12-03 21:34:08] Rendering view: pages/admin_products
+[2025-12-03 21:34:08] Render skipped: already rendered once
+[2025-12-03 21:34:09] Rendering view: pages/admin_add_product
+[2025-12-03 21:34:09] Render skipped: already rendered once
+[2025-12-03 21:34:13] Rendering view: pages/admin_add_product
+[2025-12-03 21:34:13] Render skipped: already rendered once
+[2025-12-03 21:34:14] Rendering view: pages/admin_add_product
+[2025-12-03 21:34:14] Render skipped: already rendered once
+[2025-12-03 21:34:38] Rendering view: pages/admin_add_product
+[2025-12-03 21:34:38] Render skipped: already rendered once
+[2025-12-03 21:34:40] Viewing users
+[2025-12-03 21:34:40] Rendering view: pages/admin_users
+[2025-12-03 21:34:40] Viewing users
+[2025-12-03 21:34:40] Render skipped: already rendered once
+[2025-12-03 21:34:41] Rendering view: pages/admin_products
+[2025-12-03 21:34:41] Render skipped: already rendered once
+[2025-12-03 21:34:42] Rendering view: pages/admin_categories
+[2025-12-03 21:34:42] Render skipped: already rendered once
+[2025-12-03 21:34:43] Rendering view: pages/admin_products
+[2025-12-03 21:34:43] Render skipped: already rendered once
+[2025-12-03 21:34:43] Viewing users
+[2025-12-03 21:34:43] Rendering view: pages/admin_users
+[2025-12-03 21:34:43] Viewing users
+[2025-12-03 21:34:43] Render skipped: already rendered once
+[2025-12-03 21:34:45] Rendering view: pages/admin_products
+[2025-12-03 21:34:45] Render skipped: already rendered once
+[2025-12-03 21:34:49] Rendering view: pages/admin_edit_product
+[2025-12-03 21:34:49] Render skipped: already rendered once
+[2025-12-03 21:35:01] Viewing users
+[2025-12-03 21:35:01] Rendering view: pages/admin_users
+[2025-12-03 21:35:01] Viewing users
+[2025-12-03 21:35:01] Render skipped: already rendered once
+[2025-12-03 21:35:02] Rendering view: pages/admin_products
+[2025-12-03 21:35:02] Render skipped: already rendered once
+[2025-12-03 21:35:03] Rendering view: pages/admin_categories
+[2025-12-03 21:35:03] Render skipped: already rendered once
+[2025-12-03 21:35:04] Rendering view: pages/admin
+[2025-12-03 21:35:04] Render skipped: already rendered once
+[2025-12-03 21:35:05] Rendering view: pages/admin_categories
+[2025-12-03 21:35:05] Render skipped: already rendered once
+[2025-12-03 21:35:06] Rendering view: pages/admin_products
+[2025-12-03 21:35:06] Render skipped: already rendered once
+[2025-12-03 21:35:09] Rendering view: pages/admin_add_product
+[2025-12-03 21:35:09] Render skipped: already rendered once
+[2025-12-03 21:35:33] Rendering view: pages/admin
+[2025-12-03 21:35:33] Render skipped: already rendered once
+[2025-12-03 21:35:34] Rendering view: pages/admin_categories
+[2025-12-03 21:35:34] Render skipped: already rendered once
+[2025-12-03 21:35:35] Rendering view: pages/admin_products
+[2025-12-03 21:35:35] Render skipped: already rendered once
+[2025-12-03 21:35:36] Viewing users
+[2025-12-03 21:35:36] Rendering view: pages/admin_users
+[2025-12-03 21:35:36] Viewing users
+[2025-12-03 21:35:36] Render skipped: already rendered once
+[2025-12-04 06:09:28] Rendering view: pages/home
+[2025-12-04 06:09:28] Render skipped: already rendered once
+[2025-12-04 06:09:30] No route found for GET /favicon.ico
+[2025-12-04 06:09:30] Rendering view: pages/login
+[2025-12-04 06:09:30] Render skipped: already rendered once
+[2025-12-04 06:09:41] Found user with email: thassan@algomau.ca
+[2025-12-04 06:09:41] AUTH SERVICE: Authenticating user with email: thassan@algomau.ca
+[2025-12-04 06:09:41] AUTH SERVICE: Plain password length: 11
+[2025-12-04 06:09:41] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-04 06:09:41] AUTH SERVICE: Hashed password length: 60
+[2025-12-04 06:09:41] AUTH SERVICE: password_verify result: TRUE
+[2025-12-04 06:09:41] AUTH SERVICE: Result: success
+[2025-12-04 06:09:41] Authenticating user with email: thassan@algomau.ca
+[2025-12-04 06:09:41] Result: success
+[2025-12-04 06:09:41] Rendering view: pages/admin
+[2025-12-04 06:09:41] Render skipped: already rendered once
+[2025-12-04 06:09:50] Rendering view: pages/admin_categories
+[2025-12-04 06:09:50] Render skipped: already rendered once
+[2025-12-04 06:09:51] Rendering view: pages/admin_products
+[2025-12-04 06:09:51] Render skipped: already rendered once
+[2025-12-04 06:09:53] Rendering view: pages/admin_add_product
+[2025-12-04 06:09:53] Render skipped: already rendered once
+[2025-12-04 06:10:22] Rendering view: pages/admin_products
+[2025-12-04 06:10:22] Render skipped: already rendered once
+[2025-12-04 06:10:24] Rendering view: pages/admin_edit_product
+[2025-12-04 06:10:24] Render skipped: already rendered once
+[2025-12-04 06:10:36] Rendering view: pages/admin_edit_product
+[2025-12-04 06:10:36] Render skipped: already rendered once
+[2025-12-04 06:10:37] Rendering view: pages/admin_edit_product
+[2025-12-04 06:10:37] Render skipped: already rendered once
+[2025-12-04 06:10:45] Rendering view: pages/admin_products
+[2025-12-04 06:10:45] Render skipped: already rendered once
+[2025-12-04 06:10:47] Rendering view: pages/admin_add_product
+[2025-12-04 06:10:47] Render skipped: already rendered once
+[2025-12-04 06:10:53] Rendering view: pages/admin_add_product
+[2025-12-04 06:10:53] Render skipped: already rendered once
+[2025-12-04 06:10:54] Rendering view: pages/admin_add_product
+[2025-12-04 06:10:54] Render skipped: already rendered once
+[2025-12-04 06:10:55] Rendering view: pages/admin_add_product
+[2025-12-04 06:10:55] Render skipped: already rendered once
+[2025-12-04 06:10:55] Rendering view: pages/admin_add_product
+[2025-12-04 06:10:55] Render skipped: already rendered once
+[2025-12-04 06:10:56] Rendering view: pages/admin_add_product
+[2025-12-04 06:10:56] Render skipped: already rendered once
+[2025-12-04 06:10:56] Rendering view: pages/admin_add_product
+[2025-12-04 06:10:56] Render skipped: already rendered once
+[2025-12-04 06:10:56] Rendering view: pages/admin_add_product
+[2025-12-04 06:10:56] Render skipped: already rendered once
+[2025-12-04 06:10:56] Rendering view: pages/admin_add_product
+[2025-12-04 06:10:56] Render skipped: already rendered once
+[2025-12-04 06:10:57] Viewing users
+[2025-12-04 06:10:57] Rendering view: pages/admin_users
+[2025-12-04 06:10:57] Viewing users
+[2025-12-04 06:10:57] Render skipped: already rendered once
+[2025-12-04 06:10:59] Rendering view: pages/admin_categories
+[2025-12-04 06:10:59] Render skipped: already rendered once
+[2025-12-04 06:10:59] Rendering view: pages/admin
+[2025-12-04 06:10:59] Render skipped: already rendered once
+[2025-12-04 06:11:00] Rendering view: pages/home
+[2025-12-04 06:11:00] Render skipped: already rendered once
+[2025-12-04 06:11:01] Rendering view: pages/home
+[2025-12-04 06:11:01] Render skipped: already rendered once
+[2025-12-04 06:11:33] Rendering view: pages/public_products
+[2025-12-04 06:11:33] Render skipped: already rendered once
+[2025-12-04 06:11:39] Rendering view: pages/public_products
+[2025-12-04 06:11:39] Render skipped: already rendered once
+[2025-12-04 06:11:42] Rendering view: pages/public_products
+[2025-12-04 06:11:42] Render skipped: already rendered once
+[2025-12-04 06:11:48] Rendering view: pages/admin
+[2025-12-04 06:11:48] Render skipped: already rendered once
+[2025-12-04 06:11:51] Rendering view: pages/admin_categories
+[2025-12-04 06:11:51] Render skipped: already rendered once
+[2025-12-04 06:11:51] Rendering view: pages/admin_products
+[2025-12-04 06:11:51] Render skipped: already rendered once
+[2025-12-04 06:11:53] Rendering view: pages/admin_add_product
+[2025-12-04 06:11:53] Render skipped: already rendered once
+[2025-12-04 06:11:54] Rendering view: pages/admin_categories
+[2025-12-04 06:11:54] Render skipped: already rendered once
+[2025-12-04 06:11:56] Rendering view: pages/admin_add_category
+[2025-12-04 06:11:56] Render skipped: already rendered once
+[2025-12-04 06:11:58] Rendering view: pages/admin_categories
+[2025-12-04 06:11:58] Render skipped: already rendered once
+[2025-12-04 06:12:01] Rendering view: pages/admin_add_category
+[2025-12-04 06:12:01] Render skipped: already rendered once
+[2025-12-04 06:12:06] Rendering view: pages/admin
+[2025-12-04 06:12:06] Render skipped: already rendered once
+[2025-12-04 06:12:07] Rendering view: pages/home
+[2025-12-04 06:12:07] Render skipped: already rendered once
+[2025-12-04 06:15:29] No route found for GET /public
+[2025-12-04 06:15:53] No route found for GET /public
+[2025-12-04 06:15:55] Rendering view: pages/home
+[2025-12-04 06:15:55] Render skipped: already rendered once
+[2025-12-04 06:15:58] Rendering view: pages/public_products
+[2025-12-04 06:15:58] Render skipped: already rendered once
+[2025-12-04 06:16:05] Rendering view: pages/home
+[2025-12-04 06:16:05] Render skipped: already rendered once
+[2025-12-04 06:25:05] Rendering view: pages/home
+[2025-12-04 06:25:05] Render skipped: already rendered once
+[2025-12-04 06:25:07] Rendering view: pages/login
+[2025-12-04 06:25:07] Render skipped: already rendered once
+[2025-12-04 06:25:11] User not found with email: admin@example.com
+[2025-12-04 06:25:11] AUTH SERVICE: Authenticating user with email: admin@example.com
+[2025-12-04 06:25:11] AUTH SERVICE: Result: failure (user not found)
+[2025-12-04 06:25:11] Authenticating user with email: admin@example.com
+[2025-12-04 06:25:11] Result: failure
+[2025-12-04 06:25:11] Rendering view: pages/login
+[2025-12-04 06:25:11] Render skipped: already rendered once
+[2025-12-04 06:25:14] Found user with email: thassan@algomau.ca
+[2025-12-04 06:25:14] AUTH SERVICE: Authenticating user with email: thassan@algomau.ca
+[2025-12-04 06:25:14] AUTH SERVICE: Plain password length: 11
+[2025-12-04 06:25:14] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-04 06:25:14] AUTH SERVICE: Hashed password length: 60
+[2025-12-04 06:25:14] AUTH SERVICE: password_verify result: TRUE
+[2025-12-04 06:25:14] AUTH SERVICE: Result: success
+[2025-12-04 06:25:14] Authenticating user with email: thassan@algomau.ca
+[2025-12-04 06:25:14] Result: success
+[2025-12-04 06:25:14] Rendering view: pages/admin
+[2025-12-04 06:25:14] Render skipped: already rendered once
+[2025-12-04 06:25:16] Order details: App\Models\Order Object
+(
+    [id] => 21
+    [user_id] => 6
+    [total_price] => 825.12
+    [status] => pending
+    [order_date] => 2025-12-04 01:59:36
+    [customer_name] => Tabish
+    [customer_email] => tabish.hassan@mailcom
+    [shipping_address] => ABC
+    [shipping_city] => ABC
+    [shipping_postal_code] => 981
+    [shipping_country] => CA
+    [phone] => 1
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 18
+                    [order_id] => 21
+                    [product_id] => 53
+                    [quantity] => 1
+                    [unit_price] => 759.00
+                    [product_name] => Samsung
+                    [product_price] => 759.00
+                    [product_image] => /uploads/products/prod_6930a41545b808.16139776.webp
+                )
+
+        )
+
+)
+
+[2025-12-04 06:25:16] Rendering view: pages/order_show
+[2025-12-04 06:25:16] Order details: App\Models\Order Object
+(
+    [id] => 21
+    [user_id] => 6
+    [total_price] => 825.12
+    [status] => pending
+    [order_date] => 2025-12-04 01:59:36
+    [customer_name] => Tabish
+    [customer_email] => tabish.hassan@mailcom
+    [shipping_address] => ABC
+    [shipping_city] => ABC
+    [shipping_postal_code] => 981
+    [shipping_country] => CA
+    [phone] => 1
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 18
+                    [order_id] => 21
+                    [product_id] => 53
+                    [quantity] => 1
+                    [unit_price] => 759.00
+                    [product_name] => Samsung
+                    [product_price] => 759.00
+                    [product_image] => /uploads/products/prod_6930a41545b808.16139776.webp
+                )
+
+        )
+
+)
+
+[2025-12-04 06:25:16] Render skipped: already rendered once
+[2025-12-04 06:25:21] Order details: App\Models\Order Object
+(
+    [id] => 20
+    [user_id] => 
+    [total_price] => 1030.32
+    [status] => pending
+    [order_date] => 2025-12-04 01:55:31
+    [customer_name] => Tabish
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => Test
+    [shipping_city] => Test
+    [shipping_postal_code] => 999
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 16
+                    [order_id] => 20
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+            [1] => Array
+                (
+                    [id] => 17
+                    [order_id] => 20
+                    [product_id] => 52
+                    [quantity] => 1
+                    [unit_price] => 899.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 899.00
+                    [product_image] => /uploads/products/prod_69309dd28d5235.77091391.webp
+                )
+
+        )
+
+)
+
+[2025-12-04 06:25:21] Rendering view: pages/order_show
+[2025-12-04 06:25:21] Order details: App\Models\Order Object
+(
+    [id] => 20
+    [user_id] => 
+    [total_price] => 1030.32
+    [status] => pending
+    [order_date] => 2025-12-04 01:55:31
+    [customer_name] => Tabish
+    [customer_email] => thassan@algomau.ca
+    [shipping_address] => Test
+    [shipping_city] => Test
+    [shipping_postal_code] => 999
+    [shipping_country] => CA
+    [phone] => 91
+    [payment_method] => cod
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 16
+                    [order_id] => 20
+                    [product_id] => 51
+                    [quantity] => 1
+                    [unit_price] => 50.00
+                    [product_name] => iPhone
+                    [product_price] => 50.00
+                    [product_image] => /uploads/products/prod_6930707bba9a08.66699155.webp
+                )
+
+            [1] => Array
+                (
+                    [id] => 17
+                    [order_id] => 20
+                    [product_id] => 52
+                    [quantity] => 1
+                    [unit_price] => 899.00
+                    [product_name] => MacBook Pro
+                    [product_price] => 899.00
+                    [product_image] => /uploads/products/prod_69309dd28d5235.77091391.webp
+                )
+
+        )
+
+)
+
+[2025-12-04 06:25:21] Render skipped: already rendered once
+[2025-12-04 06:25:35] Rendering view: pages/admin
+[2025-12-04 06:25:35] Render skipped: already rendered once
+[2025-12-04 06:25:36] Rendering view: pages/home
+[2025-12-04 06:25:36] Render skipped: already rendered once
+[2025-12-04 06:25:38] Rendering view: pages/public_products
+[2025-12-04 06:25:38] Render skipped: already rendered once
+[2025-12-04 06:25:40] Adding product to cart
+[2025-12-04 06:25:40] Identified session: d497e85fa8db62d3d7dd488c57d6c4c1
+[2025-12-04 06:25:40] Finding cart item: User ID: 1, Session ID: d497e85fa8db62d3d7dd488c57d6c4c1, Product ID: 55
+[2025-12-04 06:25:40] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-04 06:25:40] Found cart item: false
+[2025-12-04 06:25:40] Adding product to cart: User ID: 1, Session ID: d497e85fa8db62d3d7dd488c57d6c4c1, Product ID: 55, Quantity: 1
+[2025-12-04 06:25:40] Adding new cart item
+[2025-12-04 06:25:40] Adding product to cart: Product ID: 55
+[2025-12-04 06:25:40] SESSION Cart count: 1
+[2025-12-04 06:25:41] Adding product to cart
+[2025-12-04 06:25:41] Identified session: d497e85fa8db62d3d7dd488c57d6c4c1
+[2025-12-04 06:25:41] Finding cart item: User ID: 1, Session ID: d497e85fa8db62d3d7dd488c57d6c4c1, Product ID: 53
+[2025-12-04 06:25:41] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-04 06:25:41] Found cart item: false
+[2025-12-04 06:25:41] Adding product to cart: User ID: 1, Session ID: d497e85fa8db62d3d7dd488c57d6c4c1, Product ID: 53, Quantity: 1
+[2025-12-04 06:25:41] Adding new cart item
+[2025-12-04 06:25:41] Adding product to cart: Product ID: 53
+[2025-12-04 06:25:41] SESSION Cart count: 2
+[2025-12-04 06:25:43] Rendering view: pages/public_products
+[2025-12-04 06:25:43] Render skipped: already rendered once
+[2025-12-04 06:25:44] Session ID: d497e85fa8db62d3d7dd488c57d6c4c1 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-04 06:25:44] Rendering view: pages/cart
+[2025-12-04 06:25:44] Session ID: d497e85fa8db62d3d7dd488c57d6c4c1 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-04 06:25:44] Render skipped: already rendered once
+[2025-12-04 06:25:47] Rendering view: pages/public_products
+[2025-12-04 06:25:47] Render skipped: already rendered once
+[2025-12-04 06:25:48] Adding product to cart
+[2025-12-04 06:25:48] Identified session: d497e85fa8db62d3d7dd488c57d6c4c1
+[2025-12-04 06:25:48] Finding cart item: User ID: 1, Session ID: d497e85fa8db62d3d7dd488c57d6c4c1, Product ID: 52
+[2025-12-04 06:25:48] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-04 06:25:48] Found cart item: false
+[2025-12-04 06:25:48] Adding product to cart: User ID: 1, Session ID: d497e85fa8db62d3d7dd488c57d6c4c1, Product ID: 52, Quantity: 1
+[2025-12-04 06:25:48] Adding new cart item
+[2025-12-04 06:25:48] Adding product to cart: Product ID: 52
+[2025-12-04 06:25:48] SESSION Cart count: 3
+[2025-12-04 06:25:50] Adding product to cart
+[2025-12-04 06:25:50] Identified session: d497e85fa8db62d3d7dd488c57d6c4c1
+[2025-12-04 06:25:50] Finding cart item: User ID: 1, Session ID: d497e85fa8db62d3d7dd488c57d6c4c1, Product ID: 51
+[2025-12-04 06:25:50] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-04 06:25:50] Found cart item: false
+[2025-12-04 06:25:50] Adding product to cart: User ID: 1, Session ID: d497e85fa8db62d3d7dd488c57d6c4c1, Product ID: 51, Quantity: 1
+[2025-12-04 06:25:50] Adding new cart item
+[2025-12-04 06:25:50] Adding product to cart: Product ID: 51
+[2025-12-04 06:25:50] SESSION Cart count: 4
+[2025-12-04 06:25:52] Rendering view: pages/public_products
+[2025-12-04 06:25:52] Render skipped: already rendered once
+[2025-12-04 06:25:53] Session ID: d497e85fa8db62d3d7dd488c57d6c4c1 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-04 06:25:53] Rendering view: pages/cart
+[2025-12-04 06:25:53] Session ID: d497e85fa8db62d3d7dd488c57d6c4c1 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-04 06:25:53] Render skipped: already rendered once
+[2025-12-04 06:25:58] Rendering view: pages/checkout
+[2025-12-04 06:25:58] Render skipped: already rendered once
+[2025-12-04 06:25:58] Session ID: d497e85fa8db62d3d7dd488c57d6c4c1 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-04 06:26:18] Rendering view: pages/home
+[2025-12-04 06:26:18] Render skipped: already rendered once
+[2025-12-04 06:26:20] Rendering view: pages/admin
+[2025-12-04 06:26:20] Render skipped: already rendered once
+[2025-12-04 06:26:22] Rendering view: pages/admin_categories
+[2025-12-04 06:26:22] Render skipped: already rendered once
+[2025-12-04 06:26:22] Rendering view: pages/admin_products
+[2025-12-04 06:26:22] Render skipped: already rendered once
+[2025-12-04 06:26:23] Viewing users
+[2025-12-04 06:26:23] Rendering view: pages/admin_users
+[2025-12-04 06:26:23] Viewing users
+[2025-12-04 06:26:23] Render skipped: already rendered once
+[2025-12-04 07:19:05] Rendering view: pages/home
+[2025-12-04 07:19:05] Render skipped: already rendered once
+[2025-12-05 04:55:42] Rendering view: pages/home
+[2025-12-05 04:55:42] Render skipped: already rendered once
+[2025-12-05 04:55:43] No route found for GET /favicon.ico
+[2025-12-05 04:55:52] Rendering view: pages/public_products
+[2025-12-05 04:55:52] Render skipped: already rendered once
+[2025-12-05 04:55:58] Rendering view: pages/home
+[2025-12-05 04:55:58] Render skipped: already rendered once
+[2025-12-05 04:56:03] Session ID: b93745f9d8cb21179c331523a83da040 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 04:56:03] Rendering view: pages/cart
+[2025-12-05 04:56:03] Session ID: b93745f9d8cb21179c331523a83da040 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 04:56:03] Render skipped: already rendered once
+[2025-12-05 04:56:05] Rendering view: pages/checkout
+[2025-12-05 04:56:05] Render skipped: already rendered once
+[2025-12-05 04:56:05] Session ID: b93745f9d8cb21179c331523a83da040 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 04:56:10] Rendering view: pages/home
+[2025-12-05 04:56:10] Render skipped: already rendered once
+[2025-12-05 05:11:26] Rendering view: pages/home
+[2025-12-05 05:11:26] Render skipped: already rendered once
+[2025-12-05 05:11:28] No route found for GET /public
+[2025-12-05 05:11:29] No route found for GET /favicon.ico
+[2025-12-05 05:11:30] Rendering view: pages/home
+[2025-12-05 05:11:30] Render skipped: already rendered once
+[2025-12-05 05:12:04] Rendering view: pages/home
+[2025-12-05 05:12:04] Render skipped: already rendered once
+[2025-12-05 05:12:22] No route found for GET /public
+[2025-12-05 05:14:25] Rendering view: pages/home
+[2025-12-05 05:14:25] Render skipped: already rendered once
+[2025-12-05 05:14:29] Rendering view: pages/public_products
+[2025-12-05 05:14:29] Render skipped: already rendered once
+[2025-12-05 05:14:34] Rendering view: pages/public_products
+[2025-12-05 05:14:34] Render skipped: already rendered once
+[2025-12-05 05:14:36] Rendering view: pages/public_products
+[2025-12-05 05:14:36] Render skipped: already rendered once
+[2025-12-05 05:14:37] Session ID: 52b88dd72027b6408282bb25751e8054 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:14:37] Rendering view: pages/cart
+[2025-12-05 05:14:37] Session ID: 52b88dd72027b6408282bb25751e8054 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:14:37] Render skipped: already rendered once
+[2025-12-05 05:14:39] Rendering view: pages/checkout
+[2025-12-05 05:14:39] Render skipped: already rendered once
+[2025-12-05 05:14:40] Session ID: 52b88dd72027b6408282bb25751e8054 User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:14:42] Rendering view: pages/home
+[2025-12-05 05:14:42] Render skipped: already rendered once
+[2025-12-05 05:14:45] Rendering view: pages/public_products
+[2025-12-05 05:14:45] Render skipped: already rendered once
+[2025-12-05 05:14:46] Product: Graphics Card was viewed.
+[2025-12-05 05:14:46] Rendering view: pages/public_product_show
+[2025-12-05 05:14:46] Product: Graphics Card was viewed.
+[2025-12-05 05:14:46] Render skipped: already rendered once
+[2025-12-05 05:14:47] No route found for POST /product/graphics-card
+[2025-12-05 05:14:50] Product: Graphics Card was viewed.
+[2025-12-05 05:14:50] Rendering view: pages/public_product_show
+[2025-12-05 05:14:50] Product: Graphics Card was viewed.
+[2025-12-05 05:14:50] Render skipped: already rendered once
+[2025-12-05 05:14:54] Rendering view: pages/public_products
+[2025-12-05 05:14:54] Render skipped: already rendered once
+[2025-12-05 05:14:55] Product: Graphics Card was viewed.
+[2025-12-05 05:14:55] Rendering view: pages/public_product_show
+[2025-12-05 05:14:55] Product: Graphics Card was viewed.
+[2025-12-05 05:14:55] Render skipped: already rendered once
+[2025-12-05 05:14:57] No route found for POST /product/graphics-card
+[2025-12-05 05:14:59] Product: Graphics Card was viewed.
+[2025-12-05 05:14:59] Rendering view: pages/public_product_show
+[2025-12-05 05:14:59] Product: Graphics Card was viewed.
+[2025-12-05 05:14:59] Render skipped: already rendered once
+[2025-12-05 05:15:00] Rendering view: pages/home
+[2025-12-05 05:15:00] Render skipped: already rendered once
+[2025-12-05 05:15:04] Rendering view: pages/login
+[2025-12-05 05:15:04] Render skipped: already rendered once
+[2025-12-05 05:15:06] Found user with email: thassan@algomau.ca
+[2025-12-05 05:15:06] AUTH SERVICE: Authenticating user with email: thassan@algomau.ca
+[2025-12-05 05:15:06] AUTH SERVICE: Plain password length: 11
+[2025-12-05 05:15:06] AUTH SERVICE: Hashed password from DB: $2y$10$48nsYZ6.9zHPji1nU2Khh.udyfBp9Qn7lXR8mPlnPoV5K2ndMoIqq
+[2025-12-05 05:15:06] AUTH SERVICE: Hashed password length: 60
+[2025-12-05 05:15:06] AUTH SERVICE: password_verify result: TRUE
+[2025-12-05 05:15:06] AUTH SERVICE: Result: success
+[2025-12-05 05:15:06] Authenticating user with email: thassan@algomau.ca
+[2025-12-05 05:15:06] Result: success
+[2025-12-05 05:15:06] Rendering view: pages/admin
+[2025-12-05 05:15:06] Render skipped: already rendered once
+[2025-12-05 05:15:08] Rendering view: pages/admin_categories
+[2025-12-05 05:15:08] Render skipped: already rendered once
+[2025-12-05 05:15:08] Rendering view: pages/admin_products
+[2025-12-05 05:15:08] Render skipped: already rendered once
+[2025-12-05 05:15:09] Rendering view: pages/admin_add_product
+[2025-12-05 05:15:09] Render skipped: already rendered once
+[2025-12-05 05:15:13] Viewing users
+[2025-12-05 05:15:13] Rendering view: pages/admin_users
+[2025-12-05 05:15:13] Viewing users
+[2025-12-05 05:15:13] Render skipped: already rendered once
+[2025-12-05 05:15:17] Rendering view: pages/home
+[2025-12-05 05:15:17] Render skipped: already rendered once
+[2025-12-05 05:15:19] Rendering view: pages/public_products
+[2025-12-05 05:15:19] Render skipped: already rendered once
+[2025-12-05 05:15:20] Product: Graphics Card was viewed.
+[2025-12-05 05:15:20] Rendering view: pages/public_product_show
+[2025-12-05 05:15:20] Product: Graphics Card was viewed.
+[2025-12-05 05:15:20] Render skipped: already rendered once
+[2025-12-05 05:15:21] Adding product to cart
+[2025-12-05 05:15:21] Identified session: fd62cd1d2cbaa42b6835043dc3c248cb
+[2025-12-05 05:15:21] Finding cart item: User ID: , Session ID: fd62cd1d2cbaa42b6835043dc3c248cb, Product ID: 55
+[2025-12-05 05:15:21] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-05 05:15:21] Found cart item: false
+[2025-12-05 05:15:21] Adding product to cart: User ID: , Session ID: fd62cd1d2cbaa42b6835043dc3c248cb, Product ID: 55, Quantity: 1
+[2025-12-05 05:15:21] Adding new cart item
+[2025-12-05 05:15:22] Adding product to cart: Product ID: 55
+[2025-12-05 05:15:22] SESSION Cart count: 1
+[2025-12-05 05:15:23] Product: Graphics Card was viewed.
+[2025-12-05 05:15:23] Rendering view: pages/public_product_show
+[2025-12-05 05:15:23] Product: Graphics Card was viewed.
+[2025-12-05 05:15:23] Render skipped: already rendered once
+[2025-12-05 05:15:24] Session ID: fd62cd1d2cbaa42b6835043dc3c248cb User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:15:24] Rendering view: pages/cart
+[2025-12-05 05:15:24] Session ID: fd62cd1d2cbaa42b6835043dc3c248cb User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:15:24] Render skipped: already rendered once
+[2025-12-05 05:15:28] Removing item from cart: Item ID: 83
+[2025-12-05 05:15:28] Deleting cart item: 83
+[2025-12-05 05:15:28] SESSION Cart count: 0
+[2025-12-05 05:15:32] Rendering view: pages/admin_products
+[2025-12-05 05:15:32] Render skipped: already rendered once
+[2025-12-05 05:15:33] Rendering view: pages/admin_categories
+[2025-12-05 05:15:33] Render skipped: already rendered once
+[2025-12-05 05:15:34] Viewing users
+[2025-12-05 05:15:34] Rendering view: pages/admin_users
+[2025-12-05 05:15:34] Viewing users
+[2025-12-05 05:15:34] Render skipped: already rendered once
+[2025-12-05 05:15:36] Rendering view: pages/admin_products
+[2025-12-05 05:15:36] Render skipped: already rendered once
+[2025-12-05 05:15:37] Rendering view: pages/admin_categories
+[2025-12-05 05:15:37] Render skipped: already rendered once
+[2025-12-05 05:15:37] Rendering view: pages/admin
+[2025-12-05 05:15:37] Render skipped: already rendered once
+[2025-12-05 05:15:38] Rendering view: pages/home
+[2025-12-05 05:15:38] Render skipped: already rendered once
+[2025-12-05 05:15:40] Rendering view: pages/public_products
+[2025-12-05 05:15:40] Render skipped: already rendered once
+[2025-12-05 05:15:43] Product: Samsung was viewed.
+[2025-12-05 05:15:43] Rendering view: pages/public_product_show
+[2025-12-05 05:15:43] Product: Samsung was viewed.
+[2025-12-05 05:15:43] Render skipped: already rendered once
+[2025-12-05 05:15:44] No route found for POST /product/samsung
+[2025-12-05 05:15:48] Rendering view: pages/home
+[2025-12-05 05:15:48] Render skipped: already rendered once
+[2025-12-05 05:15:50] Session ID: 52b88dd72027b6408282bb25751e8054 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:15:50] Rendering view: pages/cart
+[2025-12-05 05:15:50] Session ID: 52b88dd72027b6408282bb25751e8054 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:15:50] Render skipped: already rendered once
+[2025-12-05 05:15:51] Rendering view: pages/checkout
+[2025-12-05 05:15:51] Render skipped: already rendered once
+[2025-12-05 05:15:51] Session ID: 52b88dd72027b6408282bb25751e8054 User ID: 1 SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:15:54] Rendering view: pages/home
+[2025-12-05 05:15:54] Render skipped: already rendered once
+[2025-12-05 05:15:56] Session ID: fd62cd1d2cbaa42b6835043dc3c248cb User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:15:56] Rendering view: pages/cart
+[2025-12-05 05:15:56] Session ID: fd62cd1d2cbaa42b6835043dc3c248cb User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:15:56] Render skipped: already rendered once
+[2025-12-05 05:19:55] No route found for GET /
+[2025-12-05 05:20:01] No route found for GET /
+[2025-12-05 05:20:07] No route found for GET /
+[2025-12-05 05:20:11] No route found for GET /
+[2025-12-05 05:20:15] Rendering view: pages/home
+[2025-12-05 05:20:15] Render skipped: already rendered once
+[2025-12-05 05:20:20] Session ID: fd62cd1d2cbaa42b6835043dc3c248cb User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:20:20] Rendering view: pages/cart
+[2025-12-05 05:20:20] Session ID: fd62cd1d2cbaa42b6835043dc3c248cb User ID:  SQL: SELECT * FROM cart_items WHERE session_id = ?
+[2025-12-05 05:20:20] Render skipped: already rendered once
+[2025-12-05 05:20:22] Rendering view: pages/home
+[2025-12-05 05:20:22] Render skipped: already rendered once
+[2025-12-05 05:20:26] No route found for GET /
+[2025-12-05 05:20:31] Rendering view: pages/home
+[2025-12-05 05:20:31] Render skipped: already rendered once
+[2025-12-05 05:20:34] Rendering view: pages/public_products
+[2025-12-05 05:20:34] Render skipped: already rendered once
+[2025-12-05 05:20:36] Product: Graphics Card was viewed.
+[2025-12-05 05:20:36] Rendering view: pages/public_product_show
+[2025-12-05 05:20:36] Product: Graphics Card was viewed.
+[2025-12-05 05:20:36] Render skipped: already rendered once
+[2025-12-05 05:26:16] Rendering view: pages/home
+[2025-12-05 05:26:16] Render skipped: already rendered once
+[2025-12-05 05:44:34] Rendering view: pages/home
+[2025-12-05 05:44:34] Render skipped: already rendered once
+[2025-12-05 05:44:35] No route found for GET /favicon.ico
+[2025-12-05 05:44:36] Rendering view: pages/login
+[2025-12-05 05:44:36] Render skipped: already rendered once
+[2025-12-05 05:48:09] Rendering view: pages/login
+[2025-12-05 05:48:09] Render skipped: already rendered once
+[2025-12-05 05:48:09] No route found for GET /favicon.ico
+[2025-12-05 05:48:10] Rendering view: pages/home
+[2025-12-05 05:48:10] Render skipped: already rendered once
+[2025-12-05 05:48:12] Rendering view: pages/public_products
+[2025-12-05 05:48:12] Render skipped: already rendered once
+[2025-12-05 05:48:14] Product: Graphics Card was viewed.
+[2025-12-05 05:48:14] Rendering view: pages/public_product_show
+[2025-12-05 05:48:14] Product: Graphics Card was viewed.
+[2025-12-05 05:48:14] Render skipped: already rendered once
+[2025-12-05 05:48:15] No route found for GET /favicon.ico
+[2025-12-05 05:48:15] Adding product to cart
+[2025-12-05 05:48:15] Identified session: 8b5114ea3d708da4102901995a3beb71
+[2025-12-05 05:48:15] Finding cart item: User ID: , Session ID: 8b5114ea3d708da4102901995a3beb71, Product ID: 55
+[2025-12-05 05:48:15] SQL: SELECT * FROM cart_items WHERE product_id = ? AND session_id = ?
+[2025-12-05 05:48:15] Found cart item: false
+[2025-12-05 05:48:15] Adding product to cart: User ID: , Session ID: 8b5114ea3d708da4102901995a3beb71, Product ID: 55, Quantity: 1
+[2025-12-05 05:48:15] Adding new cart item
+[2025-12-05 05:48:15] Adding product to cart: Product ID: 55
+[2025-12-05 05:48:15] SESSION Cart count: 1
+[2025-12-05 05:48:17] Product: Graphics Card was viewed.
+[2025-12-05 05:48:17] Rendering view: pages/public_product_show
+[2025-12-05 05:48:17] Product: Graphics Card was viewed.
+[2025-12-05 05:48:17] Render skipped: already rendered once
+[2025-12-05 05:48:17] Product: Graphics Card was viewed.
+[2025-12-05 05:48:17] Rendering view: pages/public_product_show
+[2025-12-05 05:48:17] Product: Graphics Card was viewed.
+[2025-12-05 05:48:17] Render skipped: already rendered once

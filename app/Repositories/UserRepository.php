@@ -5,9 +5,9 @@ use App\Models\User;
 use PDO;
 use PDOException;
 
-class UserRepository
+readonly class UserRepository
 {
-    public function __construct(private readonly PDO $pdo) {}
+    public function __construct(private PDO $pdo) {}
 
     public function findByEmail(string $email): ?User
     {

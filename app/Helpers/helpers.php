@@ -16,7 +16,7 @@ function base_path(string $path = ''): string
 }
 
 /**
- * Returns public path (filesystem).
+ * Returns a public path (filesystem).
  * Example: public_path('uploads') => /var/www/project-root/public/uploads
  */
 function public_path(string $path = ''): string
@@ -26,7 +26,7 @@ function public_path(string $path = ''): string
 }
 
 /**
- * Returns the request scheme (http or https) in a safe way.
+ * Returns the request scheme (http or https) safely.
  * Falls back to 'http' if nothing else is available.
  */
 function request_scheme(): string
@@ -81,6 +81,8 @@ function base_url(string $path = ''): string
 
     // Build base (preserve port if present in HTTP_HOST)
     $scheme = request_scheme();
+    //Check if we are running Apache or Nginx behind a proxy and adjust the scheme accordingly
+    $isApache = str_contains($_SERVER['SERVER_SOFTWARE'] ?? '', 'Apache');
     $url = $scheme . '://' . $host;
 
     return $path ? rtrim($url, '/') . '/' . ltrim($path, '/') : rtrim($url, '/');

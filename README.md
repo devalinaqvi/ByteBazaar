@@ -2,6 +2,11 @@
 
 A lightweight, custom-built MVC framework for an **Online Computer Store**.
 
+## 📚 Student Information
+- **Name:** Tabish Hassan
+- **Student ID:** 239649410
+- **Email:** thassan@algomau.ca
+
 ## ✨ Features
 
 * User & Admin dashboards
@@ -132,7 +137,7 @@ php migrations/seed.php
 ```
 
 **Default Admin Credentials:**
-* Email: `admin@example.com`
+* Email: `thassan@algomau.ca`
 * Password: `password123`
 
 ---
@@ -168,7 +173,7 @@ C:\xampp\htdocs\computer-store\
 
 3. Visit:
 ```
-http://localhost/computer-store/public
+http://localhost/computer-store/
 ```
 
 4. If you get "Class not found" errors, run:

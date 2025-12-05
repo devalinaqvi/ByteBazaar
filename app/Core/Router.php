@@ -10,6 +10,7 @@ class Router {
     public function __construct(Container $container) {
         $this->container = $container;
         $this->altoRouter = new AltoRouter();
+        $isApache = str_contains($_SERVER['SERVER_SOFTWARE'] ?? '', 'Apache');
         $this->altoRouter->setBasePath('');  // Empty for php -S root
     }
 
