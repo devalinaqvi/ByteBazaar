@@ -139,6 +139,10 @@
                             <dt class="text-sm">Tax</dt>
                             <dd class="text-sm font-medium text-gray-900" id="taxes">$0.00</dd>
                         </div>
+                        <div class="flex items-center justify-between">
+                            <dt class="text-sm">Shipping</dt>
+                            <dd class="text-sm font-medium text-gray-900" id="taxes">$5.00</dd>
+                        </div>
                         <div class="flex items-center justify-between border-t border-gray-200 pt-6">
                             <dt class="text-base font-medium">Total</dt>
                             <dd class="text-base font-medium text-gray-900" id="total">$0.00</dd>
@@ -232,7 +236,7 @@
             // Calculate totals
             const shipping = 5.00;
             const taxRate = 0.08;
-            const taxes = (subtotal + shipping) * taxRate;
+            const taxes = subtotal * taxRate;
             const total = subtotal + taxes + shipping;
 
             document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;

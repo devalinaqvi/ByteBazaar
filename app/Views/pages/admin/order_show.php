@@ -92,14 +92,34 @@
                     </div>
                 </dl>
 
+                <?php
+                $shipping = 5.00;
+                $taxRate = 0.08;
+                $orderTotal = $order->total_price; // Assume this holds the final price, e.g., 113.40
+
+                // 1. Calculate Subtotal (Remove shipping, then divide by (1 + tax rate))
+                $tax_inclusive_subtotal = $orderTotal - $shipping;
+                $subtotal = round($tax_inclusive_subtotal / (1 + $taxRate), 2);
+
+                // 2. Calculate Tax (Tax is Subtotal * Tax Rate)
+                $tax = round($subtotal * $taxRate, 2);
+
+                // Optional: Recalculate the final total for verification (should match $orderTotal)
+                 $calculatedTotal = round($subtotal + $tax + $shipping, 2);
+                ?>
+
                 <dl class="mt-8 divide-y divide-gray-200 text-sm lg:col-span-5 lg:mt-0">
                     <div class="flex items-center justify-between pb-4">
                         <dt class="text-gray-600">Subtotal</dt>
-                        <dd class="font-medium text-gray-900">$<?= $subtotal = (($order->total_price - 5.40) / 1.08) ?? 'N/A' ?></dd>
+                        <dd class="font-medium text-gray-900">$<?= $subtotal ?? 'N/A' ?></dd>
                     </div>
                     <div class="flex items-center justify-between pb-4">
                         <dt class="text-gray-600">Tax</dt>
-                        <dd class="font-medium text-gray-900">$<?= $tax = (($subtotal + 5.00) *0.08) ?? 'N/A' ?></dd>
+                        <dd class="font-medium text-gray-900">$<?= $tax ?? 'N/A' ?></dd>
+                    </div>
+                    <div class="flex items-center justify-between pb-4">
+                        <dt class="text-gray-600">Shipping</dt>
+                        <dd class="font-medium text-gray-900">$<?= $shipping; ?></dd>
                     </div>
                     <div class="flex items-center justify-between pt-4">
                         <dt class="font-medium text-gray-900">Order total</dt>

@@ -28,16 +28,17 @@ class OrderRepository
             $this->db->beginTransaction();
 
             // Calculate total price from CartItem objects
+            $subTotal = 0;
             $total = 0;
             foreach ($items as $item) {
-                $total += ($item->quantity * $item->product->price);
+                $subTotal += ($item->quantity * $item->product->price);
             }
             logMessage('Order total: ' . $total);
 
             // Add shipping and tax
             $shipping = 5.00;
-            $tax = ($total + $shipping) * 0.08;
-            $total = $total + $shipping + $tax;
+            $tax = $subTotal * 0.08;
+            $total = $subTotal + $shipping + $tax;
 
             // Insert into orders table
             $stmt = $this->db->prepare("
