@@ -23,9 +23,9 @@ if (!is_array($config) || !isset($config['db'])) {
     $config = [
         'db' => [
             'host' => 'localhost',
-            'dbname' => 'byte_bazaar',  // Your DB name
-            'user' => 'devali',
-            'pass' => 'devali'  // XAMPP/LAMP default
+            'dbname' => 'computer_zone',  // Your DB name
+            'user' => 'root',
+            'pass' => ''  // XAMPP/LAMP default
         ]
     ];
 }
