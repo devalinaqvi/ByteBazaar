@@ -47,7 +47,7 @@
                             <div>
                                 <p aria-hidden="true" class="text-sm text-white">Shop</p>
                                 <h3 class="mt-1 font-semibold text-white">
-                                    <a href="<?php echo route('products', ['category' => $category->slug]) ?>">
+                                    <a href="<?php echo route('products', ['categories[]' => $category->id]) ?>">
                                         <span class="absolute inset-0"></span>
                                         <?php echo $category->name; ?>
                                     </a>

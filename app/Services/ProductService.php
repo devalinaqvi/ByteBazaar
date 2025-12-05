@@ -36,7 +36,7 @@ class ProductService
         return $this->products->find($id);
     }
 
-    public function getBySlug(string $slug): \App\Models\Product
+    public function getBySlug(string $slug): ?\App\Models\Product
     {
         return $this->products->findBySlug($slug);
     }

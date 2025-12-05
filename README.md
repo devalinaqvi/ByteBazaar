@@ -6,6 +6,7 @@ A lightweight, custom-built MVC framework for an **Online Computer Store**.
 - **Name:** Tabish Hassan
 - **Student ID:** 239649410
 - **Email:** thassan@algomau.ca
+- **Live Demo:** [https://syntaxcamp.com/](https://syntaxcamp.com/) (if applicable)
 
 ## ✨ Features
 
