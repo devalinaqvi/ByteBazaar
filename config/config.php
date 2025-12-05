@@ -8,9 +8,9 @@ return [
     ],
     'db' => [
         'host' => 'localhost',
-        'dbname' => 'byte_bazaar',  // Or 'computer_store' from outline
-        'user' => 'devali',
-        'pass' => 'devali',  // Empty for XAMPP/LAMP
+        'dbname' => 'u994825803_czone',  // Or 'computer_store' from outline
+        'user' => 'u994825803_czone',
+        'pass' => 'devAlinaqvi@9',  // Empty for XAMPP/LAMP
         'charset' => 'utf8mb4'
     ],
     'session' => [
