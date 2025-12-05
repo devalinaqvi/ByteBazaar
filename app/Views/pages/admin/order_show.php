@@ -95,7 +95,11 @@
                 <dl class="mt-8 divide-y divide-gray-200 text-sm lg:col-span-5 lg:mt-0">
                     <div class="flex items-center justify-between pb-4">
                         <dt class="text-gray-600">Subtotal</dt>
-                        <dd class="font-medium text-gray-900">$<?= $order->total_price ?? 'N/A' ?></dd>
+                        <dd class="font-medium text-gray-900">$<?= $subtotal = (($order->total_price - 5.40) / 1.08) ?? 'N/A' ?></dd>
+                    </div>
+                    <div class="flex items-center justify-between pb-4">
+                        <dt class="text-gray-600">Tax</dt>
+                        <dd class="font-medium text-gray-900">$<?= $tax = (($order->total_price + 5.00) *0.08) ?? 'N/A' ?></dd>
                     </div>
                     <div class="flex items-center justify-between pt-4">
                         <dt class="font-medium text-gray-900">Order total</dt>
