@@ -233,7 +233,7 @@
             const shipping = 5.00;
             const taxRate = 0.08;
             const taxes = (subtotal + shipping) * taxRate;
-            const total = subtotal + taxes;
+            const total = subtotal + taxes + shipping;
 
             document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
             document.getElementById('taxes').textContent = `$${taxes.toFixed(2)}`;
