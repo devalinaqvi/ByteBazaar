@@ -135,6 +135,10 @@
                             <dt class="text-sm">Subtotal</dt>
                             <dd class="text-sm font-medium text-gray-900" id="subtotal">$0.00</dd>
                         </div>
+                        <div class="flex items-center justify-between">
+                            <dt class="text-sm">Tax</dt>
+                            <dd class="text-sm font-medium text-gray-900" id="taxes">$0.00</dd>
+                        </div>
                         <div class="flex items-center justify-between border-t border-gray-200 pt-6">
                             <dt class="text-base font-medium">Total</dt>
                             <dd class="text-base font-medium text-gray-900" id="total">$0.00</dd>
@@ -226,13 +230,13 @@
             document.getElementById('cart-items').innerHTML = cartItemsHtml;
 
             // Calculate totals
-            const shipping = 0.00;
-            const taxRate = 0.00;
+            const shipping = 5.00;
+            const taxRate = 0.08;
             const taxes = (subtotal + shipping) * taxRate;
-            const total = subtotal;
+            const total = subtotal + taxes;
 
             document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
-            // document.getElementById('taxes').textContent = `$${taxes.toFixed(2)}`;
+            document.getElementById('taxes').textContent = `$${taxes.toFixed(2)}`;
             document.getElementById('total').textContent = `$${total.toFixed(2)}`;
 
         } catch (error) {
