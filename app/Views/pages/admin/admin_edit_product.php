@@ -63,7 +63,7 @@
                             <?php if ($product->image_url): ?>
                                 <div class="mt-4 mb-4">
                                     <p class="text-sm text-gray-600 mb-2">Current Image:</p>
-                                    <img src="<?= htmlspecialchars($product->image_url) ?>" alt="<?= htmlspecialchars($product->name) ?>" class="h-32 w-32 object-cover rounded-md">
+                                    <img src="<?= upload_url($product->image_url) ?>" alt="<?= htmlspecialchars($product->name) ?>" class="h-32 w-32 object-cover rounded-md">
                                 </div>
                             <?php endif; ?>
 

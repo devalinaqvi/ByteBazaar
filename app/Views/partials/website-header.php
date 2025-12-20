@@ -90,7 +90,7 @@
                 <div class="flex h-16 items-center justify-between">
                     <!-- Logo (lg+) -->
                     <div class="hidden lg:flex lg:flex-1 lg:items-center">
-                        <a href="/">
+                        <a href="<?= url_path('/') ?>">
                             <span class="sr-only">Your Company</span>
                             <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto" />
                         </a>
@@ -108,7 +108,7 @@
                     </div>
 
                     <!-- Logo (lg-) -->
-                    <a href="/" class="lg:hidden">
+                    <a href="<?= url_path('/') ?>" class="lg:hidden">
                         <span class="sr-only">Your Company</span>
                         <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto" />
                     </a>

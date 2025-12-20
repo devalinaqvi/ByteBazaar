@@ -76,7 +76,7 @@
                     <?php foreach($products as $product) : ?>
                     <div class="group relative">
                         <div class="h-56 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:h-72 xl:h-80">
-                            <img src="<?php echo e($product->image_url); ?>" alt="<?php echo e($product->name); ?>" class="size-full object-cover" />
+                            <img src="<?php echo $product->image_url ? upload_url($product->image_url) : url_path('assets/images/placeholder.png'); ?>" alt="<?php echo e($product->name); ?>" class="size-full object-cover" />
                         </div>
                         <h3 class="mt-4 text-sm text-gray-700">
                             <a href="<?php echo e(route('product/'.$product->slug)); ?>">

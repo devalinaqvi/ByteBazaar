@@ -131,6 +131,31 @@ function url_path(string $path = ''): string
 }
 
 /**
+ * Returns the URL for an uploaded file (stored in /uploads/).
+ * Handles paths like /uploads/products/image.jpg by prepending the base path.
+ * Example: upload_url('/uploads/products/img.jpg') => /computer-zone/uploads/products/img.jpg
+ */
+function upload_url(?string $path): string
+{
+    if (empty($path)) {
+        return '';
+    }
+    // If path already starts with http(s), return as-is
+    if (preg_match('#^https?://#', $path)) {
+        return $path;
+    }
+    // Get the base path
+    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+    $basePath = dirname($scriptName);
+    $basePath = preg_replace('#/public$#', '', $basePath);
+    if ($basePath === '/' || $basePath === '\\') {
+        $basePath = '';
+    }
+    // Prepend base path to the upload path
+    return rtrim($basePath, '/') . '/' . ltrim($path, '/');
+}
+
+/**
  * Helper to escape output (very small HTML-escaping helper).
  */
 function e($value): string
