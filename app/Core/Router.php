@@ -6,12 +6,27 @@ use AltoRouter;
 class Router {
     private AltoRouter $altoRouter;
     private Container $container;
+    private string $basePath;
 
     public function __construct(Container $container) {
         $this->container = $container;
         $this->altoRouter = new AltoRouter();
-        $isApache = str_contains($_SERVER['SERVER_SOFTWARE'] ?? '', 'Apache');
-        $this->altoRouter->setBasePath('');  // Empty for php -S root
+
+        // Detect base path for XAMPP/subdirectory installs
+        // SCRIPT_NAME = /computer-zone/public/index.php or /computer-zone/index.php
+        $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+        $this->basePath = dirname($scriptName);
+
+        // Remove /public from the end if present
+        $this->basePath = preg_replace('#/public$#', '', $this->basePath);
+
+        // Also handle case where dirname already gives us the folder name directly
+        // (when .htaccess rewrites hide /public)
+        if ($this->basePath === '/') {
+            $this->basePath = '';
+        }
+
+        // Don't set basePath on AltoRouter since we manually strip it in dispatch()
     }
 
     public function get(string $path, string $target, string $name = ''): self {
@@ -26,10 +41,24 @@ class Router {
 
     public function dispatch(string $uri, string $method): void {
         $cleanUri = parse_url($uri, PHP_URL_PATH);
-        $cleanUri = $cleanUri === '/' ? '/' : rtrim($cleanUri, '/');
+
+        // Manually strip basePath from the URI since AltoRouter doesn't do it in match()
+        if ($this->basePath !== '' && str_starts_with($cleanUri, $this->basePath)) {
+            $cleanUri = substr($cleanUri, strlen($this->basePath));
+        }
+
+        // Ensure we have at least "/" for root
+        if ($cleanUri === '' || $cleanUri === false) {
+            $cleanUri = '/';
+        }
+
+        // Strip trailing slash except for root
+        if ($cleanUri !== '/') {
+            $cleanUri = rtrim($cleanUri, '/');
+        }
 
         try {
-            $match = $this->altoRouter->match($cleanUri);
+            $match = $this->altoRouter->match($cleanUri, $method);
         }
         catch (\Exception $e) {
             $this->handle404($e);
@@ -37,6 +66,7 @@ class Router {
         }
         if (!$match) {
             logMessage("No route found for $method $uri");
+            $this->handle404(new \Exception("No route found for $method $cleanUri"));
             return;
         }
         [$controllerName, $action] = explode('@', $match['target']);

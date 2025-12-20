@@ -66,14 +66,14 @@
                         <?php foreach ($products as $product) : ?>
                             <div class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white">
 
-                                <img src="<?= $product->image_url ?: '/assets/images/placeholder.png' ?>"
+                                <img src="<?= $product->image_url ?: url_path('assets/images/placeholder.png') ?>"
                                      alt="<?= htmlspecialchars($product->name) ?>"
                                      class="aspect-3/4 bg-gray-200 object-cover group-hover:opacity-75 sm:h-96" />
 
                                 <div class="flex flex-1 flex-col space-y-2 p-4">
 
                                     <h3 class="text-sm font-medium text-gray-900">
-                                        <a  href="/product/<?= htmlspecialchars($product->slug) ?>">
+                                        <a  href="<?= url_path('product/' . htmlspecialchars($product->slug)) ?>">
                                             <span aria-hidden="true" class="absolute inset-0"></span>
                                             <?= htmlspecialchars($product->name) ?>
                                         </a >

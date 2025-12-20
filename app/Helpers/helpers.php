@@ -79,11 +79,17 @@ function base_url(string $path = ''): string
     // Host detection
     $host = $_SERVER['HTTP_HOST'] ?? ($_SERVER['SERVER_NAME'] ?? 'localhost');
 
-    // Build base (preserve port if present in HTTP_HOST)
+    // Detect subdirectory from SCRIPT_NAME (e.g., /computer-zone/public/index.php)
+    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+    $basePath = dirname($scriptName);
+    $basePath = preg_replace('#/public$#', '', $basePath);
+    if ($basePath === '/' || $basePath === '\\') {
+        $basePath = '';
+    }
+
+    // Build base URL with subdirectory
     $scheme = request_scheme();
-    //Check if we are running Apache or Nginx behind a proxy and adjust the scheme accordingly
-    $isApache = str_contains($_SERVER['SERVER_SOFTWARE'] ?? '', 'Apache');
-    $url = $scheme . '://' . $host;
+    $url = $scheme . '://' . $host . $basePath;
 
     return $path ? rtrim($url, '/') . '/' . ltrim($path, '/') : rtrim($url, '/');
 }
@@ -97,6 +103,31 @@ function asset(string $path): string
     // If you host under a subdirectory, set base path in config and read it here.
     // For now we assume public is root.
     return base_url('assets/' . ltrim($path, '/'));
+}
+
+/**
+ * Shorthand for generating URLs with base path.
+ * Example: url('admin/products') => http://localhost/computer-zone/admin/products
+ */
+function url(string $path = ''): string
+{
+    return base_url($path);
+}
+
+/**
+ * Returns just the base path portion (without host).
+ * Example: url_path() => /computer-zone
+ * Useful for JavaScript and form actions.
+ */
+function url_path(string $path = ''): string
+{
+    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+    $basePath = dirname($scriptName);
+    $basePath = preg_replace('#/public$#', '', $basePath);
+    if ($basePath === '/' || $basePath === '\\') {
+        $basePath = '';
+    }
+    return $path ? rtrim($basePath, '/') . '/' . ltrim($path, '/') : $basePath;
 }
 
 /**

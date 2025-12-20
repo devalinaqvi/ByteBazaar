@@ -14,7 +14,8 @@ abstract class BaseMiddleware {
 
     protected function redirect(string $url, array $params = []): void {
         $query = http_build_query($params);
-        header("Location: $url?" . ($query ? $query : ''));
+        $fullUrl = base_url(ltrim($url, '/'));
+        header("Location: $fullUrl" . ($query ? "?$query" : ''));
         exit;
     }
 }

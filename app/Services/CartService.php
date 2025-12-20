@@ -121,7 +121,7 @@ class CartService
         if (!$product) {
             throw new \Exception('Product not found');
         }
-        if ($product->stock < $this->cartRepo->countItemsByProduct($productId, $sessionId)) {
+        if ($product->stock <= $this->cartRepo->countItemsByProduct($productId, $sessionId)) {
             throw new \Exception('Out of stock');
         }
     }

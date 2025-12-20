@@ -28,7 +28,7 @@
         </div>
 
         <div class="border-t border-gray-100 py-10 text-center">
-            <p class="text-sm text-gray-500">&copy; <?php echo date('Y'); ?> Byte Bazaar, Inc. All rights reserved.</p>
+            <p class="text-sm text-gray-500">&copy; <?php echo date('Y'); ?> Czone, Inc. All rights reserved.</p>
         </div>
     </div>
 </footer>

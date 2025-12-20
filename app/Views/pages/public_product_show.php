@@ -7,7 +7,7 @@
                 <ol role="list" class="flex items-center space-x-2">
                     <li>
                         <div class="flex items-center text-sm">
-                            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Products</a>
+                            <a href="<?= url_path('products') ?>" class="font-medium text-gray-500 hover:text-gray-900">Products</a>
                             <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="ml-2 size-5 shrink-0 text-gray-300">
                                 <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
                             </svg>
@@ -15,7 +15,7 @@
                     </li>
                     <li>
                         <div class="flex items-center text-sm">
-                            <a href="#" class="font-medium text-gray-500 hover:text-gray-900"><?= $product->category_id ?></a>
+                            <span class="font-medium text-gray-500"><?= htmlspecialchars($product->name) ?></span>
                         </div>
                     </li>
                 </ol>
@@ -75,7 +75,7 @@
 
         <!-- Product image -->
         <div class="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
-            <img src="<?= $product->image_url ?>" alt="<?= $product->name ?>" class="aspect-square w-full rounded-lg object-cover" />
+            <img src="<?= $product->image_url ?: url_path('assets/images/placeholder.png') ?>" alt="<?= $product->name ?>" class="aspect-square w-full rounded-lg object-cover" />
         </div>
 
         <!-- Product form -->

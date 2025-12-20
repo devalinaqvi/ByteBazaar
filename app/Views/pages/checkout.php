@@ -2,7 +2,7 @@
     <div class="mx-auto max-w-2xl px-4 pt-16 pb-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 class="sr-only">Checkout</h2>
 
-        <form id="checkout-form" method="POST" action="/checkout" class="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16">
+        <form id="checkout-form" method="POST" action="<?= url_path('checkout') ?>" class="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16">
             <input type="hidden" name="csrf_token" value="<?= csrf_hash() ?>" />
 
             <div>
@@ -186,10 +186,13 @@
 </div>
 
 <script>
+    // Base path for URL generation
+    const basePath = '<?= url_path() ?>';
+
     // Fetch and display cart items
     async function loadCartItems() {
         try {
-            const cartResponse = await fetch('api/cart', {
+            const cartResponse = await fetch(basePath + '/api/cart', {
                 headers: { 'Accept': 'application/json' }
             });
 
@@ -212,13 +215,13 @@
                 cartItemsHtml += `
                 <li class="flex px-4 py-6 sm:px-6">
                     <div class="shrink-0">
-                        <img src="${item.image || '/assets/images/placeholder.png'}" alt="${item.product_name}" class="w-20 rounded-md" />
+                        <img src="${item.image || basePath + '/assets/images/placeholder.png'}" alt="${item.product_name}" class="w-20 rounded-md" />
                     </div>
                     <div class="ml-6 flex flex-1 flex-col">
                         <div class="flex">
                             <div class="min-w-0 flex-1">
                                 <h4 class="text-sm">
-                                    <a href="/product/${item.product_slug}" class="font-medium text-gray-700 hover:text-gray-800">${item.product_name}</a>
+                                    <a href="${basePath}/product/${item.product_slug}" class="font-medium text-gray-700 hover:text-gray-800">${item.product_name}</a>
                                 </h4>
                             </div>
                         </div>
@@ -258,7 +261,7 @@
         const formData = new FormData(e.target);
 
         try {
-            const response = await fetch('/checkout', {
+            const response = await fetch(basePath + '/checkout', {
                 method: 'POST',
                 body: formData
             });
@@ -268,7 +271,7 @@
             if (data.success) {
                 showToast('Order placed successfully!', 'success');
                 setTimeout(() => {
-                    window.location.href = `/`;
+                    window.location.href = basePath + '/';
                 }, 1500);
             } else {
                 showToast(data.message || 'Failed to place order', 'error');

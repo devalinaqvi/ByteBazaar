@@ -18,14 +18,14 @@ class AuthMiddleware {
         if ($this->guestOnly) {
             if ($user) {
                 // Logged in? Skip to home
-                header('Location: /', true, 302);
+                header('Location: ' . base_url('/'), true, 302);
                 exit;
             }
         } else {
             if (!$user) {
                 // Not logged in? To login with return URL
                 $redirect = $request->getUri();
-                header("Location: /login?redirect=" . urlencode($redirect), true, 302);
+                header("Location: " . base_url('login') . "?redirect=" . urlencode($redirect), true, 302);
                 exit;
             }
         }

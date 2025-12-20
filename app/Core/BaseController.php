@@ -7,7 +7,9 @@ class BaseController {
     public function __construct() {}
     protected function redirect(string $url, array $params = []): void {
         $query = http_build_query($params);
-        header("Location: {$url}" . ($query ? "?{$query}" : ''), true, 302);
+        // Use base_url() to include subdirectory prefix (e.g., /computer-zone)
+        $fullUrl = base_url(ltrim($url, '/'));
+        header("Location: {$fullUrl}" . ($query ? "?{$query}" : ''), true, 302);
         exit;
     }
 

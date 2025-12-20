@@ -9,7 +9,7 @@
             <h3 class="mt-2 text-sm font-semibold text-gray-900">No products</h3>
             <p class="mt-1 text-sm text-gray-500">Get started by creating a new product.</p>
             <div class="mt-6">
-                <a href="/admin/products/create" class="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer">
+                <a href="<?= url_path('admin/products/create') ?>" class="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer">
                     <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="mr-1.5 -ml-0.5 size-5">
                         <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
                     </svg>
@@ -28,7 +28,7 @@
                 <p class="mt-2 text-sm text-gray-700">A list of all the products in your store including their name, description, price and stock.</p>
             </div>
             <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
-                <a href="/admin/products/create" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add product</a>
+                <a href="<?= url_path('admin/products/create') ?>" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add product</a>
             </div>
         </div>
         <div class="mt-8 flow-root">
@@ -55,8 +55,8 @@
                                 <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">$<?= number_format($product->price, 2) ?></td>
                                 <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"><?= $product->stock ?></td>
                                 <td class="py-4 pr-4 pl-3 text-right text-sm font-medium whitespace-nowrap sm:pr-6">
-                                    <a href="/admin/products/<?= $product->id ?>/edit" class="text-indigo-600 hover:text-indigo-900 mr-4">Edit</a>
-                                    <form method="POST" action="/admin/products/<?= $product->id ?>/delete" class="inline" onsubmit="return confirm('Are you sure you want to delete this product?');">
+                                    <a href="<?= url_path('admin/products/' . $product->id . '/edit') ?>" class="text-indigo-600 hover:text-indigo-900 mr-4">Edit</a>
+                                    <form method="POST" action="<?= url_path('admin/products/' . $product->id . '/delete') ?>" class="inline" onsubmit="return confirm('Are you sure you want to delete this product?');">
                                         <input type="hidden" name="csrf_token" value="<?= $csrf_token ?>">
                                         <button type="submit" class="text-red-600 hover:text-red-900">Delete</button>
                                     </form>

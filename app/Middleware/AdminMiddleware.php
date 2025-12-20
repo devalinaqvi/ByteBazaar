@@ -17,7 +17,8 @@ class AdminMiddleware extends AuthMiddleware {
     private function redirect(string $url, array $queryParams = []): void
     {
         $query = http_build_query($queryParams);
-        header("Location: $url" . ($query ? "?$query" : ""), true, 302);
+        $fullUrl = base_url(ltrim($url, '/'));
+        header("Location: $fullUrl" . ($query ? "?$query" : ""), true, 302);
         exit;
     }
 }

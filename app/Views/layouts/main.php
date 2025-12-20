@@ -59,6 +59,10 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    // Global base path for JavaScript URL generation
+    window.basePath = '<?= url_path() ?>';
+</script>
 <script src="<?= asset('js/app.js') ?>"></script>
 </body>
 </html>

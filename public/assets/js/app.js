@@ -1,3 +1,6 @@
+    // Get base path (set in layout) or default to empty
+    const basePath = window.basePath || '';
+
     /**
      * Reusable Form Handler for CRUD Operations
      * Usage: new FormHandler('#formId', options).init();
@@ -217,8 +220,8 @@
         // Create Product Form
         if ($('#productForm').length) {
             new FormHandler('#productForm', {
-                submitUrl: '/admin/products/create',
-                redirectUrl: '/admin/products',
+                submitUrl: basePath + '/admin/products/create',
+                redirectUrl: basePath + '/admin/products',
                 successMessage: 'Product created successfully!',
                 errorMessage: 'Failed to create product'
             }).init();
@@ -228,8 +231,8 @@
         if ($('#editProductForm').length) {
             const productId = $('input[name="product_id"]').val();
             new FormHandler('#editProductForm', {
-                submitUrl: `/admin/products/${productId}`,
-                redirectUrl: '/admin/products',
+                submitUrl: `${basePath}/admin/products/${productId}`,
+                redirectUrl: basePath + '/admin/products',
                 successMessage: 'Product updated successfully!',
                 errorMessage: 'Failed to update product'
             }).init();
@@ -239,7 +242,7 @@
         if ($('#addToCartForm').length) {
             const productId = $('input[name="product_id"]').val();
             new FormHandler('#addToCartForm', {
-                submitUrl: `/cart/add/${productId}`,
+                submitUrl: `${basePath}/cart/add/${productId}`,
                 successMessage: 'Product added to cart successfully!',
                 errorMessage: 'Failed to add product to cart'
             }).init();
@@ -261,7 +264,7 @@
             formData.append('csrf_token', csrfToken);
             formData.append('product_id', productId);
             formData.append('quantity', quantity);
-            fetch(`/cart/add/${productId}`, {
+            fetch(`${basePath}/cart/add/${productId}`, {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json'
@@ -304,7 +307,7 @@
                 const productId = $(this).data('product-id');
                 $.ajax({
                     type: 'POST',
-                    url: `/admin/products/${productId}/delete`,
+                    url: `${basePath}/admin/products/${productId}/delete`,
                     dataType: 'json',
                     success: function(response) {
                         if (response.success) {
@@ -324,8 +327,8 @@
         // Add Category Form (Example)
         if ($('#categoryForm').length) {
             new FormHandler('#categoryForm', {
-                submitUrl: '/admin/categories/create',
-                redirectUrl: '/admin/categories',
+                submitUrl: basePath + '/admin/categories/create',
+                redirectUrl: basePath + '/admin/categories',
                 successMessage: 'Category created successfully!',
                 errorMessage: 'Failed to create category'
             }).init();
@@ -335,8 +338,8 @@
         if ($('#editCategoryForm').length) {
             const categoryId = $('input[name="category_id"]').val();
             new FormHandler('#editCategoryForm', {
-                submitUrl: `/admin/categories/${categoryId}`,
-                redirectUrl: '/admin/categories',
+                submitUrl: `${basePath}/admin/categories/${categoryId}`,
+                redirectUrl: basePath + '/admin/categories',
                 successMessage: 'Category updated successfully!',
                 errorMessage: 'Failed to update category'
             }).init();
@@ -384,7 +387,7 @@
         const formData = new FormData();
         formData.append('id', itemId);
 
-        fetch(`/cart/remove/${itemId}`, {
+        fetch(`${basePath}/cart/remove/${itemId}`, {
             method: 'POST',
             body: formData
         })
