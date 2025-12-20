@@ -10,7 +10,7 @@
                 <?php foreach ($cartItems as $item) : ?>
                     <li class="flex py-6" data-item-id="<?php echo e($item['id']); ?>">
                         <div class="shrink-0">
-                            <img src="<?php echo $item['image']; ?>" alt="<?php echo $item['product_name']; ?>" class="size-24 rounded-md object-cover sm:size-32" />
+                            <img src="<?php echo $item['image']; ?>" alt="<?php echo $item['product_name']; ?>" class="size-24 rounded-md object-contain sm:size-32" />
                         </div>
 
                         <div class="ml-4 flex flex-1 flex-col sm:ml-6">
