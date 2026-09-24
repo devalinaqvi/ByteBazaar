@@ -1,3 +1,9 @@
-.idea
-public/uploads/products
+/.idea/
+/vendor/
+/public/uploads/products/
+/storage/*
+!/storage/.gitkeep
 *.log
+.phpunit.result.cache
+/config/config.php
+/.env

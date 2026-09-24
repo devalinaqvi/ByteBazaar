@@ -1,82 +1,68 @@
 <?php
-
 namespace App\Controllers;
-
-use App\Core\BaseController;
-use App\Core\Request;
+use App\Core\{BaseController, Request, HttpException};
 use App\Services\CategoryService;
-
 class CategoryController extends BaseController
 {
-    private Request $request;
-    public function __construct(private readonly CategoryService $categories, Request $request)
-    {
-        $this->request = $request;
-        parent::__construct();
-    }
-
+    public function __construct(
+        private CategoryService $categories,
+        private Request $request,
+    ) {}
     public function index(): void
     {
-        $list = $this->categories->list();
-
-        $this->render('pages/admin_categories', [
-            'title' => 'Categories',
-            'body_class' => 'h-full',
-            'html_class' => 'h-full bg-gray-100',
-            'header' => true,
-            'is_admin' => true,
-            'admin_nav_active' => 'active',
-            'admin_footer_active' => 'active',
-            'categories' => $list,
+        $this->render("pages/admin/admin_categories", [
+            "title" => "Categories",
+            "is_admin" => true,
+            "categories" => $this->categories->list(),
         ]);
     }
-
     public function create(): void
     {
-        $this->render('pages/admin_add_category', [
-            'title' => 'Add Category',
-            'body_class' => 'h-full',
-            'html_class' => 'h-full bg-gray-100',
-            'header' => true,
-            'is_admin' => true,
-            'admin_nav_active' => 'active',
-            'admin_footer_active' => 'active',
+        $this->render("pages/admin/category_form", [
+            "title" => "Add category",
+            "is_admin" => true,
+            "category" => null,
         ]);
     }
-
-    public function store(): void
-    {
-        $data = $this->request->all();
-        $this->categories->create($data);
-        $this->redirect('/admin/categories');
-    }
-
     public function edit(int $id): void
     {
-        $category = $this->categories->get($id);
-
-        $this->render('pages/admin_edit_category', [
-            'title' => 'Edit Category',
-            'body_class' => 'h-full',
-            'html_class' => 'h-full bg-gray-100',
-            'header' => true,
-            'is_admin' => true,
-            'admin_nav_active' => 'active',
-            'admin_footer_active' => 'active',
-            'category' => $category
+        $category =
+            $this->categories->get($id) ??
+            throw new HttpException(404, "Category not found.");
+        $this->render("pages/admin/category_form", [
+            "title" => "Edit category",
+            "is_admin" => true,
+            "category" => $category,
         ]);
     }
-
+    public function store(): void
+    {
+        $this->categories->create($this->request->all());
+        $this->done();
+    }
     public function update(int $id): void
     {
-        $data = $this->request->all();
-        $this->categories->update($id, $data);
-        $this->redirect('/admin/categories');
+        if (!$this->categories->get($id)) {
+            throw new HttpException(404, "Category not found.");
+        }
+        $this->categories->update($id, $this->request->all());
+        $this->done();
     }
-
     public function delete(int $id): void
     {
         $this->categories->delete($id);
-        $this->redirect('/admin/categories');
+        $this->done();
+    }
+    private function done(): void
+    {
+        if (wants_json()) {
+            $this->json([
+                "success" => true,
+                "message" => "Categories updated.",
+                "redirect" => url_path("admin/categories"),
+            ]);
+        } else {
+            $this->redirect("/admin/categories");
+        }
     }
 }

@@ -9,6 +9,15 @@ class CategoryRepository
 {
     public function __construct(private PDO $db) {}
 
+    public function slugExists(string $slug, int $except = 0): bool
+    {
+        $s = $this->db->prepare(
+            "SELECT id FROM categories WHERE slug = ? AND id <> ?",
+        );
+        $s->execute([$slug, $except]);
+        return (bool) $s->fetchColumn();
+    }
+
     public function getAll(): array
     {
         $stmt = $this->db->query("SELECT * FROM categories ORDER BY name ASC");
@@ -26,23 +35,23 @@ class CategoryRepository
     public function create(array $data): int
     {
         $params = [
-            ':name' => $data['name'] ?? null,
-            ':slug' => $data['slug'] ?? null
+            ":name" => $data["name"] ?? null,
+            ":slug" => $data["slug"] ?? null,
         ];
         $stmt = $this->db->prepare("
             INSERT INTO categories (name, slug)
             VALUES (:name, :slug)
         ");
         $stmt->execute($params);
-        return (int)$this->db->lastInsertId();
+        return (int) $this->db->lastInsertId();
     }
 
     public function update(int $id, array $data): bool
     {
         $params = [
-            ':name' => $data['name'] ?? null,
-            ':slug' => $data['slug'] ?? null,
-            ':id' => $id
+            ":name" => $data["name"] ?? null,
+            ":slug" => $data["slug"] ?? null,
+            ":id" => $id,
         ];
         $stmt = $this->db->prepare("
             UPDATE categories SET

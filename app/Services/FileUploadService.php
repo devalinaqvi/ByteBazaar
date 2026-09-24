@@ -1,78 +1,80 @@
 <?php
-
 namespace App\Services;
-
+use App\Core\HttpException;
 class FileUploadService
 {
-    private string $uploadDir;
-
-    public function __construct()
+    public function optionalImage(?array $file): ?string
     {
-        // Use realpath to get absolute path from project root
-        $projectRoot = realpath(__DIR__ . '/../../');
-        $this->uploadDir = $projectRoot . '/public/uploads/products/';
-
-        // Create directory if it doesn't exist
-        if (!is_dir($this->uploadDir)) {
-            if (!mkdir($this->uploadDir, 0755, true)) {
-                throw new \Exception("Failed to create upload directory: " . $this->uploadDir);
-            }
+        if (
+            !$file ||
+            ($file["error"] ?? UPLOAD_ERR_NO_FILE) === UPLOAD_ERR_NO_FILE
+        ) {
+            return null;
         }
-
-        // Check if directory is writable
-        if (!is_writable($this->uploadDir)) {
-            throw new \Exception("Upload directory is not writable: " . $this->uploadDir);
-        }
+        return $this->uploadImage($file);
     }
-
     public function uploadImage(array $file): string
     {
-        // Check if file array is empty
-        if (empty($file) || !isset($file['tmp_name']) || !isset($file['error'])) {
-            throw new \Exception("No file provided");
+        if (
+            ($file["error"] ?? -1) !== UPLOAD_ERR_OK ||
+            !is_string($file["tmp_name"] ?? null) ||
+            !is_uploaded_file($file["tmp_name"])
+        ) {
+            throw new HttpException(
+                422,
+                "The image could not be uploaded. Please try again.",
+            );
         }
-
-        // Check for upload errors
-        if ($file['error'] !== UPLOAD_ERR_OK) {
-            $errors = [
-                UPLOAD_ERR_INI_SIZE => 'File exceeds upload_max_filesize',
-                UPLOAD_ERR_FORM_SIZE => 'File exceeds MAX_FILE_SIZE',
-                UPLOAD_ERR_PARTIAL => 'File was only partially uploaded',
-                UPLOAD_ERR_NO_FILE => 'No file was uploaded',
-                UPLOAD_ERR_NO_TMP_DIR => 'Missing temporary directory',
-                UPLOAD_ERR_CANT_WRITE => 'Failed to write file',
-                UPLOAD_ERR_EXTENSION => 'Extension not allowed'
-            ];
-            throw new \Exception($errors[$file['error']] ?? 'Unknown upload error');
+        $tmp = $file["tmp_name"];
+        if (filesize($tmp) > 2 * 1024 * 1024) {
+            throw new HttpException(422, "Images must be 2 MB or smaller.");
         }
-
-        $allowed = ['image/jpeg', 'image/png', 'image/webp'];
-
-        if (!in_array($file['type'], $allowed)) {
-            throw new \Exception("Invalid file type. Allowed: JPEG, PNG, WebP");
+        $ext = self::imageExtension($tmp);
+        $dir = dirname(__DIR__, 2) . "/public/uploads/products";
+        if (!is_dir($dir) && !mkdir($dir, 0755, true) && !is_dir($dir)) {
+            throw new \RuntimeException("Unable to create upload directory");
         }
-
-        if ($file['size'] > 2 * 1024 * 1024) { // 2MB limit
-            throw new \Exception("File too large. Max 2MB allowed");
+        $filename = bin2hex(random_bytes(24)) . "." . $ext;
+        if (!move_uploaded_file($tmp, $dir . "/" . $filename)) {
+            throw new \RuntimeException("Unable to store uploaded image");
         }
-
-        // Validate temp file exists and is uploaded
-        if (!is_uploaded_file($file['tmp_name'])) {
-            throw new \Exception("Invalid uploaded file");
-        }
-
-        $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
-        $filename = uniqid('prod_', true) . '.' . $ext;
-        $dest = $this->uploadDir . $filename;
-
-        // Move uploaded file
-        if (!move_uploaded_file($file['tmp_name'], $dest)) {
-            throw new \Exception("Failed to move uploaded file");
-        }
-
-        // Set proper permissions on uploaded file
-        chmod($dest, 0644);
-
         return "/uploads/products/" . $filename;
+    }
+    public static function imageExtension(string $path): string
+    {
+        $mime = (new \finfo(FILEINFO_MIME_TYPE))->file($path);
+        $info = @getimagesize($path);
+        $types = [
+            "image/jpeg" => "jpg",
+            "image/png" => "png",
+            "image/webp" => "webp",
+        ];
+        if (
+            !isset($types[$mime]) ||
+            !$info ||
+            $info["mime"] !== $mime ||
+            $info[0] * $info[1] > 24000000
+        ) {
+            throw new HttpException(
+                422,
+                "Choose a valid JPEG, PNG, or WebP image (up to 24 megapixels).",
+            );
+        }
+        return $types[$mime];
+    }
+    public function deleteImage(?string $path): void
+    {
+        if (
+            $path &&
+            preg_match(
+                '#^/uploads/products/[a-f0-9]{48}\.(jpg|png|webp)$#',
+                $path,
+            )
+        ) {
+            $file = dirname(__DIR__, 2) . "/public" . $path;
+            if (is_file($file)) {
+                unlink($file);
+            }
+        }
     }
 }

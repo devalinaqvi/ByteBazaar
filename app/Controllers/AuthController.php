@@ -1,67 +1,64 @@
 <?php
-
 namespace App\Controllers;
-
-use App\Core\BaseController;
-use App\Core\Request;
+use App\Core\{BaseController, Request, HttpException, Validation};
 use App\Services\AuthService;
-
 class AuthController extends BaseController
 {
-    private readonly AuthService $authService;
-    private readonly Request $request;
-
-    public function __construct(AuthService $authService, Request $request) {
-        parent::__construct();
-        $this->authService = $authService;
-        $this->request = $request;
+    public function __construct(
+        private AuthService $auth,
+        private Request $request,
+        private \App\Services\LoginLimiter $limiter,
+    ) {}
+    public function login(): void
+    {
+        $this->render("pages/login", ["title" => "Welcome back"]);
     }
-    public function login(): void {
-        $this->render('pages/login', ['title' => 'Login', 'nav_rendered' => false, 'footer_rendered' => false, 'body_class' => 'h-full', 'html_class' => 'bg-gray-100']);
+    public function register(): void
+    {
+        $this->render("pages/register", ["title" => "Create your account"]);
     }
-
-    public function register(): void {
-        $this->render('pages/register', ['title' => 'Register', 'nav_rendered' => false, 'footer_rendered' => false, 'body_class' => 'h-full', 'html_class' => 'bg-gray-100']);
-    }
-
-    public function postRegister(): void {
+    public function authenticate(): void
+    {
         $data = $this->request->all();
-        $email = $data['email'];
-        if ($this->authService->emailExists($email)) {
+        $email = Validation::email($data);
+        $password = $data["password"] ?? "";
+        if (
+            !is_string($password) ||
+            $password === "" ||
+            strlen($password) > 72
+        ) {
+            throw new HttpException(422, "Enter a valid password.");
+        }
+        $this->limiter->attempt($email, $_SERVER["REMOTE_ADDR"] ?? "local");
+        $user = $this->auth->authenticate($email, $password);
+        if (!$user) {
+            throw new HttpException(
+                422,
+                "The email or password is incorrect. Please try again.",
+            );
+        }
+        $this->auth->login($user);
+        $this->done($user->is_admin ? "/admin" : "/user/dashboard");
+    }
+    public function postRegister(): void
+    {
+        $this->auth->register($this->request->all());
+        $this->done("/user/dashboard");
+    }
+    public function logout(): void
+    {
+        $this->auth->logout();
+        $this->redirect("/");
+    }
+    private function done(string $path): void
+    {
+        if (wants_json()) {
             $this->json([
-                'success' => false,
-                'message' => 'Email already exists'
+                "success" => true,
+                "redirect" => url_path(ltrim($path, "/")),
             ]);
+        } else {
+            $this->redirect($path);
         }
-        $this->authService->register($data);
-        $this->redirect('/login');
     }
-
-    public function logout(): void {
-        $this->authService->logout();
-        $this->redirect('/login');
-    }
-
-    public function forgotPassword(): void {
-        $this->render('pages/forgot-password', ['title' => 'Forgot Password', 'nav_rendered' => false, 'footer_rendered' => false, 'body_class' => 'h-full', 'html_class' => 'bg-gray-100']);
-    }
-    public function authenticate(): void {
-        $email = $this->request->post('email');
-        $password = $this->request->post('password');
-        $authenticatedUser = $this->authService->authenticate($email, $password);
-        logMessage("Authenticating user with email: {$email}");
-        logMessage("Result: " . ($authenticatedUser ? 'success' : 'failure'));
-        if (!$authenticatedUser) {
-            $this->redirect('/login');
-            return;
-        }
-        $this->authService->login($authenticatedUser);
-        if($authenticatedUser->is_admin)
-            $this->redirect('/admin');
-        else
-            $this->redirect('/user/dashboard');
-    }
-    public function resetPassword(): void {}
-
-    public function verify(): void {}
 }

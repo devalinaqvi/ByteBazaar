@@ -1,398 +1,112 @@
-# 🖥️ Online Computer Store (Custom PHP MVC Framework)
+# Byte Bazaar
 
-A lightweight, custom-built MVC framework for an **Online Computer Store**.
+A PHP 8.2+ storefront with a responsive shopping experience, guest and account carts, cash-on-delivery checkout, and an administration area.
 
-## 📚 Student Information
-- **Name:** Tabish Hassan
-- **Student ID:** 239649410
-- **Email:** thassan@algomau.ca
-- **Live Demo:** [https://syntaxcamp.com/](https://syntaxcamp.com/) (if applicable)
+## Setup
 
-## ✨ Features
+Requirements: PHP 8.2+, Composer, MySQL 8.0+, and the PDO MySQL, mbstring, fileinfo, and standard PHP extensions. Tests also use PDO SQLite. The UI uses local CSS and vanilla JavaScript; no frontend build or external CDN is required.
 
-* User & Admin dashboards
-* Product management (CRUD)
-* Cart system (guest & logged-in)
-* AJAX add-to-cart
-* Checkout + order creation
-* Repositories & Services architecture
-* Routing via **AltoRouter**
-* PDO MySQL with prepared statements
-* Unit testing with **PHPUnit**
-* Order management with order items tracking
-
----
-
-# 📁 Project Structure
-
-```
-project-root/
-├── app/
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Repositories/
-│   ├── Services/
-│   ├── Factories/
-│   ├── Core/              # Router, Container, Database, BaseController
-│   └── Views/             # admin/ & user/
-├── public/                # Document root for Apache/Nginx
-│   ├── index.php
-│   ├── assets/
-│   └── uploads/
-├── config/
-│   └── config.php
-├── migrations/
-│   ├── schema.sql
-│   └── seed.php
-├── vendor/
-├── .htaccess
-├── composer.json
-└── README.md
-```
-
----
-
-# 🛠️ Requirements
-
-| Software        | Version       |
-| --------------- |---------------|
-| PHP             | **8.2+**      |
-| MySQL           | **5.7 / 8.0** |
-| Composer        | **latest**    |
-| Apache or Nginx | optional      |
-
-### PHP Extensions Needed
-
-Ensure these are enabled in `php.ini`:
-
-```ini
-extension=pdo
-extension=pdo_mysql
-extension=openssl
-extension=mbstring
-extension=curl
-extension=json
-```
-
----
-
-# 📦 Installation
-
-### 1️⃣ Install Dependencies
-
-```bash
+```sh
 composer install
+cp config/config.example.php config/config.php
 ```
 
-This installs:
-* **altorouter/altorouter** — Routing
-* **phpunit/phpunit** — Testing
-* PSR-4 Autoloading
+Configure `db.host`, `db.port`, `db.dbname`, `db.user`, and `db.pass` in your local configuration, or set `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, and `DB_PASSWORD`. Environment values override the local file. Keep credentials out of version control. The existing local config is preserved during upgrades; `.gitignore` does not untrack a file already committed in an older revision.
 
-### 2️⃣ Configure Environment
+Create an empty MySQL database with UTF-8 support, then run:
 
-Edit `config/config.php`:
-
-```php
-return [
-    'db' => [
-        'host' => 'localhost',
-        'database' => 'computer_store',
-        'user' => 'root',
-        'password' => '',
-    ],
-    'app' => [
-        'url' => 'http://localhost:8000',
-        'env' => 'local'
-    ]
-];
+```sh
+composer migrate
+composer serve
 ```
 
-### 3️⃣ Create Database
+Open [the local store](http://localhost:8000). Set the production web root to `public/`.
 
-Login to MySQL:
+`migrations/schema.sql` is the canonical clean-install schema. `composer migrate` also adds the required columns and indexes to the original application schema. It preserves existing products, accounts, carts, and orders, and changes the order/account foreign key to preserve order history when an account is deleted. Older orders retain their recorded total; the UI does not invent a historical tax breakdown. Back up a database before applying a schema change. MySQL DDL is not transactionally reversible.
 
-```bash
-mysql -u root -p
+The old, conflicting SQL dumps have been removed, including their embedded account and customer records. Do not use those files from an older revision to initialize a new environment.
+
+### Optional demo data
+
+```sh
+composer seed
 ```
 
-Create database:
+Seeding creates a small synthetic catalog and preserves existing records. It does not create an administrator with a default password. To create an initial administrator, supply `SEED_ADMIN_EMAIL` and `SEED_ADMIN_PASSWORD` through your environment and run the seed command. Passwords must contain 12–72 characters. Existing accounts are never promoted or have their passwords reset by seeding.
 
-```sql
-CREATE DATABASE computer_store;
-USE computer_store;
+For an isolated SQLite preview, explicitly set a separate database file for both commands:
+
+```sh
+APP_DB_SQLITE=/tmp/byte-bazaar-preview.sqlite composer seed
+APP_DB_SQLITE=/tmp/byte-bazaar-preview.sqlite php -S localhost:8088 -t public/
 ```
 
-### 4️⃣ Run Migrations
+SQLite is useful for previews and tests. MySQL is the deployment target and is covered by the integration and concurrency checks.
 
-Run the schema file:
+## Sessions and dependency injection
 
-```bash
-mysql -u root -p computer_store < migrations/schema.sql
-```
+`public/index.php` creates a new container on **every request**. Container singletons are shared only within that request. `SessionContext` holds a reference to that request's PHP session; there are no static identities, global container singletons, or cached PDO connections. Controllers are transient, and the view renderer receives its dependencies from the same request container.
 
-Or run the seed script:
+- Guest carts use a cryptographically random server-side ownership key.
+- Account carts use `user:<database user ID>` and persist across login sessions.
+- Login merges the current guest cart into the account cart, caps quantities to available stock, rotates the PHP session ID and CSRF token, and clears transient session data.
+- Logout clears authentication and starts a fresh guest session. It never turns the account cart into the next visitor's guest cart.
+- Cookie names include the installation, environment, and database identity. Different localhost ports alone do **not** isolate browser cookies; the database-specific namespace prevents a preview login from being reused against the real local database.
+- Cookies are HttpOnly and SameSite=Lax, with Secure enabled on HTTPS. PHP strict session mode rejects unknown session IDs. Responses containing session state use `private, no-store`.
+- Roles are read from the database, not trusted from an `is_admin` session flag. Cart changes and order reads check the current owner.
 
-```bash
-php migrations/seed.php
-```
+Use the normal PHP request lifecycle (PHP-FPM, Apache PHP, or the built-in development server). A persistent application worker must build a fresh container and session context for every request. If multiple hosts serve the same installation, configure a shared PHP session store and a stable shared installation identifier before scaling out.
 
-**Default Admin Credentials:**
-* Email: `thassan@algomau.ca`
-* Password: `password123`
+Changing to the new cookie namespace requires users of the old version to sign in again. The original application never reliably attached guest carts to accounts, so their old ownership cannot be inferred safely.
 
----
+## Checkout and security
 
-# 🚀 Running the Application
+Checkout validates customer information and positive quantities on the server. It reads current prices and availability inside a transaction, conditionally decrements stock, saves the order and its items, and clears the cart before committing. Account-level locking coordinates carts across browser sessions. A unique checkout key makes retries return the existing order. Competing orders cannot consume the same final stock unit.
 
-## ✅ Option A — PHP Built-in Server (Recommended for Development)
+Prices are converted to integer cents before multiplication and tax rounding. Shipping is currently $5 per order; the configured business rule is a flat 8% tax. These are demo business rules, not a jurisdiction-aware tax engine. Only cash on delivery is supported. Cancellation, refunds, online payments, password recovery, and email delivery are not implemented or advertised as available.
 
-Simply run:
+POST routes require a session CSRF token. Product and customer fields are escaped in HTML, and the UI builds notifications with text nodes. Login attempts are limited using database counters across sessions. Uploaded images must pass file-content and dimension checks; stored extensions are derived from verified MIME types. Apache blocks executable extensions under uploads. Nginx must route PHP execution only to the front controller:
 
-```bash
-php -S localhost:8000 -t public/
-```
-
-Access the application at:
-
-```
-http://localhost:8000
-```
-
-**This is the quickest way to get started!**
-
----
-
-## 🔷 Option B — XAMPP (Windows)
-
-1. Copy project to:
-```
-C:\xampp\htdocs\computer-store\
-```
-
-2. Start Apache from XAMPP Control Panel
-
-3. Visit:
-```
-http://localhost/computer-store/
-```
-
-4. If you get "Class not found" errors, run:
-```bash
-composer dump-autoload
-```
-
----
-
-## 🐧 Option C — Apache (Linux / macOS)
-
-1. Enable rewrite module:
-```bash
-sudo a2enmod rewrite
-sudo systemctl restart apache2
-```
-
-2. Create virtual host `/etc/apache2/sites-available/computer-store.conf`:
-```apache
-<VirtualHost *:80>
-    ServerName computer-store.local
-    DocumentRoot /var/www/computer-store/public
-
-    <Directory /var/www/computer-store/public>
-        AllowOverride All
-        Require all granted
-    </Directory>
-</VirtualHost>
-```
-
-3. Enable site:
-```bash
-sudo a2ensite computer-store
-sudo systemctl reload apache2
-```
-
-4. Add to `/etc/hosts`:
-```
-127.0.0.1 computer-store.local
-```
-
-5. Access:
-```
-http://computer-store.local
-```
-
----
-
-## 🐳 Option D — Nginx (Linux / macOS)
-
-Create server block `/etc/nginx/sites-available/computer-store`:
 ```nginx
-server {
-    listen 80;
-    server_name computer-store.local;
-
-    root /var/www/computer-store/public;
-    index index.php;
-
-    location / {
-        try_files $uri /index.php?$query_string;
-    }
-
-    location ~ \.php$ {
-        include fastcgi_params;
-        fastcgi_pass unix:/run/php/php8.1-fpm.sock;
-        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
-    }
+root /path/to/byte-bazaar/public;
+index index.php;
+location / { try_files $uri $uri/ /index.php?$query_string; }
+location = /index.php {
+    include fastcgi_params;
+    fastcgi_pass unix:/run/php/php8.2-fpm.sock;
+    fastcgi_param SCRIPT_FILENAME $document_root/index.php;
 }
+location ~ \.php(?:/|$) { return 404; }
+location ~ /\. { deny all; }
 ```
 
-Enable site:
-```bash
-sudo ln -s /etc/nginx/sites-available/computer-store /etc/nginx/sites-enabled/
-sudo systemctl restart nginx
-```
+Use HTTPS and pass the real HTTPS state to PHP through your trusted proxy configuration. The app does not trust arbitrary forwarded-protocol headers. Keep the upload directory writable by PHP; a read-only upload directory does not prevent the rest of the store from starting. Back up uploads with the database. Run deployment installs with `composer install --no-dev --optimize-autoloader`.
 
-Add to `/etc/hosts`:
-```
-127.0.0.1 computer-store.local
-```
+## Verification
 
-Access:
-```
-http://computer-store.local
-```
-
----
-
-# 📝 Running Tests
-
-```bash
+```sh
+composer validate --strict --no-check-publish
 composer test
 ```
 
-Or manually:
-```bash
-vendor/bin/phpunit
+The suite uses a freshly migrated in-memory SQLite database for each test. It covers independent sessions, DI scope, cart ownership, login merges and logout, roles, CSRF, order authorization, quantities, stock rollback, idempotency, pricing, uploads, migrations, and route targets.
+
+For MySQL, create a **disposable** `byte_bazaar_test` database. The suite drops and recreates its application tables. Never point it at a database you want to keep:
+
+```sh
+TEST_MYSQL_DSN='mysql:unix_socket=/path/to/test.sock;dbname=byte_bazaar_test' vendor/bin/phpunit
 ```
 
----
+For true concurrent requests, create a separate disposable `byte_bazaar_test_concurrency` database, then run the check below with PHP's pcntl extension. It races two buyers for the final unit, races duplicate checkout submissions, and checks the migration against a schema-only fixture of the original application.
 
-# 🗄️ Database Schema
-
-The migrations include:
-
-* **users** — Authentication & authorization
-* **categories** — Product categories
-* **products** — Product catalog (with soft delete)
-* **cart_items** — Shopping cart (session-based & user-based)
-* **orders** — Order records with shipping details
-* **order_items** — Individual items in each order
-* Proper indexes & foreign key constraints
-* Guest session_id support for anonymous cart
-
----
-
-# 🧑‍💻 Development Workflow
-
-### Admin Panel:
-* Product management (Create, Read, Update, Delete)
-* Category management
-* Order management & tracking
-* View all orders with item details
-
-### User Features:
-* Browse products by category
-* Search functionality
-* Pagination
-* Add to cart (AJAX)
-* Checkout with shipping details
-* Order history
-* Guest checkout support
-
----
-
-# 🛡️ Security Features
-
-* Password hashing using `password_hash()`
-* Session-based authentication
-* PDO prepared statements (SQL injection prevention)
-* CSRF token support
-* Server-side input validation
-* Soft deletes for data integrity
-
----
-
-# 📖 Common Commands
-
-```bash
-# Install dependencies
-composer install
-
-# Run development server
-php -S localhost:8000 -t public/
-
-# Reload autoloader (after adding new classes)
-composer dump-autoload
-
-# Run tests
-composer test
-
-# Seed database
-php migrations/seed.php
+```sh
+TEST_MYSQL_DSN='mysql:unix_socket=/path/to/test.sock;dbname=byte_bazaar_test_concurrency' php tests/mysql_concurrency.php
 ```
 
----
+`tests/http_smoke.py` exercises two independent cookie jars and a demo administrator against a disposable localhost preview. It creates synthetic accounts and orders and tests uploads. Seed that preview with the synthetic administrator `admin@example.test` / `local-demo-admin-only`, then run:
 
-# 🆘 Troubleshooting
-
-### "Class not found" errors
-```bash
-composer dump-autoload
-```
-### Upload File Size Too Large
-* Increase `upload_max_filesize` in `php.ini`
-
-### Nginx 413 Request Entity Too Large
-* Increase `client_max_body_size` in `nginx.conf`
-
-### Apache 500 Internal Server Error
-* Check Apache error logs: `sudo tail -f /var/log/apache2/error.log`
-
-### Database connection fails
-* Check credentials in `config/config.php`
-* Ensure MySQL is running
-* Verify database exists: `mysql -u root -p -e "SHOW DATABASES;"`
-
-### .htaccess not working
-* Enable mod_rewrite: `sudo a2enmod rewrite`
-* Restart Apache: `sudo systemctl restart apache2`
-
-### Port 8000 already in use
-Use a different port:
-```bash
-php -S localhost:8001 -t public/
+```sh
+BYTE_BAZAAR_ALLOW_TEST_WRITES=1 python3 tests/http_smoke.py http://127.0.0.1:8088
 ```
 
-### Admin credentials not working
-* Check credentials in `migrations/seed.php`
-
----
-
-# 📞 Support
-
-If you encounter issues:
-
-1. Check error logs in browser console
-2. Verify all PHP extensions are enabled
-3. Ensure database migrations ran successfully
-4. Review credentials in `config/config.php`
-
----
-
-# 📄 License
-
-This project is for educational purposes.
-
----
-
-**Happy coding! 🚀**
+These test-only credentials are never installed in the real local database. Browser verification should include the catalog filters, product detail, quantity changes, checkout, login/logout, administration, and narrow mobile layouts.

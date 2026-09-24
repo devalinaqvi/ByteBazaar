@@ -1,66 +1,27 @@
 <?php
-
-use App\Repositories\ProductRepository;
-use PHPUnit\Framework\TestCase;
-
-class ProductRepositoryTest extends TestCase
+class ProductRepositoryTest extends StoreTestCase
 {
-    private PDO $db;
-    private ProductRepository $repo;
-
-    protected function setUp(): void
+    public function testSoftDeleteExcludedFromSearchAndSlug(): void
     {
-        $this->db = new PDO('sqlite::memory:');
-        $this->db->exec("
-            CREATE TABLE products (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                name TEXT,
-                slug TEXT,
-                description TEXT,
-                price REAL,
-                stock INTEGER,
-                category_id INTEGER,
-                image TEXT,
-                created_at TEXT,
-                updated_at TEXT,
-                deleted_at TEXT
-            );
-        ");
-
-        $this->repo = new ProductRepository($this->db);
+        $r = new App\Repositories\ProductRepository($this->db);
+        $r->softDelete(1);
+        $this->assertNull($r->findBySlug("laptop"));
+        $this->assertSame(0, $r->catalog("Laptop", [1])["total"]);
     }
-
-    public function testCreateProduct()
+    public function testPaginationAndPriceSort(): void
     {
-        $id = $this->repo->create([
-            'name' => 'Laptop',
-            'slug' => 'laptop',
-            'description' => 'desc',
-            'price' => 999.90,
-            'stock' => 10,
-            'category_id' => 1,
-            'image' => '/uploads/test.jpg',
-        ]);
-
-        $this->assertEquals(1, $id);
+        $r = new App\Repositories\ProductRepository($this->db);
+        $result = $r->catalog("", [], 1, "price_desc", 1);
+        $this->assertSame(2, $result["total"]);
+        $this->assertSame("Desktop", $result["products"][0]->name);
     }
-
-    public function testSoftDelete()
+    public function testMigrationCanRunTwice(): void
     {
-        $id = $this->repo->create([
-            'name' => 'Laptop',
-            'slug' => 'laptop',
-            'description' => 'desc',
-            'price' => 999.90,
-            'stock' => 10,
-            'category_id' => 1,
-            'image' => '/uploads/test.jpg',
-        ]);
-
-        $this->repo->softDelete($id);
-
-        $product = $this->repo->find($id);
-
-        $this->assertNull($product);
+        migrate($this->db);
+        migrate($this->db);
+        $this->assertEquals(
+            2,
+            $this->db->query("SELECT COUNT(*) FROM products")->fetchColumn(),
+        );
     }
 }

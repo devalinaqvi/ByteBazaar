@@ -3,7 +3,6 @@ namespace App\Repositories;
 
 use App\Models\User;
 use PDO;
-use PDOException;
 
 readonly class UserRepository
 {
@@ -11,35 +10,38 @@ readonly class UserRepository
 
     public function findByEmail(string $email): ?User
     {
-        try {
-            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $e) {
-            logMessage("Error setting PDO error mode: {$e->getMessage()}");
-            return null;
-        }
-
-        $stmt = $this->pdo->prepare("SELECT * FROM users WHERE email = :email LIMIT 1");
-        $stmt->execute(['email' => $email]);
+        $stmt = $this->pdo->prepare(
+            "SELECT * FROM users WHERE email = :email LIMIT 1",
+        );
+        $stmt->execute(["email" => $email]);
 
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         if ($row) {
-            logMessage("Found user with email: {$email}");
             return new User($row);
         }
-        logMessage("User not found with email: {$email}");
+
         return null;
     }
 
-    public function listAllUsers(): array
+    public function listing(int $page): array
     {
-        $stmt = $this->pdo->query("SELECT * FROM users");
-        $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        return array_map(function($row) {
-            return new User($row);
-        }, $rows);
+        $total = (int) $this->pdo
+            ->query("SELECT COUNT(*) FROM users")
+            ->fetchColumn();
+        $page = max(1, min($page, max(1, (int) ceil($total / 20))));
+        $users = $this->pdo
+            ->query(
+                "SELECT id, name, email, created_at, is_admin FROM users ORDER BY id DESC LIMIT 20 OFFSET " .
+                    ($page - 1) * 20,
+            )
+            ->fetchAll(PDO::FETCH_ASSOC);
+        return [
+            "users" => $users,
+            "page" => $page,
+            "pages" => max(1, (int) ceil($total / 20)),
+            "total" => $total,
+        ];
     }
-
     public function create(string $name, string $email, string $password): int
     {
         $stmt = $this->pdo->prepare("
@@ -48,9 +50,9 @@ readonly class UserRepository
         ");
 
         $stmt->execute([
-            'name' => $name,
-            'email' => $email,
-            'pass' => password_hash($password, PASSWORD_DEFAULT)
+            "name" => $name,
+            "email" => $email,
+            "pass" => password_hash($password, PASSWORD_DEFAULT),
         ]);
 
         return (int) $this->pdo->lastInsertId();
@@ -58,20 +60,15 @@ readonly class UserRepository
 
     public function findById(int $id): ?User
     {
-        $stmt = $this->pdo->prepare("SELECT * FROM users WHERE id = :id LIMIT 1");
-        $stmt->execute(['id' => $id]);
+        $stmt = $this->pdo->prepare(
+            "SELECT * FROM users WHERE id = :id LIMIT 1",
+        );
+        $stmt->execute(["id" => $id]);
 
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         if ($row) {
             return new User($row);
         }
         return null;
-    }
-
-    public function listAllOrders(int $userId): array
-    {
-        $stmt = $this->pdo->prepare("SELECT * FROM orders WHERE user_id = :id");
-        $stmt->execute(['id' => $userId]);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }

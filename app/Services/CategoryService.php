@@ -20,13 +20,27 @@ class CategoryService
 
     public function create(array $data): int
     {
-        $data['slug'] = $this->slugify($data['name']);
+        $data["name"] = \App\Core\Validation::text($data, "name", 100);
+        $data["slug"] = $this->slugify($data["name"]) ?: "category";
+        if ($this->repo->slugExists($data["slug"], $id ?? 0)) {
+            throw new \App\Core\HttpException(
+                422,
+                "A category with that name already exists.",
+            );
+        }
         return $this->repo->create($data);
     }
 
     public function update(int $id, array $data): bool
     {
-        $data['slug'] = $this->slugify($data['name']);
+        $data["name"] = \App\Core\Validation::text($data, "name", 100);
+        $data["slug"] = $this->slugify($data["name"]) ?: "category";
+        if ($this->repo->slugExists($data["slug"], $id ?? 0)) {
+            throw new \App\Core\HttpException(
+                422,
+                "A category with that name already exists.",
+            );
+        }
         return $this->repo->update($id, $data);
     }
 
@@ -38,7 +52,7 @@ class CategoryService
     private function slugify(string $text): string
     {
         $slug = strtolower(trim($text));
-        $slug = preg_replace('/[^a-z0-9]+/', '-', $slug);
-        return trim($slug, '-');
+        $slug = preg_replace("/[^a-z0-9]+/", "-", $slug);
+        return trim($slug, "-");
     }
 }

@@ -1,24 +1,29 @@
 <?php
-
 namespace App\Controllers;
-
-use App\Core\BaseController;
-use App\Core\Request;
-use App\Services\UserService;
-
+use App\Core\{BaseController, Request, SessionContext};
+use App\Services\{OrderService, AuthService};
 class UserController extends BaseController
 {
-    private readonly Request $request;
     public function __construct(
-        private readonly UserService $users,
-        Request $request
-    ) {
-        parent::__construct();
-    }
-
-    public function dashboard(): void {
-        $userId = $_SESSION['user_id'];
-        $orders = $this->users->listAllOrders($userId);
-        $this->render('pages/user/index', ['title' => 'Dashboard', 'body_class' => 'h-full', 'html_class' => 'h-full bg-gray-100', 'header' => true, 'is_user' => true, 'admin_nav_active' => 'active', 'admin_footer_active' => 'active', 'orders' => $orders]);
+        private OrderService $orders,
+        private Request $request,
+        private SessionContext $session,
+        private AuthService $auth,
+    ) {}
+    public function dashboard(): void
+    {
+        $this->render(
+            "pages/orders",
+            array_merge(
+                [
+                    "title" => "Your account",
+                    "customer" => $this->auth->getCurrentUser(),
+                ],
+                $this->orders->listing(
+                    $this->session->userId(),
+                    max(1, (int) $this->request->get("page", 1)),
+                ),
+            ),
+        );
     }
 }

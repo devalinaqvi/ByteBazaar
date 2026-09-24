@@ -1,51 +1,40 @@
 <?php
 namespace App\Core;
-
-use PDO;  // For type hints
-
-class Container {
+use PDO;
+/** A new container is built for each HTTP request, never shared between workers. */
+class Container
+{
     private array $bindings = [];
     private array $instances = [];
-
-    public function __construct(PDO $pdo) {  // Accept PDO directly (your $pdo)
-        $this->instances['pdo'] = $pdo;
-        $this->bind('db', $pdo);  // Alias for legacy
+    public function __construct(PDO $pdo)
+    {
+        $this->instances = ["pdo" => $pdo, "db" => $pdo];
     }
-
-    public function bind(string $key, callable|object $concrete): self {
-        $this->bindings[$key] = $concrete;
-        unset($this->instances[$key]);  // Reset if singleton
+    public function bind(string $key, callable|object $concrete): self
+    {
+        $this->bindings[$key] = [$concrete, false];
+        unset($this->instances[$key]);
         return $this;
     }
-
-    public function singleton(string $key, callable|object $concrete): self {
-        $instance = is_callable($concrete) ? $concrete($this) : $concrete;
-        $this->instances[$key] = $instance;
+    public function singleton(string $key, callable|object $concrete): self
+    {
+        $this->bindings[$key] = [$concrete, true];
+        unset($this->instances[$key]);
         return $this;
     }
-
-    public function get(string $key) {
+    public function get(string $key): mixed
+    {
         if (isset($this->instances[$key])) {
             return $this->instances[$key];
         }
-
         if (!isset($this->bindings[$key])) {
-            throw new \Exception("No binding for $key");
+            throw new \RuntimeException("No binding for {$key}");
         }
-
-        $concrete = $this->bindings[$key];
-        $instance = is_callable($concrete) ? $concrete($this) : $concrete;  // Lazy resolve
-
-        // Singleton pattern (cache instances)
-        $this->instances[$key] = $instance;
+        [$factory, $shared] = $this->bindings[$key];
+        $instance = is_callable($factory) ? $factory($this) : $factory;
+        if ($shared) {
+            $this->instances[$key] = $instance;
+        }
         return $instance;
-    }
-
-    // Factory for controllers (inject deps via closure)
-    public function make(string $class): object {
-        if (!class_exists($class)) {
-            throw new \Exception("Class $class not found");
-        }
-        return new $class($this);  // Pass container for constructor deps
     }
 }

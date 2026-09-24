@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php" colors="true" stderr="true" cacheResult="false" failOnWarning="true">
+ <testsuites><testsuite name="Byte Bazaar"><directory>tests</directory></testsuite></testsuites>
+</phpunit>

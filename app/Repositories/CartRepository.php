@@ -1,148 +1,170 @@
 <?php
-
 namespace App\Repositories;
-
-use App\Factories\CartItemFactory;
 use PDO;
-
+use App\Core\HttpException;
 class CartRepository
 {
     public function __construct(private PDO $db) {}
-
-    public function getCartItems(?int $userId, string $sessionId): array
+    public function items(string $owner): array
     {
-        $sql = "SELECT * FROM cart_items WHERE ";
-        $sql .= "session_id = ?";
-        $params = [$sessionId];
-
-        logMessage('Session ID: ' . $sessionId . ' User ID: ' . $userId . ' SQL: ' . $sql);
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
-        $rows = $stmt->fetchAll();
-
-        return array_map(
-            fn($row) => CartItemFactory::fromArray($row),
-            $rows
+        $stmt = $this->db->prepare(
+            "SELECT c.id, c.product_id, c.quantity, p.name AS product_name, p.slug AS product_slug, p.price, p.image_url AS image, p.stock, p.deleted_at FROM cart_items c JOIN products p ON p.id = c.product_id WHERE c.session_id = ? ORDER BY c.id",
         );
+        $stmt->execute([$owner]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-    public function getOrderItems(?int $userId, string $sessionId): array
-    {
-        $sql = "
-            SELECT 
-                c.*, 
-                p.name AS product_name,
-                p.price AS product_price,
-                p.image_url AS product_image,
-                p.description AS product_description
-            FROM cart_items c
-            INNER JOIN products p ON p.id = c.product_id
-            WHERE 
-            c.session_id = ?";
-            $params = [$sessionId];
-
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
-        $rows = $stmt->fetchAll();
-
-        return array_map(function ($row) {
-            $item = CartItemFactory::fromArray($row);
-
-            $item->product = (object)[
-                'name'        => $row['product_name'],
-                'price'       => $row['product_price'],
-                'image'       => $row['product_image'],
-                'description' => $row['product_description'],
-            ];
-
-            return $item;
-        }, $rows);
-    }
-
-
-    public function findItem(?int $userId, string $sessionId, int $productId)
-    {
-        logMessage('Finding cart item: User ID: ' . $userId . ', Session ID: ' . $sessionId . ', Product ID: ' . $productId);
-
-        $sql = "SELECT * FROM cart_items WHERE product_id = ? AND ";
-
-        if ($sessionId) {
-            $sql .= "session_id = ?";
-            $params = [$productId, $sessionId];
+    public function setQuantity(
+        string $owner,
+        int $productId,
+        int $quantity,
+        bool $add = false,
+        ?int $expectedId = null,
+    ): void {
+        $this->db->beginTransaction();
+        try {
+            // Account first, then product: the same lock order used by checkout.
+            $lock =
+                $this->db->getAttribute(PDO::ATTR_DRIVER_NAME) === "mysql"
+                    ? " FOR UPDATE"
+                    : "";
+            if (str_starts_with($owner, "user:")) {
+                $u = $this->db->prepare(
+                    "SELECT id FROM users WHERE id = ?" . $lock,
+                );
+                $u->execute([(int) substr($owner, 5)]);
+            }
+            $s = $this->db->prepare(
+                "SELECT stock FROM products WHERE id = ? AND deleted_at IS NULL" .
+                    $lock,
+            );
+            $s->execute([$productId]);
+            $stock = $s->fetchColumn();
+            if ($stock === false) {
+                throw new HttpException(
+                    404,
+                    "This product is no longer available.",
+                );
+            }
+            $s = $this->db->prepare(
+                "SELECT id, quantity FROM cart_items WHERE session_id = ? AND product_id = ?",
+            );
+            $s->execute([$owner, $productId]);
+            $item = $s->fetch();
+            if (
+                $expectedId !== null &&
+                (!$item || (int) $item["id"] !== $expectedId)
+            ) {
+                throw new HttpException(
+                    409,
+                    "Your bag changed. Refresh it and try again.",
+                );
+            }
+            $quantity += $add && $item ? (int) $item["quantity"] : 0;
+            if ($quantity < 1 || $quantity > 999 || $quantity > (int) $stock) {
+                throw new HttpException(
+                    422,
+                    "The requested quantity is not available.",
+                );
+            }
+            if ($item) {
+                $s = $this->db->prepare(
+                    "UPDATE cart_items SET quantity = ? WHERE id = ? AND session_id = ?",
+                );
+                $s->execute([$quantity, $item["id"], $owner]);
+            } else {
+                $s = $this->db->prepare(
+                    "INSERT INTO cart_items (session_id, product_id, quantity) VALUES (?, ?, ?)",
+                );
+                $s->execute([$owner, $productId, $quantity]);
+            }
+            $this->db->commit();
+        } catch (\Throwable $e) {
+            if ($this->db->inTransaction()) {
+                $this->db->rollBack();
+            }
+            throw $e;
         }
-        logMessage('SQL: ' . $sql);
-
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
-
-        $data = $stmt->fetch();
-        logMessage('Found cart item: ' . json_encode($data));
-        return $data ? CartItemFactory::fromArray($data) : null;
     }
-
-    public function addItem(array $data): int
+    public function update(string $owner, int $id, int $quantity): void
     {
-        // Debug: Check if product exists
-        $checkStmt = $this->db->prepare("SELECT id FROM products WHERE id = :product_id AND deleted_at IS NULL");
-        $checkStmt->execute([':product_id' => $data['product_id']]);
-
-        if (!$checkStmt->fetch()) {
-            throw new \Exception("Product ID {$data['product_id']} does not exist or is deleted");
+        $s = $this->db->prepare(
+            "SELECT product_id FROM cart_items WHERE id = ? AND session_id = ?",
+        );
+        $s->execute([$id, $owner]);
+        $product = $s->fetchColumn();
+        if ($product === false) {
+            throw new HttpException(404, "Cart item not found.");
         }
-
-        $stmt = $this->db->prepare("
-        INSERT INTO cart_items (session_id, product_id, quantity)
-        VALUES (:session_id, :product_id, :quantity)
-        ");
-        $stmt->execute($data);
-        return $this->db->lastInsertId();
+        $this->setQuantity($owner, (int) $product, $quantity, false, $id);
     }
-
-    public function updateQuantity(int $id, int $quantity): bool
+    public function remove(string $owner, int $id): void
     {
-        $stmt = $this->db->prepare("
-            UPDATE cart_items SET quantity = ? WHERE id = ?
-        ");
-        return $stmt->execute([$quantity, $id]);
+        $s = $this->db->prepare(
+            "DELETE FROM cart_items WHERE id = ? AND session_id = ?",
+        );
+        $s->execute([$id, $owner]);
+        if (!$s->rowCount()) {
+            throw new HttpException(404, "Cart item not found.");
+        }
     }
-
-    public function deleteItem(int $id): bool
+    public function clear(string $owner): void
     {
-        logMessage('Deleting cart item: ' . $id);
-        return $this->db->prepare("DELETE FROM cart_items WHERE id = ?")->execute([$id]);
+        $s = $this->db->prepare("DELETE FROM cart_items WHERE session_id = ?");
+        $s->execute([$owner]);
     }
-
-    public function clearSessionCart(string $sessionId): bool
+    public function merge(string $guest, string $account): void
     {
-        return $this->db->prepare("DELETE FROM cart_items WHERE session_id = ?")
-            ->execute([$sessionId]);
-    }
-
-    public function transferSessionToUser(string $sessionId, int $userId): void
-    {
-        $stmt = $this->db->prepare("
-            UPDATE cart_items SET user_id = ?, session_id = NULL
-            WHERE session_id = ?
-        ");
-
-        $stmt->execute([$userId, $sessionId]);
-    }
-
-    public function countItems(string $sessionId): int
-    {
-        $stmt = $this->db->prepare("
-            SELECT COUNT(*) as count FROM cart_items WHERE session_id = ?
-        ");
-        $stmt->execute([$sessionId]);
-        $result = $stmt->fetch();
-        return $result['count'] ?? 0;
-    }
-    public function countItemsByProduct(int $productId, string $session_id): int
-    {
-        $stmt = $this->db->prepare("
-            SELECT SUM(quantity) as total_quantity FROM cart_items WHERE product_id = ? AND session_id = ?
-        ");
-        $stmt->execute([$productId, $session_id]);
-        $result = $stmt->fetch();
-        return $result['total_quantity'] ?? 0;
+        if ($guest === $account) {
+            return;
+        }
+        $this->db->beginTransaction();
+        try {
+            // Login to the same account in two browsers cannot overwrite a merge.
+            $lock =
+                $this->db->getAttribute(PDO::ATTR_DRIVER_NAME) === "mysql"
+                    ? " FOR UPDATE"
+                    : "";
+            $s = $this->db->prepare(
+                "SELECT id FROM users WHERE id = ?" . $lock,
+            );
+            $s->execute([(int) substr($account, 5)]);
+            foreach ($this->items($guest) as $item) {
+                if ($item["deleted_at"] !== null || (int) $item["stock"] < 1) {
+                    continue;
+                }
+                $s = $this->db->prepare(
+                    "SELECT id, quantity FROM cart_items WHERE session_id = ? AND product_id = ?",
+                );
+                $s->execute([$account, $item["product_id"]]);
+                $existing = $s->fetch();
+                $qty = min(
+                    999,
+                    (int) $item["stock"],
+                    max(0, (int) $item["quantity"]) +
+                        ($existing ? max(0, (int) $existing["quantity"]) : 0),
+                );
+                if ($qty < 1) {
+                    continue;
+                }
+                if ($existing) {
+                    $s = $this->db->prepare(
+                        "UPDATE cart_items SET quantity = ? WHERE id = ?",
+                    );
+                    $s->execute([$qty, $existing["id"]]);
+                } else {
+                    $s = $this->db->prepare(
+                        "INSERT INTO cart_items (session_id, product_id, quantity) VALUES (?, ?, ?)",
+                    );
+                    $s->execute([$account, $item["product_id"], $qty]);
+                }
+            }
+            $this->clear($guest);
+            $this->db->commit();
+        } catch (\Throwable $e) {
+            if ($this->db->inTransaction()) {
+                $this->db->rollBack();
+            }
+            throw $e;
+        }
     }
 }

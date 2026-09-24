@@ -1,136 +1,106 @@
 <?php
 namespace App\Core;
-
 use AltoRouter;
-
-class Router {
-    private AltoRouter $altoRouter;
-    private Container $container;
-    private string $basePath;
-
-    public function __construct(Container $container) {
-        $this->container = $container;
-        $this->altoRouter = new AltoRouter();
-
-        // Detect base path for XAMPP/subdirectory installs
-        // SCRIPT_NAME = /computer-zone/public/index.php or /computer-zone/index.php
-        $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
-        $this->basePath = dirname($scriptName);
-
-        // Remove /public from the end if present
-        $this->basePath = preg_replace('#/public$#', '', $this->basePath);
-
-        // Also handle case where dirname already gives us the folder name directly
-        // (when .htaccess rewrites hide /public)
-        if ($this->basePath === '/') {
-            $this->basePath = '';
-        }
-
-        // Don't set basePath on AltoRouter since we manually strip it in dispatch()
+class Router
+{
+    private AltoRouter $router;
+    public function __construct(private Container $container)
+    {
+        $this->router = new AltoRouter();
     }
-
-    public function get(string $path, string $target, string $name = ''): self {
-        $this->altoRouter->map('GET', $path, $target, $name);
+    public function get(string $path, string $target, string $name = ""): self
+    {
+        $this->router->map("GET", $path, $target, $name);
         return $this;
     }
-
-    public function post(string $path, string $target, string $name = ''): self {
-        $this->altoRouter->map('POST', $path, $target, $name);
+    public function post(string $path, string $target, string $name = ""): self
+    {
+        $this->router->map("POST", $path, $target, $name);
         return $this;
     }
-
-    public function dispatch(string $uri, string $method): void {
-        $cleanUri = parse_url($uri, PHP_URL_PATH);
-
-        // Manually strip basePath from the URI since AltoRouter doesn't do it in match()
-        if ($this->basePath !== '' && str_starts_with($cleanUri, $this->basePath)) {
-            $cleanUri = substr($cleanUri, strlen($this->basePath));
-        }
-
-        // Ensure we have at least "/" for root
-        if ($cleanUri === '' || $cleanUri === false) {
-            $cleanUri = '/';
-        }
-
-        // Strip trailing slash except for root
-        if ($cleanUri !== '/') {
-            $cleanUri = rtrim($cleanUri, '/');
-        }
-
+    public function dispatch(string $uri, string $method): void
+    {
         try {
-            $match = $this->altoRouter->match($cleanUri, $method);
-        }
-        catch (\Exception $e) {
-            $this->handle404($e);
-            return;
-        }
-        if (!$match) {
-            logMessage("No route found for $method $uri");
-            $this->handle404(new \Exception("No route found for $method $cleanUri"));
-            return;
-        }
-        [$controllerName, $action] = explode('@', $match['target']);
-        $controllerClass = "\\App\\Controllers\\{$controllerName}";
-
-        $next = function() use ($controllerClass, $action, $match) {
-            $this->callController($controllerClass, $action, $match['params']);
-        };
-        $routeName = $match['name'] ?? '';
-        $this->applyMiddleware($routeName, new Request(), $next);
-        if (is_callable($next)) {
-            $next();
-        }
-    }
-
-    private function callController(string $controllerClass, string $action, array $params): void {
-        try {
-            try {
-                $controller = $this->container->get($controllerClass);
-            } catch (\Exception $e) {
-                $reflection = new \ReflectionClass($controllerClass);
-                $constructor = $reflection->getConstructor();
-                if ($constructor && $constructor->getNumberOfRequiredParameters() > 0) {
-                    throw new \Exception("Controller $controllerClass requires binding in container");
+            $path = parse_url($uri, PHP_URL_PATH) ?: "/";
+            $base = url_path();
+            if (
+                $base &&
+                ($path === $base || str_starts_with($path, $base . "/"))
+            ) {
+                $path = substr($path, strlen($base));
+            }
+            $path = rtrim($path, "/") ?: "/";
+            $match = $this->router->match($path, $method);
+            if (!$match) {
+                throw new HttpException(404, "This page could not be found.");
+            }
+            $session = $this->container->get("session");
+            if (
+                $method === "POST" &&
+                !$session->validCsrf(
+                    $_POST["csrf_token"] ??
+                        ($_SERVER["HTTP_X_CSRF_TOKEN"] ?? null),
+                )
+            ) {
+                throw new HttpException(
+                    403,
+                    "Your session has changed. Refresh the page and try again.",
+                );
+            }
+            $name = $match["name"] ?? "";
+            $user = $this->container->get("authService")->getCurrentUser();
+            if (
+                str_starts_with($name, "admin_") ||
+                str_starts_with($name, "protected_")
+            ) {
+                if (!$user) {
+                    if (wants_json()) {
+                        throw new HttpException(
+                            401,
+                            "Please sign in to continue.",
+                        );
+                    }
+                    header("Location: " . url_path("login"), true, 302);
+                    return;
                 }
-                $controller = new $controllerClass();
+                if (str_starts_with($name, "admin_") && !$user["is_admin"]) {
+                    throw new HttpException(
+                        403,
+                        "You do not have access to this page.",
+                    );
+                }
             }
-            if (!method_exists($controller, $action)) {
-                throw new \Exception("Method $action not in $controllerClass");
+            if (str_starts_with($name, "guest_") && $user) {
+                header("Location: " . url_path("user/dashboard"), true, 302);
+                return;
             }
-            call_user_func_array([$controller, $action], array_values($params));
-        } catch (\Exception $e) {
-            error_log("Controller error: " . $e->getMessage());
-            error_log("Stack trace: " . $e->getTraceAsString());
-            $this->handle404($e);
+            [$controller, $action] = explode("@", $match["target"]);
+            $instance = $this->container->get(
+                "\\App\\Controllers\\" . $controller,
+            );
+            if ($instance instanceof BaseController) {
+                $instance->setRenderer($this->container->get("view"));
+            }
+            $instance->$action(...array_values($match["params"]));
+        } catch (\Throwable $e) {
+            $status = $e instanceof HttpException ? $e->status : 500;
+            if ($status === 500) {
+                error_log(get_class($e) . ": " . $e->getMessage());
+            }
+            $message =
+                $status === 500
+                    ? "Something went wrong. Please try again."
+                    : $e->getMessage();
+            http_response_code($status);
+            if (wants_json()) {
+                header("Content-Type: application/json");
+                echo json_encode(["success" => false, "message" => $message]);
+            } else {
+                $title = "Unable to complete request";
+                $view = "pages/error";
+                $error = $message;
+                require base_path("app/Views/layouts/main.php");
+            }
         }
-    }
-
-    private function applyMiddleware(string $routeName, Request $request, callable $next): void {
-        $authService = $this->container->get('authService');
-        $middlewareChain = $next;
-        if (str_starts_with($routeName, 'admin_')) {
-            $adminMiddleware = new \App\Middleware\AdminMiddleware($authService);
-            $middlewareChain = function() use ($adminMiddleware, $request, $middlewareChain) {
-                $adminMiddleware->handle($request, $middlewareChain);
-            };
-        } elseif (str_starts_with($routeName, 'protected_')) {
-            $authMiddleware = new \App\Middleware\AuthMiddleware($authService);
-            $middlewareChain = function() use ($authMiddleware, $request, $middlewareChain) {
-                $authMiddleware->handle($request, $middlewareChain);
-            };
-        } elseif (str_starts_with($routeName, 'guest_')) {
-            $guestMiddleware = new \App\Middleware\AuthMiddleware($authService, true);
-            $middlewareChain = function() use ($guestMiddleware, $request, $middlewareChain) {
-                $guestMiddleware->handle($request, $middlewareChain);
-            };
-        }
-        $middlewareChain();
-    }
-    private function handle404(\Exception $e): void {
-        http_response_code(404);
-        echo '<h1>404 - Page Not Found</h1>' . ($e ? "<p>$e</p>" : '');
-        error_log("404 error: " . $e->getMessage());
-        error_log("Stack trace: " . $e->getTraceAsString());
-        exit;
     }
 }
