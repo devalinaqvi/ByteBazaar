@@ -42,9 +42,20 @@
           <label for="description">Description</label>
           <textarea id="description" name="description" rows="6" maxlength="10000" required>
 <?= e(
-    $product?->description ?? "",
+    $product?->description ?? generate_product_description()["template"],
 ) ?></textarea>
-          <small>Describe the real features and specifications. Plain text only.</small>
+          <?php
+          $descriptionTemplates = ["general" => product_description_templates()];
+          foreach ($categories as $descriptionCategory) {
+              $descriptionTemplates[$descriptionCategory->id] = product_description_templates($descriptionCategory->name);
+          }
+          ?>
+          <div class="form-actions" data-description-tools data-templates="<?= e(json_encode($descriptionTemplates, JSON_THROW_ON_ERROR)) ?>" hidden>
+            <button class="button secondary" type="button" data-rotate-description aria-controls="description">Try another description ↻</button>
+            <button class="button secondary" type="button" data-undo-description disabled aria-controls="description">Undo</button>
+          </div>
+          <small data-description-status role="status" aria-live="polite"></small>
+          <small>Edit the suggested template to match the real features. {name}, {price}, and {category} are filled when saved; replace other placeholders yourself. Plain text only.</small>
         </div>
         <div class="field">
           <label for="price">Price ($)</label>

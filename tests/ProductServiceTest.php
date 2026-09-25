@@ -25,6 +25,16 @@ class ProductServiceTest extends StoreTestCase
         );
         $s->update($id, $data);
         $this->assertSame("/assets/example.png", $r->find($id)->image_url);
+        $data["description"] = "{name} costs {price}. Category: {category}.";
+        $s->update($id, $data);
+        $category = (new App\Services\CategoryService(new App\Repositories\CategoryRepository($this->db)))->get(1);
+        $this->assertSame(
+            "Laptop costs $199.99. Category: " . $category->name . ".",
+            $r->find($id)->description,
+        );
+        $data["description"] = "First paragraph.\n\nSecond paragraph.";
+        $s->update($id, $data);
+        $this->assertSame($data["description"], $r->find($id)->description);
     }
     public function testDisguisedScriptIsNotAnImage(): void
     {

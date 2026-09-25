@@ -55,8 +55,17 @@ class ProductService
             1,
             PHP_INT_MAX,
         );
-        if (!$this->categoriesService->get($category)) {
+        $categoryRecord = $this->categoriesService->get($category);
+        if (!$categoryRecord) {
             throw new HttpException(422, "Select an existing category.");
+        }
+        if (preg_match('/\{(?:name|brand|price|cpu|ram|storage|display|category|gpu|specs|feature_[123])\}/', $description)) {
+            $description = render_description($description, [
+                "name" => $name,
+                "price" => money($price),
+                "category" => $categoryRecord->name,
+            ]);
+            $description = Validation::text(["description" => $description], "description", 10000);
         }
         return [
             "name" => $name,

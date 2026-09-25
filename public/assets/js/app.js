@@ -129,3 +129,37 @@ document.querySelectorAll("[data-image-input]").forEach((input) => {
 window.addEventListener("pageshow", (event) => {
   if (event.persisted) window.location.reload();
 });
+
+// Templates stay local to this form; cycling does not submit or reload it.
+document.querySelectorAll("[data-description-tools]").forEach((tools) => {
+  const form = tools.closest("form");
+  const description = form.querySelector('[name="description"]');
+  const category = form.querySelector('[name="category_id"]');
+  const templates = JSON.parse(tools.dataset.templates);
+  const undo = tools.querySelector("[data-undo-description]");
+  const status = form.querySelector("[data-description-status]");
+  const history = [];
+  const positions = new Map();
+  tools.hidden = false;
+  tools.querySelector("[data-rotate-description]").addEventListener("click", () => {
+    if (form.dataset.busy === "true") return;
+    const key = category.value || "general";
+    const options = templates[key] || templates.general;
+    let index = positions.get(key) ?? options.indexOf(description.value.trim());
+    index = (index + 1) % options.length;
+    if (options[index] === description.value.trim()) index = (index + 1) % options.length;
+    history.push(description.value);
+    description.value = options[index];
+    positions.set(key, index);
+    undo.disabled = false;
+    description.dispatchEvent(new Event("input", { bubbles: true }));
+    status.textContent = `Description ${index + 1} of ${options.length}. Review before saving. Use Undo to restore your previous text.`;
+  });
+  undo.addEventListener("click", () => {
+    if (form.dataset.busy === "true" || !history.length) return;
+    description.value = history.pop();
+    undo.disabled = history.length === 0;
+    description.dispatchEvent(new Event("input", { bubbles: true }));
+    status.textContent = "Previous description restored.";
+  });
+});
